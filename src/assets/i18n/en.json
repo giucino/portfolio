@@ -1,0 +1,20 @@
+{
+	"NAVBAR": {
+		"HOME": "atHome",
+		"ABOUT": "aboutMe",
+		"SKILLS": "techStack",
+		"PROJECTS": "myProjects",
+		"CONTACT": "contactMe"
+	},
+	"LANDING": {
+		"DEV": "Frontend Developer",
+		"DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bring ideas into real life.",
+		"SAY_HELLO": "get in touch"
+	},
+	"PROJECTS": {
+		"JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+		"POLLO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+		"CRM": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+		"POKEDEX": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+	}
+}

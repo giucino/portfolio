@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { SectionTitleComponent } from '../shared/components/section-title/section-title.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [SectionTitleComponent, TranslateModule],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-
+  constructor(public translate: TranslateService) { }
 }

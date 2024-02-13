@@ -1,21 +1,22 @@
 @import './../../../../styles.scss';
 
-footer {
-    height: 100vh;
+section {
+    // height: 90vh;
     width: 100%;
-    padding: 30px 100px;
-    background-color: $bg-dark;
-}
+    font-family: $syne-font;
+    padding: $section-padding;
+    background-color: $scndry-dark;
 
-.section-title {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 60px;
-    letter-spacing: -4px;
-    color: #fff
-}
+    .section-title {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 60px;
+        color: #fff;
 
-.section-title span {
-    border-bottom: solid 4px $orange;
-    color: $orange;
+        span {
+            border-bottom: solid 4px $orange;
+            color: $orange;
+            margin-right: -15px;
+        }
+    }
 }

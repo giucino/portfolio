@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-3 col-sm-3 col-3">
                 <div class="header-logo__content">
-                    <div class="content__logo">GC</div>
+                    <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
                 </div>
             </div>
             <div class="col-md-9 col-sm-9 col-9 header-right">
@@ -14,13 +14,48 @@
                     </div>
                 </div>
                 <aside class="header-menu" [class.header-menu__right]="menuValue">
-                    <ul>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="/">Home</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#about">About</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#skills">Skills</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#portfolio">Portfolio</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#contact">Contact</a></li>
+                    <ul aria-label="Primary" role="list">
+                        <li *ngFor="let menuItem of menuItems" (click)="closeMenu()">
+                            <a class="animate__animated animate__slideInDown" [href]="menuItem.link">
+                                {{ menuItem.label | translate }}
+                            </a>
+                        </li>
                     </ul>
+                    <!-- <ul aria-label="Primary" role="list">
+                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="/">
+                                {{ 'NAVBAR.HOME' | translate }}</a></li>
+                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#about">
+                                {{ 'NAVBAR.ABOUT' | translate }}</a></li>
+                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#skills">
+                                {{ 'NAVBAR.SKILLS' | translate }}</a></li>
+                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#projekte">
+                                {{ 'NAVBAR.PROJECTS' | translate }}</a></li>
+                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#contact">
+                                {{ 'NAVBAR.CONTACT' | translate }}</a></li>
+                    </ul> -->
+                    <div class="content__social-links">
+                        <ul>
+                            <li *ngFor="let link of socialLinks">
+                                <a [href]="link.url" target="_blank">
+                                    <i [class]="link.iconClass"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <ul>
+                            <li><a href="https://github.com/giucino" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-xing"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/" target="_blank"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                            </li>
+                            <li><a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            </li>
+                        </ul> -->
+                    </div>
                 </aside>
             </div>
         </div>

@@ -1,6 +1,28 @@
-<div class="about">
-    <h1 class="section-title">
-        <span>A</span>
-        bout Me
-    </h1>
-</div>
+<app-section-title [titlePrefix]="'a'" [title]="'boutMe'" [sectionId]="'about'" [animation]="'fade-right'"
+    [offset]="'300'" [easing]="'ease-in-sine'">
+
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="about-text">
+                <p class="mb-45">
+                    I am a frontend web developer with a passion for creating beautiful and functional web
+                    applications.
+                    I have a strong foundation in web development and programming, and I am always eager to learn new
+                    technologies and frameworks. I am a quick learner and a team player, and I am always looking for
+                    opportunities to grow and improve my skills.
+                </p>
+                <p class="mb-45">
+                    I am currently seeking a position as a web developer
+                    where I can contribute my skills and knowledge to create innovative and high-quality web
+                    applications.
+                </p>
+            </div>
+        </div>
+        <div class="btn-wrap fadeInUp text-left mt-45 mb-45" data-wow-delay=".9s"
+            style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+            <div class="btn-link"> <a href="mailto:giucino1980@gmail.com">hi&#64;gcino.com </a> <span
+                    class="btn-block color1 animation-bounce"></span> </div>
+        </div>
+    </div>
+
+</app-section-title>

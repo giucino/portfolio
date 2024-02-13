@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule, NgIf } from '@angular/common';
+import { Component, OnInit, Renderer2, Inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { PreloaderComponent } from './preloader/preloader.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule,
     RouterOutlet,
-    NgIf, 
+    // NgIf,
     PreloaderComponent,
     MainContentComponent,
     FooterComponent,
@@ -21,15 +22,21 @@ import { ImprintComponent } from './imprint/imprint.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  isLoading:boolean = true;
+  title = 'Portfolio';
+  isLoading: boolean = true;
+
+  constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document, private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+  }
 
   ngOnInit(): void {
+
     if (this.isLoading) {
-      document.body.classList.add('no-scroll');
+      this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
     }
     setTimeout(() => {
       this.isLoading = false;
-      document.body.classList.remove('no-scroll');
+      this.renderer.removeStyle(this.document.body, 'overflow');
     }, 2500);
   }
 }

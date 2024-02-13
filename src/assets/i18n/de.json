@@ -1,0 +1,20 @@
+{
+	"NAVBAR": {
+		"HOME": "Startseite",
+		"ABOUT": "ueberMich",
+		"SKILLS": "Skills",
+		"PROJECTS": "Projekte",
+		"CONTACT": "Kontakt"
+	},
+	"LANDING": {
+		"DEV": "Frontend Entwickler",
+		"DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
+		"SAY_HELLO": "sag hallo"
+	},
+	"PROJECTS": {
+		"JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+		"POLLO": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+		"CRM": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
+		"POKEDEX": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert."
+	}
+}

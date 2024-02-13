@@ -1,17 +1,48 @@
 @import "./assets/font.scss";
 @import 'animate.css';
 
+
+/* Colors */
 $orange: #fc5f4d;
 $prmry-dark: #18191d;
 $scndry-dark: #212228;
 $grey: #868A9B;
 
-// $yellow: #F90;
-// $red: #ef5c4b;
+$yellow: #F90;
 // $prmry-light: #ebeff3;
 
 
+$syne-font: 'Syne', sans-serif;
+$overpass-font: 'Overpass', sans-serif;
 
+$fs-xxs: 0.75rem; // 12px
+$fs-xs: 1rem; // 16px
+$fs-s: 1.25rem; // 20px
+$fs-m: 1.5rem; // 24px
+$fs-l: 2rem; // 32px
+$fs-xl: 2.5rem; // 40px
+$fs-xxl: 3rem; // 48px
+$fs-xxxl: 3.75rem; // 60px
+
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;
+
+/* typography */
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #868a9b;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    line-height: 1.5em;
+}
 
 @mixin flex-container($jc, $ai) {
     display: flex;
@@ -19,10 +50,14 @@ $grey: #868A9B;
     align-items: $ai;
 }
 
-$m-width-Desktop: 1440px;
-$m-width-Laptop: 1200px;
-$m-width-Tablet: 768px;
-$m-width-Mobile: 300px;
+$section-padding: 120px 0;
+
+$m-width-xxl: 1440px;
+$m-width-xl: 1200px; // Extra Large (xl): 1200 Pixel oder größer.
+$m-width-l: 992px; // Large (lg): 992 Pixel oder größer.
+$m-width-m: 768px; // Medium (md): 768 Pixel oder größer.
+$m-width-s: 576px; // Small (sm): 576 Pixel oder größer.
+$m-width-xs: 300px; // Extra Small (xs): Kleiner als 576 Pixel.
 
 *,
 *::before,
@@ -30,34 +65,218 @@ $m-width-Mobile: 300px;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: 'Syne', sans-serif;
-    background-color: $prmry-dark;
+/* Set core root defaults */
+html:focus-within {
     scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: $prmry-dark;
+    margin: 0;
+    padding: 0;
+    font: inherit;
     overflow-x: hidden;
 }
 
-.font-syne {
-    font-family: 'Syne', sans-serif;
-}
-
-.font-overpass {
-    font-family: 'Overpass', sans-serif;
-}
-
-ul {
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-.no-scroll {
-    overflow: hidden;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
 }
 
-// .fade-out {
-//     opacity: 0;
-//     transition: opacity 1s ease-out;
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+// .no-scroll {
+//     overflow: hidden;
 // }
 
+
+@media screen and (min-width: $m-width-xl) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* ======= Button style ======= */
+.btn-wrap {
+    margin-bottom: 0px;
+    background-color: $prmry-dark;
+}
+
+.btn-link {
+    position: relative;
+    width: 170px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.btn-link a {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.75em;
+    position: relative;
+    display: block;
+    z-index: 99;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+
+.btn-link a i {
+    font-size: 12px;
+}
+
+.btn-link:hover,
+.btn-link a:hover {
+    text-decoration: none;
+}
+
+.btn-block {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: 1;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+// .btn-block:hover {
+//     text-decoration: none;
+// }
+
+// .animation {
+//     -webkit-transition: all 0.2s ease;
+//     -moz-transition: all 0.2s ease;
+//     -ms-transition: all 0.2s ease;
+//     -o-transition: all 0.2s ease;
+//     transition: all 0.2s ease;
+// }
+
+.btn-link:hover .btn-block {
+    left: 60%;
+    text-decoration: none;
+}
+
+.animation-bounce {
+    -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-block.color1 {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-block.color2 {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* lists */
+// ul {
+//     list-style-type: none;
+// }
+
+// li {
+//     list-style: none;
+// }
+
+/* links */
+// a {
+//     text-decoration: none;
+//     color: inherit;
+// }
+
+// a:hover {
+//     text-decoration: none;
+//     // color: inherit;
+//     cursor: pointer;
+// }
+
+// a:link {
+//     text-decoration: none;
+// }
+
+// a:focus {
+//     outline: none;
+// }

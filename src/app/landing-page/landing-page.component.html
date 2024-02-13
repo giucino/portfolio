@@ -1,34 +1,59 @@
 <app-navbar></app-navbar>
 
-<section class="landing-page">
+<section id="home" class="landing-page">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <div class="landing-page__content w-100">
-                    <span class="content__headline animate__animated animate__fadeInDownBig">Frontend</span>
-                    <span class="content__headline">Developer</span>
-                    <span class="content__name">Giuseppe Cino</span>
-                    <div class="content__button">Send a Message</div>
-                    <p class="content__description">I work on with digital startups and entreprenurs on design and branding. need help on your
-                        project? <a href="" data-replace="say hello"><span>say hello</span></a></p>
-                    <div class="content__social-links">
-                        <ul>
-                            <li><a href="https://github.com/giucino" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            </li>
-                            <li><a href="" target="_blank"><i class="fa-brands fa-xing"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </li>
-                            <li><a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-12">
+                <div class="header-section-wrap">
 
-            <div class="col-md-4">
-                <div class="landing-page__aside">
-                    <img class="aside__image w-100" src="./../../assets/img/passbild.png" alt="">
+                    <div class="header-view-on-mobile">
+                        <h1 class="content__name">Giuseppe Cino</h1>
+                        <h6 class="content__headline">{{ 'LANDING.DEV' | translate }}</h6>
+                    </div>
+
+                    <div>
+                        <img class="header-img" src="./../../assets/img/passbild.png" alt="">
+                    </div>
+
+                    <div class="landing-page__content">
+                        <div class="header-not-view-on-mobile">
+                            <h1 class="content__name animate__animated animate__fadeInDownBig">Giuseppe Cino</h1>
+                            <h6 class="content__headline">{{ 'LANDING.DEV' | translate }}</h6>
+                        </div>
+
+                        <div class="content__description-container">
+                            <p class="content__description">{{ 'LANDING.DESCRIPTION' | translate }}
+                                <a href="" [attr.data-replace]="translatedText"><span>{{ 'LANDING.SAY_HELLO' | translate
+                                        }}</span></a>
+                            </p>
+                        </div>
+
+                        <!-- <div class="content__social-links">
+                                <ul>
+                                    <li><a href="https://github.com/giucino" target="_blank"><i
+                                                class="fa-brands fa-github"></i></a>
+                                    </li>
+                                    <li><a href="" target="_blank"><i class="fa-brands fa-xing"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/"
+                                            target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li><a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                                    </li>
+                                    <li><a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                                    </li>
+                                </ul>
+                            </div> -->
+
+                        <!-- <div class="btn-wrap text-center">
+                                <div> <a href="#">Download CV <i></i></a> <span></span> </div>
+                            </div> -->
+
+                        <div class="btn-container text-center">
+                            <button (click)="switchLanguage('de')" title="Deutsch">DE</button>
+                            <button (click)="switchLanguage('en')" title="Englisch">EN</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
