@@ -1,9 +1,13 @@
-<app-preloader *ngIf="isLoading"></app-preloader>
+@if(isLoading){
+<app-preloader></app-preloader>
+}
 
-<div id="content" *ngIf="!isLoading">
+@if(!isLoading){
+<div id="content">
     <router-outlet></router-outlet>
 </div>
+}
 
 <footer id="footer">
-<app-footer></app-footer>
+    <app-footer></app-footer>
 </footer>

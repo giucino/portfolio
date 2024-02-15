@@ -12,7 +12,6 @@ import {TranslateService} from "@ngx-translate/core";
   standalone: true,
   imports: [CommonModule,
     RouterOutlet,
-    // NgIf,
     PreloaderComponent,
     MainContentComponent,
     FooterComponent,
@@ -23,14 +22,14 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent implements OnInit {
   title = 'Portfolio';
-  isLoading: boolean = true;
+  isLoading = true;
 
   constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document, private translate: TranslateService) {
     this.translate.setDefaultLang('en');
   }
 
-  ngOnInit(): void {
 
+  ngOnInit(): void {
     if (this.isLoading) {
       this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
     }

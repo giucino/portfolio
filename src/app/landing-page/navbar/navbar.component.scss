@@ -8,7 +8,7 @@ header {
     width: 100%;
     @include flex-container(center, center);
     z-index: 1;
-    font-family: $syne-font;
+    // font-family: $syne-font;
 }
 
 .header-right {

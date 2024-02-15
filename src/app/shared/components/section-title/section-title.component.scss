@@ -3,7 +3,7 @@
 .section {
     height: auto;
     width: 100%;
-    font-family: $syne-font;
+    // font-family: $syne-font;
     padding: $section-padding;
     background-color: $prmry-dark;
 
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $m-width-m) {
     .section {
         width: 100%;
 

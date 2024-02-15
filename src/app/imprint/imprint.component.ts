@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-imprint',
@@ -10,5 +10,6 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
+  constructor(public translate: TranslateService) { }
 
 }

@@ -13,6 +13,6 @@ export class SectionTitleComponent {
   @Input() sectionId!: string;
   @Input() animation!: string;
   @Input() duration!: number; 
-  @Input() offset!: string;
+  @Input() offset!: number;
   @Input() easing!: string;
 }
