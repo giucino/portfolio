@@ -1,14 +1,12 @@
 <section id="{{ sectionId }}" class="section">
     <div class="container">
-        <div [attr.data-aos]="animation" [attr.data-aos-duration]="duration" [attr.data-aos-offset]="offset"
+        <div class="row" [attr.data-aos]="animation" [attr.data-aos-duration]="duration" [attr.data-aos-offset]="offset"
             [attr.data-aos-easing]="easing">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-content w-100">
-                        <h1 class="section-title">
-                            <span>{{ titlePrefix }}</span>{{ title }}
-                        </h1>
-                    </div>
+            <div class="col-md-12">
+                <div class="section-content w-100">
+                    <h1 class="section-title">
+                        <span>{{ titlePrefix }}</span>{{ title }}
+                    </h1>
                 </div>
             </div>
         </div>

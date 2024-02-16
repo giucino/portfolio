@@ -1,5 +1,5 @@
 @import "./assets/font.scss";
-@import 'animate.css';
+// @import 'animate.css';
 
 /* Colors */
 $orange: #fc5f4d;
@@ -271,3 +271,12 @@ button {
 // a:focus {
 //     outline: none;
 // }
+
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
