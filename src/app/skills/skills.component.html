@@ -1,4 +1,4 @@
-<app-section-title [titlePrefix]="'t'" [title]="'echStack'" [sectionId]="'skills'" [animation]="'fade-up'"
+<app-section-title [titlePrefixKey]="'SKILLS.TITLE_PREFIX'" [titleKey]="'SKILLS.TITLE'" [sectionId]="'skills'" [animation]="'fade-up'"
     [duration]="1500">
 
     <div class="row">
@@ -11,5 +11,20 @@
             </div>
         </div>
     </div>
+
+
+    <!-- <div class="row">
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2" *ngFor="let tech of techIcons">
+            <div class="card img-block">
+                <div class="wrapper-img">
+                    <img [src]="'./assets/img/skills/' + tech.icon" class="img-fluid card-img-top" alt="{{ tech.name }}">
+                </div>
+                <div class="title-block">
+                    <h4>Lab. 001</h4>
+                    <p>Join</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 </app-section-title>

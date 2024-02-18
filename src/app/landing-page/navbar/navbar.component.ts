@@ -19,13 +19,13 @@ export class NavbarComponent {
     { link: '#contact', label: 'NAVBAR.CONTACT' }
   ];
 
-  socialLinks = [
-    { url: 'https://github.com/giucino', iconClass: 'fa-brands fa-github' },
-    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-xing' },
-    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-linkedin-in' },
-    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-discord' },
-    { url: 'mailto:giucino1980@gmail.com', iconClass: 'fa-solid fa-envelope' }
-  ];
+  // socialLinks = [
+  //   { url: 'https://github.com/giucino', iconClass: 'fa-brands fa-github' },
+  //   { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-xing' },
+  //   { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-linkedin-in' },
+  //   { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-discord' },
+  //   { url: 'mailto:giucino1980@gmail.com', iconClass: 'fa-solid fa-envelope' }
+  // ];
 
   constructor(private el: ElementRef, private renderer: Renderer2, public translate: TranslateService) { }
 

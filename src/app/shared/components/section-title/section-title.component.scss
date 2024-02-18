@@ -3,20 +3,17 @@
 .section {
     height: auto;
     width: 100%;
-    // font-family: $syne-font;
     padding: $section-padding;
-    background-color: $prmry-dark;
 
     .section-title {
         font-size: $fs-xxxl;
         line-height: 60px;
         margin-bottom: 60px;
-        color: #fff;
 
         span {
             border-bottom: solid 4px $orange;
             color: $orange;
-            // margin-right: -15px;
+            margin-right: -14px;
         }
     }
 }

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-landing-page',
   standalone: true,

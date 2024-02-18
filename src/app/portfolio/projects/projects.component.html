@@ -1,169 +1,44 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-7 project-img">
+    <div class="row mb-45" *ngFor="let project of projects; let i = index">
+        <div class="col-md-7 project-img" [ngClass]="{'order-md-2': i % 2 !== 0}">
             <div class="row">
                 <div class="item mb-30">
-                    <div class="gallery-item-inner">
-                        <a href="./../../../assets/img/projects/1.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img">
-                                    <img src="./../../../assets/img/projects/1.jpg" class="img-fluid mx-auto d-block"
-                                        alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <img [src]="'./../../../assets/img/projects/' + project.imgSrc" class="img-fluid mx-auto d-block"
+                        alt="">
                 </div>
             </div>
         </div>
-        <div class="col-md-4 offset-md-1">
-            <h6 #animateElement>Design</h6>
-            <h1 #animateElement>Join</h1>
-            <p #animateElement class="mt-45">Pellentesque magna magna semper dapibus felis necatin
-                aliuen risus. Pellentesque habitant morbi tristique senectus the netuse malesuada nullam ac lorem miss
-                the duru.</p>
-            <p #animateElement class="mt-45"><span>Date :</span> 23 Dec 2023</p>
-            <p #animateElement><span>Client :</span> Viola Polina</p>
-            <p #animateElement><span>Firm Name :</span> X-LAB</p>
-            <p #animateElement><span>Category :</span> HTML, CSS, JavaScript</p>
-            <div #animateElement class="cta-project">
+        <div class="col-md-4 offset-md-1" [ngClass]="{'order-md-1': i % 2 !== 0}">
+            <h6 appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element">
+                {{ project.type | translate }}
+            </h6>
+            <h1 appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element">
+                {{ project.title }}</h1>
+            <p appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element mt-45">
+                {{ project.description | translate }}</p>
+            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp" class="mt-45"><span>
+                    {{ project.toolchain.label | translate }}</span> {{ project.toolchain.content | translate }}</p>
+            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp"><span>{{
+                    project.category.label | translate }}</span> {{ project.category.content | translate }}</p>
+            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp"><span>
+                    {{ project.date.label | translate
+                    }}</span> {{ project.date.content | translate }}</p>
+
+            <div #animateElement appViewportAnimation="animate__animated animate__fadeInUp" class="cta-project">
                 <div class="btn-wrap text-left mt-45">
-                    <div class="btn-link"> <a href="#">Live website <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
+                    <div class="btn-link"> <a [href]="project.liveTestLink" target="_blank">Live website
+                            <i class="pi pi-arrow-up-right" style="font-size: .75rem"></i>
+                        </a> <span class="btn-block color1 animation-bounce"></span> </div>
                 </div>
-                <div class="btn-wrap text-left mt-45">
-                    <div class="btn-link"> <a href="#">GitHub <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="col-md-7">
-            <!-- Images -->
-            <div class="row">
-                <div class="item mb-30">
-                    <div class="gallery-item-inner">
-                        <a href="./../../../assets/img/projects/1.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="./../../../assets/img/projects/1.jpg"
-                                        class="img-fluid mx-auto d-block" alt=""> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 offset-md-1">
-            <h6>Design</h6>
-            <h1>Join</h1>
-            <p class="mt-45">Pellentesque magna magna semper dapibus felis necatin
-                aliuen risus. Pellentesque habitant morbi tristique senectus the netuse malesuada nullam ac lorem miss
-                the duru.</p>
-            <p class="mt-45"><span>Date :</span> 23 Dec 2023</p>
-            <p><span>Client :</span> Viola Polina</p>
-            <p ><span>Firm Name :</span> X-LAB</p>
-            <p ><span>Category :</span> HTML, CSS, JavaScript</p>
-            <div class="cta-project">
-                <div class="btn-wrap text-left mt-45">
-                    <div class="btn-link"> <a href="#">Live website <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-                <div class="btn-wrap text-left mt-45">
-                    <div class="btn-link"> <a href="#">GitHub <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-7">
-            <!-- Images -->
-            <div class="row">
-                <div class="item mb-30">
-                    <div class="gallery-item-inner">
-                        <a href="./../../../assets/img/projects/1.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="./../../../assets/img/projects/1.jpg"
-                                        class="img-fluid mx-auto d-block" alt=""> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 offset-md-1">
-            <h6>Design</h6>
-            <h1>Join</h1>
-            <p class="mt-45 animate__fadeInUp">Pellentesque magna magna semper dapibus felis necatin
-                aliuen risus. Pellentesque habitant morbi tristique senectus the netuse malesuada nullam ac lorem miss
-                the duru.</p>
-            <p class="mt-45 animate__fadeInUp"><span>Date :</span> 23 Dec 2023</p>
-            <p class="animate__fadeInUp"><span>Client :</span> Viola Polina</p>
-            <p class="animate__fadeInUp"><span>Firm Name :</span> X-LAB</p>
-            <p class="animate__fadeInUp"><span>Category :</span> HTML, CSS, JavaScript</p>
-            <div class="cta-project">
-                <div class="btn-wrap animate__fadeInUp text-left mt-45">
-                    <div class="btn-link"> <a href="#">Live website <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-                <div class="btn-wrap animate__fadeInUp text-left mt-45">
-                    <div class="btn-link"> <a href="#">GitHub <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-7">
-            <!-- Images -->
-            <div class="row">
-                <div class="item mb-30">
-                    <div class="gallery-item-inner">
-                        <a href="./../../../assets/img/projects/1.jpg" title="" class="img-zoom">
-                            <div class="gallery-box">
-                                <div class="gallery-img"> <img src="./../../../assets/img/projects/1.jpg"
-                                        class="img-fluid mx-auto d-block" alt=""> </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 offset-md-1">
-            <h6>Design</h6>
-            <h1>Join</h1>
-            <p class="mt-45 animate__fadeInUp">Pellentesque magna magna semper dapibus felis necatin
-                aliuen risus. Pellentesque habitant morbi tristique senectus the netuse malesuada nullam ac lorem miss
-                the duru.</p>
-            <p class="mt-45 animate__fadeInUp"><span>Date :</span> 23 Dec 2023</p>
-            <p class="animate__fadeInUp"><span>Client :</span> Viola Polina</p>
-            <p class="animate__fadeInUp"><span>Firm Name :</span> X-LAB</p>
-            <p class="animate__fadeInUp"><span>Category :</span> HTML, CSS, JavaScript</p>
-            <div class="cta-project">
-                <div class="btn-wrap animate__fadeInUp text-left mt-45">
-                    <div class="btn-link"> <a href="#">Live website <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
-                <div class="btn-wrap animate__fadeInUp text-left mt-45">
-                    <div class="btn-link"> <a href="#">GitHub <i></i> </a> <span
-                            class="btn-block color1 animation-bounce"></span> </div>
-                </div>
+                <!-- <div class="btn-wrap text-left mt-45">
+                    <div class="btn-link"> <a [href]="project.githubLink" target="_blank">GitHub
+                            <i class="pi pi-arrow-up-right" style="font-size: .75rem"></i>
+                        </a> <span class="btn-block color1 animation-bounce"></span> </div>
+                </div> -->
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 
 
 

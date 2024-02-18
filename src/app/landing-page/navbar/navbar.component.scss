@@ -3,12 +3,11 @@
 header {
     position: sticky;
     top: 0;
-    background-color: $prmry-dark;
     height: 10vh;
     width: 100%;
+    background-color: $prmry-dark;
     @include flex-container(center, center);
     z-index: 1;
-    // font-family: $syne-font;
 }
 
 .header-right {
@@ -103,26 +102,6 @@ header {
         li {
             opacity: 1;
             transform: translateY(0);
-        }
-    }
-}
-
-.content__social-links {
-    margin-top: 35px;
-
-    ul {
-        @include flex-container(center, center);
-        flex-direction: row;
-        padding: 0;
-
-        li {
-            display: inline-block;
-            margin: 0px 6px;
-
-            a {
-                font-size: $fs-s;
-                color: $scndry-dark;
-            }
         }
     }
 }

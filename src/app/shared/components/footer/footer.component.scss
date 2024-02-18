@@ -1,9 +1,7 @@
 @import './../../../../styles.scss';
 
 section {
-    // height: 90vh;
     width: 100%;
-    // font-family: $syne-font;
     padding: $section-padding;
     background-color: $scndry-dark;
 
@@ -17,6 +15,27 @@ section {
             border-bottom: solid 4px $orange;
             color: $orange;
             margin-right: -15px;
+        }
+    }
+}
+
+
+.content__social-links {
+    margin-top: 35px;
+
+    ul {
+        @include flex-container(center, center);
+        flex-direction: row;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0px 6px;
+
+            a {
+                font-size: $fs-s;
+                color: #fff;
+            }
         }
     }
 }

@@ -1,20 +1,96 @@
 {
 	"NAVBAR": {
-		"HOME": "Startseite",
+		"HOME": "startSeite",
 		"ABOUT": "ueberMich",
-		"SKILLS": "Skills",
-		"PROJECTS": "Projekte",
-		"CONTACT": "Kontakt"
+		"SKILLS": "skills",
+		"PROJECTS": "meineProjekte",
+		"CONTACT": "kontakt"
 	},
 	"LANDING": {
 		"DEV": "Frontend Entwickler",
 		"DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
 		"SAY_HELLO": "sag hallo"
 	},
+	"ABOUT": {
+		"TITLE_PREFIX": "u",
+		"TITLE": "eberMich",
+		"DESCRIPTION_I": "Ich bin ein Frontend-Webentwickler mit Leidenschaft für die Erstellung schöner und funktionaler Webanwendungen. Ich habe eine solide Grundlage in der Webentwicklung und im Programmieren, und ich bin immer bestrebt, neue Technologien und Frameworks zu lernen. Ich bin ein schneller Lerner und ein Teamplayer, und ich bin stets auf der Suche nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu verbessern",
+		"DESCRIPTION_II": "Ich suche derzeit eine Position als Webentwickler, bei der ich meine Fähigkeiten und Kenntnisse einbringen kann, um innovative und qualitativ hochwertige Webanwendungen zu erstellen."
+	},
+	"SKILLS": {
+		"TITLE_PREFIX": "s",
+		"TITLE": "kills"
+	},
 	"PROJECTS": {
-		"JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-		"POLLO": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-		"CRM": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
-		"POKEDEX": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert."
+		"TITLE_PREFIX": "m",
+		"TITLE": "eineProjekte",
+		"JOIN": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+			"TOOLCHAIN": {
+				"LABEL": "Werkzeug :",
+				"CONTENT": "JavaScript, HTML, CSS"
+			},
+			"CATEGORY": {
+				"LABEL": "Kategorie :",
+				"CONTENT": "Projektmanagement, Aufgabenverwaltung"
+			},
+			"DATE": {
+				"LABEL": "Datum :",
+				"CONTENT": "Okt 2023"
+			}
+		},
+		"POLLO": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+			"TOOLCHAIN": {
+				"LABEL": "Werkzeug :",
+				"CONTENT": "JavaScript, HTML, CSS"
+			},
+			"CATEGORY": {
+				"LABEL": "Kategorie :",
+				"CONTENT": "Unterhaltung, Spiele"
+			},
+			"DATE": {
+				"LABEL": "Datum :",
+				"CONTENT": "Dez 2023"
+			}
+		},
+		"CRM": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
+			"TOOLCHAIN": {
+				"LABEL": "Werkzeug :",
+				"CONTENT": "JavaScript, HTML, CSS"
+			},
+			"CATEGORY": {
+				"LABEL": "Kategorie :",
+				"CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement"
+			},
+			"DATE": {
+				"LABEL": "Datum :",
+				"CONTENT": "Dez 2023"
+			}
+		},
+		"POKEDEX": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
+			"TOOLCHAIN": {
+				"LABEL": "Werkzeug :",
+				"CONTENT": "JavaScript, HTML, CSS"
+			},
+			"CATEGORY": {
+				"LABEL": "Kategorie :",
+				"CONTENT": "Bildung, Unterhaltung"
+			},
+			"DATE": {
+				"LABEL": "Datum :",
+				"CONTENT": "Dez 2023"
+			}
+		}
+	},
+	"CONTACT": {
+		"TITLE_PREFIX": "k",
+		"TITLE": "ontakt"
 	}
 }

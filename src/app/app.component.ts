@@ -5,7 +5,7 @@ import { PreloaderComponent } from './preloader/preloader.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import {TranslateService} from "@ngx-translate/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,9 @@ export class AppComponent implements OnInit {
   title = 'Portfolio';
   isLoading = true;
 
-  constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document, private translate: TranslateService) {
+  constructor(private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document,
+    private translate: TranslateService) {
     this.translate.setDefaultLang('en');
   }
 
