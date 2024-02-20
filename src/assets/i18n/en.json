@@ -1,96 +1,56 @@
 {
-	"NAVBAR": {
-		"HOME": "atHome",
-		"ABOUT": "aboutMe",
-		"SKILLS": "techStack",
-		"PROJECTS": "myProjects",
-		"CONTACT": "contactMe"
-	},
-	"LANDING": {
-		"DEV": "Frontend Developer",
-		"DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bring ideas into real life.",
-		"SAY_HELLO": "get in touch"
-	},
-	"ABOUT": {
-		"TITLE_PREFIX": "a",
-		"TITLE": "boutMe",
-		"DESCRIPTION_I": "I am a frontend web developer with a passion for creating beautiful and functional web applications. I have a strong foundation in web development and programming, and I am always eager to learn new technologies and frameworks. I am a quick learner and a team player, and I am always looking for opportunities to grow and improve my skills.",
-		"DESCRIPTION_II": "I am currently seeking a position as a web developer where I can contribute my skills and knowledge to create innovative and high-quality web applications."
-	},
-	"SKILLS": {
-		"TITLE_PREFIX": "t",
-		"TITLE": "echStack"
-	},
-	"PROJECTS": {
-		"TITLE_PREFIX": "m",
-		"TITLE": "yProjects",
-		"JOIN": {
-			"APPLICATION_TYPE": "WebApp",
-			"DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories.",
-			"TOOLCHAIN": {
-				"LABEL": "Toolchain :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Category :",
-				"CONTENT": "Project Management, Task Management"
-			},
-			"DATE": {
-				"LABEL": "Date :",
-				"CONTENT": "Oct 2023"
-			}
-		},
-		"POLLO": {
-			"APPLICATION_TYPE": "WebApp",
-			"DESCRIPTION": "Jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
-			"TOOLCHAIN": {
-				"LABEL": "Toolchain :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Category :",
-				"CONTENT": "Entertainment, Games"
-			},
-			"DATE": {
-				"LABEL": "Date :",
-				"CONTENT": "Dec 2023"
-			}
-		},
-		"CRM": {
-			"APPLICATION_TYPE": "WebApp",
-			"DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
-			"TOOLCHAIN": {
-				"LABEL": "Toolchain :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Category :",
-				"CONTENT": "Business Applications, Customer Relationship Management"
-			},
-			"DATE": {
-				"LABEL": "Date :",
-				"CONTENT": "Dec 2023"
-			}
-		},
-		"POKEDEX": {
-			"APPLICATION_TYPE": "WebApp",
-			"DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
-			"TOOLCHAIN": {
-				"LABEL": "Toolchain :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Category :",
-				"CONTENT": "Education, Entertainment"
-			},
-			"DATE": {
-				"LABEL": "Date :",
-				"CONTENT": "Dec 2023"
-			}
-		}
-	},
-	"CONTACT": {
-		"TITLE_PREFIX": "c",
-		"TITLE": "ontactMe"
-	}
+	"ABOUT.DESCRIPTION_I": "I am a frontend web developer with a passion for creating beautiful and functional web applications. I have a strong foundation in web development and programming, and I am always eager to learn new technologies and frameworks. I am a quick learner and a team player, and I am always looking for opportunities to grow and improve my skills.",
+	"ABOUT.DESCRIPTION_II": "I am currently seeking a position as a web developer where I can contribute my skills and knowledge to create innovative and high-quality web applications.",
+	"ABOUT.TITLE": "boutMe",
+	"ABOUT.TITLE_PREFIX": "a",
+	"CONTACT.TITLE": "ontactMe",
+	"CONTACT.TITLE_PREFIX": "c",
+	"LANDING.DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bring ideas into real life.",
+	"LANDING.DEV": "Frontend Developer",
+	"LANDING.SAY_HELLO": "get in touch",
+	"NAVBAR.ABOUT": "aboutMe",
+	"NAVBAR.CONTACT": "contactMe",
+	"NAVBAR.HOME": "atHome",
+	"NAVBAR.PROJECTS": "myProjects",
+	"NAVBAR.SKILLS": "techStack",
+	"PROJECTS.CRM.APPLICATION_TYPE": "WebApp",
+	"PROJECTS.CRM.CATEGORY.CONTENT": "Business Applications, Customer Relationship Management",
+	"PROJECTS.CRM.CATEGORY.LABEL": "Category :",
+	"PROJECTS.CRM.DATE.CONTENT": "Dec 2023",
+	"PROJECTS.CRM.DATE.LABEL": "Date :",
+	"PROJECTS.CRM.DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
+	"PROJECTS.CRM.TITLE": "CRM",
+	"PROJECTS.CRM.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.CRM.TOOLCHAIN.LABEL": "Toolchain :",
+	"PROJECTS.JOIN.APPLICATION_TYPE": "WebApp",
+	"PROJECTS.JOIN.CATEGORY.CONTENT": "Project Management, Task Management",
+	"PROJECTS.JOIN.CATEGORY.LABEL": "Category :",
+	"PROJECTS.JOIN.DATE.CONTENT": "Oct 2023",
+	"PROJECTS.JOIN.DATE.LABEL": "Date :",
+	"PROJECTS.JOIN.DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories.",
+	"PROJECTS.JOIN.TITLE": "Join",
+	"PROJECTS.JOIN.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.JOIN.TOOLCHAIN.LABEL": "Toolchain :",
+	"PROJECTS.POKEDEX.APPLICATION_TYPE": "WebApp",
+	"PROJECTS.POKEDEX.CATEGORY.CONTENT": "Education, Entertainment",
+	"PROJECTS.POKEDEX.CATEGORY.LABEL": "Category :",
+	"PROJECTS.POKEDEX.DATE.CONTENT": "Dec 2023",
+	"PROJECTS.POKEDEX.DATE.LABEL": "Date :",
+	"PROJECTS.POKEDEX.DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
+	"PROJECTS.POKEDEX.TITLE": "Pokedex",
+	"PROJECTS.POKEDEX.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.POKEDEX.TOOLCHAIN.LABEL": "Toolchain :",
+	"PROJECTS.POLLO.APPLICATION_TYPE": "WebApp",
+	"PROJECTS.POLLO.CATEGORY.CONTENT": "Entertainment, Games",
+	"PROJECTS.POLLO.CATEGORY.LABEL": "Category :",
+	"PROJECTS.POLLO.DATE.CONTENT": "Dec 2023",
+	"PROJECTS.POLLO.DATE.LABEL": "Date :",
+	"PROJECTS.POLLO.DESCRIPTION": "Jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
+	"PROJECTS.POLLO.TITLE": "El Pollo Loco",
+	"PROJECTS.POLLO.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.POLLO.TOOLCHAIN.LABEL": "Toolchain :",
+	"PROJECTS.TITLE": "yProjects",
+	"PROJECTS.TITLE_PREFIX": "m",
+	"SKILLS.TITLE": "echStack",
+	"SKILLS.TITLE_PREFIX": "t"
 }

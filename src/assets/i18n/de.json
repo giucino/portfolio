@@ -1,96 +1,56 @@
 {
-	"NAVBAR": {
-		"HOME": "startSeite",
-		"ABOUT": "ueberMich",
-		"SKILLS": "skills",
-		"PROJECTS": "meineProjekte",
-		"CONTACT": "kontakt"
-	},
-	"LANDING": {
-		"DEV": "Frontend Entwickler",
-		"DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
-		"SAY_HELLO": "sag hallo"
-	},
-	"ABOUT": {
-		"TITLE_PREFIX": "u",
-		"TITLE": "eberMich",
-		"DESCRIPTION_I": "Ich bin ein Frontend-Webentwickler mit Leidenschaft für die Erstellung schöner und funktionaler Webanwendungen. Ich habe eine solide Grundlage in der Webentwicklung und im Programmieren, und ich bin immer bestrebt, neue Technologien und Frameworks zu lernen. Ich bin ein schneller Lerner und ein Teamplayer, und ich bin stets auf der Suche nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu verbessern",
-		"DESCRIPTION_II": "Ich suche derzeit eine Position als Webentwickler, bei der ich meine Fähigkeiten und Kenntnisse einbringen kann, um innovative und qualitativ hochwertige Webanwendungen zu erstellen."
-	},
-	"SKILLS": {
-		"TITLE_PREFIX": "s",
-		"TITLE": "kills"
-	},
-	"PROJECTS": {
-		"TITLE_PREFIX": "m",
-		"TITLE": "eineProjekte",
-		"JOIN": {
-			"APPLICATION_TYPE": "Webanwendung",
-			"DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-			"TOOLCHAIN": {
-				"LABEL": "Werkzeug :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Kategorie :",
-				"CONTENT": "Projektmanagement, Aufgabenverwaltung"
-			},
-			"DATE": {
-				"LABEL": "Datum :",
-				"CONTENT": "Okt 2023"
-			}
-		},
-		"POLLO": {
-			"APPLICATION_TYPE": "Webanwendung",
-			"DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-			"TOOLCHAIN": {
-				"LABEL": "Werkzeug :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Kategorie :",
-				"CONTENT": "Unterhaltung, Spiele"
-			},
-			"DATE": {
-				"LABEL": "Datum :",
-				"CONTENT": "Dez 2023"
-			}
-		},
-		"CRM": {
-			"APPLICATION_TYPE": "Webanwendung",
-			"DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
-			"TOOLCHAIN": {
-				"LABEL": "Werkzeug :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Kategorie :",
-				"CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement"
-			},
-			"DATE": {
-				"LABEL": "Datum :",
-				"CONTENT": "Dez 2023"
-			}
-		},
-		"POKEDEX": {
-			"APPLICATION_TYPE": "Webanwendung",
-			"DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
-			"TOOLCHAIN": {
-				"LABEL": "Werkzeug :",
-				"CONTENT": "JavaScript, HTML, CSS"
-			},
-			"CATEGORY": {
-				"LABEL": "Kategorie :",
-				"CONTENT": "Bildung, Unterhaltung"
-			},
-			"DATE": {
-				"LABEL": "Datum :",
-				"CONTENT": "Dez 2023"
-			}
-		}
-	},
-	"CONTACT": {
-		"TITLE_PREFIX": "k",
-		"TITLE": "ontakt"
-	}
+	"ABOUT.DESCRIPTION_I": "Ich bin ein Frontend-Webentwickler mit Leidenschaft für die Erstellung schöner und funktionaler Webanwendungen. Ich habe eine solide Grundlage in der Webentwicklung und im Programmieren, und ich bin immer bestrebt, neue Technologien und Frameworks zu lernen. Ich bin ein schneller Lerner und ein Teamplayer, und ich bin stets auf der Suche nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu verbessern",
+	"ABOUT.DESCRIPTION_II": "Ich suche derzeit eine Position als Webentwickler, bei der ich meine Fähigkeiten und Kenntnisse einbringen kann, um innovative und qualitativ hochwertige Webanwendungen zu erstellen.",
+	"ABOUT.TITLE": "eberMich",
+	"ABOUT.TITLE_PREFIX": "u",
+	"CONTACT.TITLE": "ontakt",
+	"CONTACT.TITLE_PREFIX": "k",
+	"LANDING.DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
+	"LANDING.DEV": "Frontend Entwickler",
+	"LANDING.SAY_HELLO": "sag hallo",
+	"NAVBAR.ABOUT": "ueberMich",
+	"NAVBAR.CONTACT": "kontakt",
+	"NAVBAR.HOME": "startSeite",
+	"NAVBAR.PROJECTS": "meineProjekte",
+	"NAVBAR.SKILLS": "skills",
+	"PROJECTS.CRM.APPLICATION_TYPE": "Webanwendung",
+	"PROJECTS.CRM.CATEGORY.CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement",
+	"PROJECTS.CRM.CATEGORY.LABEL": "Kategorie :",
+	"PROJECTS.CRM.DATE.CONTENT": "Dez 2023",
+	"PROJECTS.CRM.DATE.LABEL": "Datum :",
+	"PROJECTS.CRM.DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
+	"PROJECTS.CRM.TITLE": "CRM",
+	"PROJECTS.CRM.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.CRM.TOOLCHAIN.LABEL": "Werkzeug :",
+	"PROJECTS.JOIN.APPLICATION_TYPE": "Webanwendung",
+	"PROJECTS.JOIN.CATEGORY.CONTENT": "Projektmanagement, Aufgabenverwaltung",
+	"PROJECTS.JOIN.CATEGORY.LABEL": "Kategorie :",
+	"PROJECTS.JOIN.DATE.CONTENT": "Okt 2023",
+	"PROJECTS.JOIN.DATE.LABEL": "Datum :",
+	"PROJECTS.JOIN.DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+	"PROJECTS.JOIN.TITLE": "Join",
+	"PROJECTS.JOIN.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.JOIN.TOOLCHAIN.LABEL": "Werkzeug :",
+	"PROJECTS.POKEDEX.APPLICATION_TYPE": "Webanwendung",
+	"PROJECTS.POKEDEX.CATEGORY.CONTENT": "Bildung, Unterhaltung",
+	"PROJECTS.POKEDEX.CATEGORY.LABEL": "Kategorie :",
+	"PROJECTS.POKEDEX.DATE.CONTENT": "Dez 2023",
+	"PROJECTS.POKEDEX.DATE.LABEL": "Datum :",
+	"PROJECTS.POKEDEX.DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
+	"PROJECTS.POKEDEX.TITLE": "Pokedex",
+	"PROJECTS.POKEDEX.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.POKEDEX.TOOLCHAIN.LABEL": "Werkzeug :",
+	"PROJECTS.POLLO.APPLICATION_TYPE": "Webanwendung",
+	"PROJECTS.POLLO.CATEGORY.CONTENT": "Unterhaltung, Spiele",
+	"PROJECTS.POLLO.CATEGORY.LABEL": "Kategorie :",
+	"PROJECTS.POLLO.DATE.CONTENT": "Dez 2023",
+	"PROJECTS.POLLO.DATE.LABEL": "Datum :",
+	"PROJECTS.POLLO.DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+	"PROJECTS.POLLO.TITLE": "El Pollo Loco",
+	"PROJECTS.POLLO.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
+	"PROJECTS.POLLO.TOOLCHAIN.LABEL": "Werkzeug :",
+	"PROJECTS.TITLE": "eineProjekte",
+	"PROJECTS.TITLE_PREFIX": "m",
+	"SKILLS.TITLE": "kills",
+	"SKILLS.TITLE_PREFIX": "s"
 }
