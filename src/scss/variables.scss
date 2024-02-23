@@ -1,0 +1,46 @@
+/* Colors */
+$orange: #fc5f4d;
+$prmry-dark: #18191d;
+$scndry-dark: #212228;
+$grey: #868A9B;
+
+// $yellow: #F90;
+// $prmry-light: #ebeff3;
+
+
+$syne-font: "Syne", sans-serif;
+$overpass-font: "Overpass", sans-serif;
+
+$fs-xxs: 0.75rem; // 12px
+$fs-xs: 1rem; // 16px
+$fs-s: 1.25rem; // 20px
+$fs-m: 1.5rem; // 24px
+$fs-l: 2rem; // 32px
+$fs-xl: 2.5rem; // 40px
+$fs-xxl: 3rem; // 48px
+$fs-xxxl: 3.75rem; // 60px
+
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;
+
+
+$m-width-xxl: 1440px;
+$m-width-xl: 1200px; // Extra Large (xl): 1200 Pixel oder größer.
+$m-width-l: 992px; // Large (lg): 992 Pixel oder größer.
+$m-width-m: 768px; // Medium (md): 768 Pixel oder größer.
+$m-width-s: 576px; // Small (sm): 576 Pixel oder größer.
+$m-width-xs: 320px; // Extra Small (xs): Kleiner als 576 Pixel.
+
+
+$section-padding: 120px 0;
+
+
+
+@mixin flex-container($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}

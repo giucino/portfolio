@@ -1,12 +1,14 @@
 @import "./../../styles.scss";
 
 .landing-page {
+    position: relative;
+    top: 10vh;
     height: auto;
     width: 100%;
-    padding-top: 0;
+    padding: 60px 0;
 
     .header-section-wrap {
-        overflow: hidden;
+        // overflow: hidden;
 
         .header-img {
             width: 100%;
@@ -25,7 +27,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     color: #fff;
-    text-shadow: 2px 2px #212228;
+    text-shadow: 2px 2px $scndry-dark;
 }
 
 .content__headline {
@@ -48,7 +50,6 @@
 
     .content__description {
         color: $grey;
-        font-family: 'Overpass', sans-serif;
         font-weight: $fw-400;
         line-height: 1.75em;
         margin-bottom: 0px;
@@ -108,45 +109,6 @@
     }
 }
 
-.btn-container {
-    margin-top: 40px;
-
-    button {
-        padding: 15px 30px;
-        font-size: $fs-s;
-        font-weight: $fw-700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background-color: $orange;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-
-        &:hover {
-            background-color: $prmry-dark;
-        }
-    }
-}
-
-.content__social-links {
-    margin-top: 35px;
-
-    ul {
-        padding: 0;
-
-        li {
-            display: inline-block;
-            margin: 0px 6px;
-
-            a {
-                font-size: $fs-s;
-                color: #fff;
-            }
-        }
-    }
-}
-
 
 /* ======= Media Query style ======= */
 @media (min-width: $m-width-l) {
@@ -194,10 +156,6 @@
         padding: 0px;
         margin: 30px auto 30px auto;
     }
-
-    // .btn-wrap {
-    //     margin-bottom: 45px;
-    // }
 }
 
 /* Tablet Layout: 480px. */

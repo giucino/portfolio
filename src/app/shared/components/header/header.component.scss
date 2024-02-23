@@ -1,21 +1,22 @@
-@import "./../../../styles.scss";
+@import './../../../../styles.scss';
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     height: 10vh;
     width: 100%;
     background-color: $prmry-dark;
     @include flex-container(center, center);
-    z-index: 1;
-}
+    z-index: 1000;
 
-.header-right {
-    @include flex-container(flex-end, center);
-}
+    .content__logo {
+        width: 100px;
+    }
 
-.content__logo {
-    width: 100px;
+    .header-right {
+        @include flex-container(flex-end, center);
+    }
 }
 
 .header-menu {
@@ -70,6 +71,7 @@ header {
                 color: $scndry-dark;
                 font-size: $fs-s;
                 font-weight: $fw-700;
+                // text-transform: uppercase;
 
                 &::before {
                     content: '';
@@ -260,5 +262,27 @@ $h-hide-distance: $h-width + $h-padding;
 @media screen and (max-width: $m-width-s) {
     .header-menu ul li a {
         font-size: $fs-xs;
+    }
+}
+
+
+
+.btn-container {
+    margin-top: 40px;
+
+    button {
+        padding: 15px 30px;
+        font-size: $fs-s;
+        font-weight: $fw-700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $prmry-dark;
+        // border: none;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: $orange;
+        }
     }
 }

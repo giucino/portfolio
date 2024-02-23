@@ -1,21 +1,13 @@
-<app-section-title [titlePrefixKey]="'ABOUT.TITLE_PREFIX'" [titleKey]="'ABOUT.TITLE'" [sectionId]="'about'" [animation]="'fade-right'"
-    [offset]="300" [easing]="'ease-in-sine'">
+<app-section-title [titlePrefixKey]="'ABOUT.TITLE_PREFIX'" [titleKey]="'ABOUT.TITLE'" [titleSuffixKey]="'ABOUT.TITLE_SUFFIX'" [sectionId]="'about'"
+    [animation]="'fade-right'" [offset]="300" [easing]="'ease-in-sine'">
 
-    <div class="row">
-        <div class="col-md-12 ">
-            <div class="about-text">
-                <p class="mb-45">
-                    {{ 'ABOUT.DESCRIPTION_I' | translate }}
-                </p>
-                <p class="mb-45">
-                    {{ 'ABOUT.DESCRIPTION_II' | translate }}
-                </p>
-            </div>
-        </div>
-        <div class="btn-wrap text-left mt-45 mb-45">
-            <div class="btn-link"> <a href="mailto:giucino1980@gmail.com">hi&#64;gcino.com <i class="fa-solid fa-arrow-up"></i></a> <span
-                    class="btn-block color1 animation-bounce"></span> </div>
-        </div>
+    <div class="with-title-content">
+        <p class="mt-45">{{ 'ABOUT.DESCRIPTION_I' | translate }}</p>
+        <p>{{ 'ABOUT.DESCRIPTION_II' | translate }}</p>
+    </div>
+
+    <div class="col-md-5 offset-md-2 above-main-content">
+        <div> <img src="./../../assets/img/a.jpeg" class="img-fluid" alt=""> </div>
     </div>
 
 </app-section-title>

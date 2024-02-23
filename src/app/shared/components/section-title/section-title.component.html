@@ -1,14 +1,17 @@
 <section id="{{ sectionId }}" class="section">
     <div class="container">
-        <div class="row" [attr.data-aos]="animation" [attr.data-aos-duration]="duration" [attr.data-aos-offset]="offset"
-            [attr.data-aos-easing]="easing">
-            <div class="col-md-12">
-                <div class="section-content w-100">
-                    <h1 class="section-title">
+        <div class="row mb-45">
+            <div class="col-md-5">
+                <div [attr.data-aos]="animation" [attr.data-aos-duration]="duration" [attr.data-aos-offset]="offset"
+                    [attr.data-aos-easing]="easing">
+                    <h6>
                         <span>{{ titlePrefixKey | translate }}</span> {{ titleKey | translate }}
-                    </h1>
+                    </h6>
+                    <h1 class="section-title">{{ titleSuffixKey | translate }}</h1>
                 </div>
+                <ng-content select=".with-title-content"></ng-content>
             </div>
+            <ng-content select=".above-main-content"></ng-content>
         </div>
         <ng-content></ng-content>
     </div>

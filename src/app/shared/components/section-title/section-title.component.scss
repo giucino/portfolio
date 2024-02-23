@@ -5,18 +5,28 @@
     width: 100%;
     padding: $section-padding;
 
+    h6 {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 12px;
+        color: $grey;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        span {
+            border-bottom: solid 2px $orange;
+            color: $orange;
+            margin-right: -5px;
+        }
+    }
+
     .section-title {
         font-size: $fs-xxxl;
         line-height: 60px;
-        margin-bottom: 60px;
-
-        span {
-            border-bottom: solid 4px $orange;
-            color: $orange;
-            margin-right: -14px;
-        }
     }
 }
+
 
 @media screen and (max-width: $m-width-m) {
     .section {
@@ -27,3 +37,13 @@
         }
     }
 }
+
+// @media screen and (max-width: $m-width-s) {
+//     .section {
+//         width: 100%;
+
+//         .section-title {
+//             font-size: $fs-l;
+//         }
+//     }
+// }

@@ -3,6 +3,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { PreloaderComponent } from './preloader/preloader.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { TranslateService } from "@ngx-translate/core";
@@ -14,6 +15,7 @@ import { TranslateService } from "@ngx-translate/core";
     RouterOutlet,
     PreloaderComponent,
     MainContentComponent,
+    HeaderComponent,
     FooterComponent,
     ImprintComponent
   ],

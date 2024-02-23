@@ -13,11 +13,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class FooterComponent {
 
   socialLinks = [
-    { url: 'mailto:giucino1980@gmail.com', iconClass: 'fa-solid fa-envelope' },
-    { url: 'https://github.com/giucino', iconClass: 'fa-brands fa-github' },
-    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-linkedin-in' },
-    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-discord' }
+    { url: 'mailto:giucino1980@gmail.com', iconClass: 'pi pi-envelope' },
+    { url: 'https://github.com/giucino', iconClass: 'pi pi-github' },
+    { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'pi pi-linkedin' }
     // { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-xing' }
+    // { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'pi pi-discord' }
   ];
 
 

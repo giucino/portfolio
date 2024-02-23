@@ -1,56 +1,112 @@
 {
-	"ABOUT.DESCRIPTION_I": "Ich bin ein Frontend-Webentwickler mit Leidenschaft für die Erstellung schöner und funktionaler Webanwendungen. Ich habe eine solide Grundlage in der Webentwicklung und im Programmieren, und ich bin immer bestrebt, neue Technologien und Frameworks zu lernen. Ich bin ein schneller Lerner und ein Teamplayer, und ich bin stets auf der Suche nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu verbessern",
-	"ABOUT.DESCRIPTION_II": "Ich suche derzeit eine Position als Webentwickler, bei der ich meine Fähigkeiten und Kenntnisse einbringen kann, um innovative und qualitativ hochwertige Webanwendungen zu erstellen.",
-	"ABOUT.TITLE": "eberMich",
-	"ABOUT.TITLE_PREFIX": "u",
-	"CONTACT.TITLE": "ontakt",
-	"CONTACT.TITLE_PREFIX": "k",
-	"LANDING.DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
-	"LANDING.DEV": "Frontend Entwickler",
-	"LANDING.SAY_HELLO": "sag hallo",
-	"NAVBAR.ABOUT": "ueberMich",
-	"NAVBAR.CONTACT": "kontakt",
-	"NAVBAR.HOME": "startSeite",
-	"NAVBAR.PROJECTS": "meineProjekte",
-	"NAVBAR.SKILLS": "skills",
-	"PROJECTS.CRM.APPLICATION_TYPE": "Webanwendung",
-	"PROJECTS.CRM.CATEGORY.CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement",
-	"PROJECTS.CRM.CATEGORY.LABEL": "Kategorie :",
-	"PROJECTS.CRM.DATE.CONTENT": "Dez 2023",
-	"PROJECTS.CRM.DATE.LABEL": "Datum :",
-	"PROJECTS.CRM.DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
-	"PROJECTS.CRM.TITLE": "CRM",
-	"PROJECTS.CRM.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
-	"PROJECTS.CRM.TOOLCHAIN.LABEL": "Werkzeug :",
-	"PROJECTS.JOIN.APPLICATION_TYPE": "Webanwendung",
-	"PROJECTS.JOIN.CATEGORY.CONTENT": "Projektmanagement, Aufgabenverwaltung",
-	"PROJECTS.JOIN.CATEGORY.LABEL": "Kategorie :",
-	"PROJECTS.JOIN.DATE.CONTENT": "Okt 2023",
-	"PROJECTS.JOIN.DATE.LABEL": "Datum :",
-	"PROJECTS.JOIN.DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-	"PROJECTS.JOIN.TITLE": "Join",
-	"PROJECTS.JOIN.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
-	"PROJECTS.JOIN.TOOLCHAIN.LABEL": "Werkzeug :",
-	"PROJECTS.POKEDEX.APPLICATION_TYPE": "Webanwendung",
-	"PROJECTS.POKEDEX.CATEGORY.CONTENT": "Bildung, Unterhaltung",
-	"PROJECTS.POKEDEX.CATEGORY.LABEL": "Kategorie :",
-	"PROJECTS.POKEDEX.DATE.CONTENT": "Dez 2023",
-	"PROJECTS.POKEDEX.DATE.LABEL": "Datum :",
-	"PROJECTS.POKEDEX.DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
-	"PROJECTS.POKEDEX.TITLE": "Pokedex",
-	"PROJECTS.POKEDEX.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
-	"PROJECTS.POKEDEX.TOOLCHAIN.LABEL": "Werkzeug :",
-	"PROJECTS.POLLO.APPLICATION_TYPE": "Webanwendung",
-	"PROJECTS.POLLO.CATEGORY.CONTENT": "Unterhaltung, Spiele",
-	"PROJECTS.POLLO.CATEGORY.LABEL": "Kategorie :",
-	"PROJECTS.POLLO.DATE.CONTENT": "Dez 2023",
-	"PROJECTS.POLLO.DATE.LABEL": "Datum :",
-	"PROJECTS.POLLO.DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
-	"PROJECTS.POLLO.TITLE": "El Pollo Loco",
-	"PROJECTS.POLLO.TOOLCHAIN.CONTENT": "JavaScript, HTML, CSS",
-	"PROJECTS.POLLO.TOOLCHAIN.LABEL": "Werkzeug :",
-	"PROJECTS.TITLE": "eineProjekte",
-	"PROJECTS.TITLE_PREFIX": "m",
-	"SKILLS.TITLE": "kills",
-	"SKILLS.TITLE_PREFIX": "s"
+	"NAVBAR": {
+		"ABOUT": "Über mich",
+		"CONTACT": "Kontakt",
+		"HOME": "Start",
+		"PROJECTS": "Projekte",
+		"SKILLS": "Skills"
+	},
+	"LANDING": {
+		"DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
+		"DEV": "Frontend Entwickler",
+		"SAY_HELLO": "sag hallo"
+	},
+	"ABOUT": {
+		"DESCRIPTION_I": "Ich bin ein Frontend-Webentwickler mit Leidenschaft für die Erstellung schöner und funktionaler Webanwendungen. Ich habe eine solide Grundlage in der Webentwicklung und im Programmieren, und ich bin immer bestrebt, neue Technologien und Frameworks zu lernen. Ich bin ein schneller Lerner und ein Teamplayer, und ich bin stets auf der Suche nach Möglichkeiten, meine Fähigkeiten weiterzuentwickeln und zu verbessern",
+		"DESCRIPTION_II": "Ich suche derzeit eine Position als Webentwickler, bei der ich meine Fähigkeiten und Kenntnisse einbringen kann, um innovative und qualitativ hochwertige Webanwendungen zu erstellen.",
+		"TITLE_PREFIX": "ü",
+		"TITLE": "ber mich",
+		"TITLE_SUFFIX": "Ich gestalte digitale Zukunft."
+	},
+	"SKILLS": {
+		"TITLE_PREFIX": "s",
+		"TITLE": "kills",
+		"TITLE_SUFFIX": "und Fähigkeiten.",
+		"TITLE_DESCRIPTION": "Ich habe eine solide Grundlage in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen insbesondere in der Frontend-Entwicklung, wo ich Erfahrungen mit HTML, CSS und JavaScript gesammelt habe. Zudem habe ich mich mit dem Framework Angular vertraut gemacht, um dynamische und responsive Webanwendungen zu erstellen. Problem solving und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um effektive Lösungen zu entwickeln."
+	},
+	"PROJECTS": {
+		"CRM": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"CATEGORY": {
+				"CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement",
+				"LABEL": "Kategorie :"
+			},
+			"DATE": {
+				"CONTENT": "Mrz 2024",
+				"LABEL": "Datum :"
+			},
+			"DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
+			"TITLE": "CRM",
+			"TOOLCHAIN": {
+				"CONTENT": "JavaScript, HTML, CSS",
+				"LABEL": "Werkzeug :"
+			}
+		},
+		"JOIN": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"CATEGORY": {
+				"CONTENT": "Projektmanagement, Aufgabenverwaltung",
+				"LABEL": "Kategorie :"
+			},
+			"DATE": {
+				"CONTENT": "Okt 2023",
+				"LABEL": "Datum :"
+			},
+			"DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+			"TITLE": "Join",
+			"TOOLCHAIN": {
+				"CONTENT": "JavaScript, HTML, CSS",
+				"LABEL": "Werkzeug :"
+			}
+		},
+		"POKEDEX": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"CATEGORY": {
+				"CONTENT": "Bildung, Unterhaltung",
+				"LABEL": "Kategorie :"
+			},
+			"DATE": {
+				"CONTENT": "Jul 2023",
+				"LABEL": "Datum :"
+			},
+			"DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
+			"TITLE": "Pokedex",
+			"TOOLCHAIN": {
+				"CONTENT": "JavaScript, HTML, CSS",
+				"LABEL": "Werkzeug :"
+			}
+		},
+		"POLLO": {
+			"APPLICATION_TYPE": "Webanwendung",
+			"CATEGORY": {
+				"CONTENT": "Unterhaltung, Spiele",
+				"LABEL": "Kategorie :"
+			},
+			"DATE": {
+				"CONTENT": "Dez 2023",
+				"LABEL": "Datum :"
+			},
+			"DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+			"TITLE": "El Pollo Loco",
+			"TOOLCHAIN": {
+				"CONTENT": "JavaScript, HTML, CSS",
+				"LABEL": "Werkzeug :"
+			}
+		},
+		"TITLE_PREFIX": "p",
+		"TITLE": "rojekte",
+		"TITLE_SUFFIX": "Meine Arbeit.",
+		"TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Fühlen Sie sich frei, sie zu testen. Sie stellen meine Reise im Erlernen und Anwenden neuer Fähigkeiten in realen Szenarien dar. Ich schätze jedes Feedback, das Sie haben könnten."
+	},
+	"CONTACT": {
+		"TITLE_PREFIX": "k",
+		"TITLE": "ontakt",
+		"TITLE_SUFFIX": "Kontakt aufnehmen",
+		"NAME": "Name *",
+		"EMAIL": "E-Mail Adresse *",
+		"PHONE": "Telefon *",
+		"SUBJECT": "Betreff *",
+		"MESSAGE": "Wie kann ich Ihnen helfen? Zögern Sie nicht, Kontakt aufzunehmen. *",
+		"SEND": "Ihre Nachricht wurde erfolgreich gesendet."
+	}
 }

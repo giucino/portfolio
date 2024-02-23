@@ -21,18 +21,11 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- <ul aria-label="Primary" role="list">
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="/">
-                                {{ 'NAVBAR.HOME' | translate }}</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#about">
-                                {{ 'NAVBAR.ABOUT' | translate }}</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#skills">
-                                {{ 'NAVBAR.SKILLS' | translate }}</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#projekte">
-                                {{ 'NAVBAR.PROJECTS' | translate }}</a></li>
-                        <li (click)="closeMenu()"><a class="animate__animated animate__slideInDown" href="#contact">
-                                {{ 'NAVBAR.CONTACT' | translate }}</a></li>
-                    </ul> -->
+
+                    <div class="btn-container text-center">
+                        <button (click)="switchLanguage('de')" title="Deutsch">DE</button>
+                        <button (click)="switchLanguage('en')" title="Englisch">EN</button>
+                    </div>
                 </aside>
             </div>
         </div>

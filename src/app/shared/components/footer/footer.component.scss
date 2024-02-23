@@ -1,41 +1,47 @@
 @import './../../../../styles.scss';
 
-section {
-    width: 100%;
-    padding: $section-padding;
+footer {
     background-color: $scndry-dark;
+    padding: 75px 0 60px 0;
+    width: 100%;
 
-    .section-title {
-        font-size: 60px;
-        line-height: 60px;
-        margin-bottom: 60px;
-        color: #fff;
+    h5 {
+        font-size: $fs-s;
+        font-weight: $fw-700;
+    }
 
-        span {
-            border-bottom: solid 4px $orange;
-            color: $orange;
-            margin-right: -15px;
+    p {
+        color: $grey;
+    }
+
+    .footer-social-link {
+        @include flex-container(flex-end, center);
+        padding: 0;
+
+        li {
+            @include flex-container(center, center);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            transition: all 0.3 ease-in-out;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            margin-right: 5px;
+
+            i {
+                font-size: 14px;
+                color: #fff;
+            }
         }
     }
 }
 
 
-.content__social-links {
-    margin-top: 35px;
+@media screen and (max-width: 767.98px) {
+    .col-md-4 {
+        text-align: center !important;
+    }
 
-    ul {
-        @include flex-container(center, center);
-        flex-direction: row;
-        padding: 0;
-
-        li {
-            display: inline-block;
-            margin: 0px 6px;
-
-            a {
-                font-size: $fs-s;
-                color: #fff;
-            }
-        }
+    footer .footer-social-link {
+        justify-content: center;
     }
 }

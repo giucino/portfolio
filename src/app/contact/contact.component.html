@@ -1,3 +1,49 @@
-<app-section-title [titlePrefixKey]="'CONTACT.TITLE_PREFIX'" [titleKey]="'CONTACT.TITLE'" [sectionId]="'contact'" [animation]="'fade-up'"
-    [duration]="1500">
+<app-section-title [titlePrefixKey]="'CONTACT.TITLE_PREFIX'" [titleKey]="'CONTACT.TITLE'"
+    [titleSuffixKey]="'CONTACT.TITLE_SUFFIX'" [sectionId]="'contact'" [animation]="'fade-down'" [duration]="1500">
+
+    <!-- Contact  -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form method="post" class="contact__form" action="mail.php">
+                        <!-- Form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert">{{ 'CONTACT.SEND' | translate }}</div>
+                            </div>
+                        </div>
+                        <!-- Form elements -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input name="phone" type="text" placeholder="{{ 'CONTACT.PHONE' | translate }}">
+                            </div>
+                            <div class="col-md-12">
+                                <input name="subject" type="text" placeholder="{{ 'CONTACT.SUBJECT' | translate }}" required>
+                            </div>
+                            <div class="col-md-12">
+                                <textarea name="message" id="message" cols="30" rows="4"
+                                    placeholder="{{ 'CONTACT.MESSAGE' | translate }}" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-wrap">
+                                    <div class="btn-link">
+                                        <input type="submit" value="Get in touch"><i class="pi pi-arrow-up-right"></i>
+                                        <span class="btn-block color1 animation-bounce"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </app-section-title>

@@ -14,6 +14,7 @@ export class SectionTitleComponent {
 
   @Input() titlePrefixKey!: string;
   @Input() titleKey!: string;
+  @Input() titleSuffixKey!: string;
   @Input() sectionId!: string;
   @Input() animation?: string;
   @Input() duration?: number;

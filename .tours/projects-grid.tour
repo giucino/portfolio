@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "projects-grid",
+  "steps": [
+    {
+      "file": "src/app/portfolio/projects/projects.component.html",
+      "description": "Mit dieser Anpassung wird für Projekte mit einem ungeraden Index (i % 2 !== 0, was jedes zweite Projekt bedeutet, beginnend mit dem zweiten Projekt bei 0-basierter Zählung) die Klasse right-offset-md-1 angewendet, die den Margin auf der rechten Seite hinzufügt. Für Projekte mit einem geraden Index (i % 2 === 0, was jedes zweite Projekt bedeutet, beginnend mit dem ersten Projekt) wird die Klasse offset-md-1 angewendet, die den standardmäßigen Bootstrap-Offset auf der linken Seite hinzufügt",
+      "line": 11
+    }
+  ]
+}

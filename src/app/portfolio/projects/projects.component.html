@@ -1,124 +1,51 @@
 <div class="container">
-    <div class="row mb-45" *ngFor="let project of projects; let i = index">
-        <div class="col-md-7 project-img" [ngClass]="{'order-md-2': i % 2 !== 0}">
+    <div class="row mb-45" *ngFor="let project of projects; let i = index" [ngClass]="{'mb-45': i !== projects.length - 1}">
+        <div class="col-md-6 project-img" [ngClass]="{'order-md-2': i % 2 !== 0}">
             <div class="row">
-                <div class="item mb-30">
+                <div class="item mb-30 pr-0">
                     <img [src]="'./../../../assets/img/projects/' + project.imgSrc" class="img-fluid mx-auto d-block"
-                        alt="">
+                        alt="Image of the Project">
                 </div>
             </div>
         </div>
-        <div class="col-md-4 offset-md-1" [ngClass]="{'order-md-1': i % 2 !== 0}">
-            <h6 appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element">
+        <div class="col-md-5 offset-md-1 project-content" [ngClass]="{'order-md-1': i % 2 !== 0, 'right-offset-md-1': i % 2 !== 0, 
+        'offset-md-1': i % 2 === 0}">
+            <h6 appViewportAnimation="animate__animated animate__fadeInUp">
                 {{ project.type | translate }}
             </h6>
-            <h1 appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element">
-                {{ project.title }}</h1>
-            <p appViewportAnimation="animate__animated animate__fadeInUp" class="my-animate-element mt-45">
-                {{ project.description | translate }}</p>
-            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp" class="mt-45"><span>
-                    {{ project.toolchain.label | translate }}</span> {{ project.toolchain.content | translate }}</p>
-            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp"><span>{{
-                    project.category.label | translate }}</span> {{ project.category.content | translate }}</p>
-            <p #animateElement appViewportAnimation="animate__animated animate__fadeInUp"><span>
-                    {{ project.date.label | translate
-                    }}</span> {{ project.date.content | translate }}</p>
+            <h1 appViewportAnimation="animate__animated animate__fadeInUp">
+                {{ project.title }}
+            </h1>
+            <p appViewportAnimation="animate__animated animate__fadeInUp" class="mt-45">
+                {{ project.description | translate }}
+            </p>
+            <p appViewportAnimation="animate__animated animate__fadeInUp" class="mt-45">
+                <span>{{ project.toolchain.label | translate }}</span>
+                {{ project.toolchain.content | translate }}
+            </p>
+            <p appViewportAnimation="animate__animated animate__fadeInUp">
+                <span>{{ project.category.label | translate }}</span>
+                {{ project.category.content | translate }}
+            </p>
+            <p appViewportAnimation="animate__animated animate__fadeInUp">
+                <span>{{ project.date.label | translate }}</span>
+                {{ project.date.content | translate }}
+            </p>
 
-            <div #animateElement appViewportAnimation="animate__animated animate__fadeInUp" class="cta-project">
-                <div class="btn-wrap text-left mt-45">
+            <div appViewportAnimation="animate__animated animate__fadeInUp" class="d-flex">
+                <div class="text-left mt-30">
                     <div class="btn-link"> <a [href]="project.liveTestLink" target="_blank">Live website
-                            <i class="pi pi-arrow-up-right" style="font-size: .75rem"></i>
-                        </a> <span class="btn-block color1 animation-bounce"></span> </div>
+                            <i class="pi pi-arrow-up-right"></i>
+                        </a> <span class="btn-block color1 animation-bounce"></span>
+                    </div>
                 </div>
-                <!-- <div class="btn-wrap text-left mt-45">
+                <div class="text-left mt-30">
                     <div class="btn-link"> <a [href]="project.githubLink" target="_blank">GitHub
-                            <i class="pi pi-arrow-up-right" style="font-size: .75rem"></i>
-                        </a> <span class="btn-block color1 animation-bounce"></span> </div>
-                </div> -->
+                            <i class="pi pi-arrow-up-right"></i>
+                        </a> <span class="btn-block color1 animation-bounce"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="item mb-30">
-                <a href="portfolio-page.html">
-                    <div class="img-block">
-                        <div class="wrapper-img"> <img src="./../../../assets/img/projects/join.png" class="img-fluid">
-                        </div>
-                        <div class="title-block">
-                            <h4>Lab. 001</h4>
-                            <p>Join</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="mb-30">
-                <a href="portfolio-page.html">
-                    <div class="img-block">
-                        <div class="wrapper-img"> <img src="./../../../assets/img/projects/1.jpg" class="img-fluid">
-                        </div>
-                        <div class="title-block">
-                            <h4>Lab. 001</h4>
-                            <p>Join</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="mb-30">
-                <a href="portfolio-page.html">
-                    <div class="img-block">
-                        <div class="wrapper-img"> <img src="./../../../assets/img/projects/1.jpg" class="img-fluid">
-                        </div>
-                        <div class="title-block">
-                            <h4>Lab. 001</h4>
-                            <p>Join</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="mb-30">
-                <a href="portfolio-page.html">
-                    <div class="img-block">
-                        <div class="wrapper-img"> <img src="./../../../assets/img/projects/1.jpg" class="img-fluid">
-                        </div>
-                        <div class="title-block">
-                            <h4>Lab. 001</h4>
-                            <p>Join</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="mb-30">
-                <a href="portfolio-page.html">
-                    <div class="img-block">
-                        <div class="wrapper-img"> <img src="./../../../assets/img/projects/1.jpg" class="img-fluid">
-                        </div>
-                        <div class="title-block">
-                            <h4>Lab. 001</h4>
-                            <p>Join</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div> -->

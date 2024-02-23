@@ -1,49 +1,10 @@
 @import './../../../styles.scss';
 
 
-h6 {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
-    color: #868a9b;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-h1 {
-    font-size: 60px;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin-bottom: 0px;
-    color: #fff;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.75em;
-    margin: 0 0 20px;
-    color: #868a9b;
-    font-weight: 400;
-}
-
-p span {
-    color: #fff;
-}
-
-.cta-project {
-    display: flex;
-}
-
-.btn-link a i {
-    font-size: 14px;
-}
-
-
 @supports (animation-timeline: view()) {
     .project-img img {
         filter: grayscale(100%);
-        scale: .8;
+        transform: scale(.8);
         opacity: 0;
         animation: fade-in linear forwards;
         animation-timeline: view();
@@ -53,24 +14,89 @@ p span {
 
 .project-img img:hover {
     filter: grayscale(0%);
-
 }
 
 @keyframes fade-in {
     to {
-        scale: 1;
+        transform: scale(1);
         opacity: 1;
     }
 }
 
+.project-content {
+    h6 {
+        display: inline-block;
+        font-weight: $fw-700;
+        font-size: $fs-xxs;
+        color: $grey;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
+    h1 {
+        font-size: $fs-xxxl;
+        line-height: 1.2em;
+        font-weight: $fw-700;
+        margin-bottom: 0px;
+        color: #fff;
+    }
 
-// .my-animate-element {
-//     animation-duration: 1s;
-//     animation-delay: 0.5s;
-//     animation-iteration-count: 1;
-// }
+    p {
+        line-height: 1.75em;
+        color: $grey;
+        font-weight: $fw-400;
 
-// .animate__initial {
-//     opacity: 0;
-// }
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.right-offset-md-1 {
+    margin-right: 8.333333%;
+}
+
+@media screen and (max-width: $m-width-l) {
+    .project-content {
+        h1 {
+            font-size: $fs-xxl;
+        }
+    }
+
+    .project-img {
+        padding-right: 0 !important;
+    }
+
+    .pr-0 {
+        padding-right: 0 !important;
+    
+    }
+}
+
+@media screen and (max-width: $m-width-m) {
+    .project-img {
+        padding-right: 12px !important;
+    }
+
+    .pr-0 {
+        padding-right: 12px !important;
+    
+    }
+}
+
+@media screen and (max-width: $m-width-s) {
+    .project-content {
+        h1 {
+            font-size: $fs-xxl;
+        }
+    }
+}
+
+@media screen and (max-width: $m-width-xs) {
+    .project-content {
+        h1 {
+            font-size: $fs-xl;
+        }
+    }
+}
