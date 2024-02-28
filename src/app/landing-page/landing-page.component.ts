@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,6 +12,7 @@ export class LandingPageComponent {
   // translatedText!: string;
 
   constructor(public translate: TranslateService) { }
+
 
   // ngOnInit() {
   //   this.translateText();

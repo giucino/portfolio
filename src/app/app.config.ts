@@ -13,19 +13,20 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes),
-  provideClientHydration(),
-  provideAnimations(),
-  provideHttpClient(),
+  providers: [
+    provideRouter(routes),
+    provideClientHydration(),
+    provideAnimations(),
+    provideHttpClient(),
     HttpClientModule,
-  importProvidersFrom(
-    TranslateModule.forRoot({
-      defaultLanguage: 'en',
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }))
+    importProvidersFrom(
+      TranslateModule.forRoot({
+        defaultLanguage: 'en',
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+        }
+      }))
   ],
 };

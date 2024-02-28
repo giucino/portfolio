@@ -34,7 +34,7 @@ export class ProjectsComponent {
         label: 'PROJECTS.JOIN.DATE.LABEL',
         content: 'PROJECTS.JOIN.DATE.CONTENT'
       },
-      liveTestLink: 'https://github.com/giucino/join',
+      liveTestLink: 'https://join.giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/join',
     },
     {
@@ -54,7 +54,7 @@ export class ProjectsComponent {
         label: 'PROJECTS.POLLO.DATE.LABEL',
         content: 'PROJECTS.POLLO.DATE.CONTENT'
       },
-      liveTestLink: 'https://github.com/giucino/el_pollo_loco',
+      liveTestLink: 'https://elpolloloco.giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/el_pollo_loco',
     },
     {
@@ -74,7 +74,7 @@ export class ProjectsComponent {
         label: 'PROJECTS.POKEDEX.DATE.LABEL',
         content: 'PROJECTS.POKEDEX.DATE.CONTENT'
       },
-      liveTestLink: 'https://github.com/giucino/pokedex',
+      liveTestLink: 'https://pokedex.giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/pokedex',
     },
     {

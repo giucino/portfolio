@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2, Inject } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { PreloaderComponent } from './preloader/preloader.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -13,6 +13,7 @@ import { TranslateService } from "@ngx-translate/core";
   standalone: true,
   imports: [CommonModule,
     RouterOutlet,
+    // RouterModule,
     PreloaderComponent,
     MainContentComponent,
     HeaderComponent,

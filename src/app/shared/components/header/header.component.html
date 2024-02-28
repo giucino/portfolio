@@ -14,12 +14,22 @@
                     </div>
                 </div>
                 <aside class="header-menu" [class.header-menu__right]="menuValue">
-                    <ul aria-label="Primary" role="list">
-                        <li *ngFor="let menuItem of menuItems" (click)="closeMenu()">
+                    <!-- <ul aria-label="Primary" role="list">
+                        <li *ngFor="let menuItem of menuItems"; (click)="closeMenu()">
                             <a class="animate__animated animate__slideInDown" [href]="menuItem.link">
                                 {{ menuItem.label | translate }}
                             </a>
                         </li>
+                    </ul> -->
+                    <ul aria-label="Primary" role="list">
+                        @for(fragment of fragments; track fragment.id) {
+                        <li (click)="closeMenu()">
+                            <a [routerLink]="fragment.path" [fragment]="fragment.id"
+                                [class.active]="isActive(fragment.id)" class="animate__animated animate__slideInDown"
+                                (click)="closeMenu()">{{ fragment.label |
+                                translate }}</a>
+                        </li>
+                        }
                     </ul>
 
                     <div class="btn-container text-center">

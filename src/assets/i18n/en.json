@@ -104,7 +104,7 @@
 		"TITLE_SUFFIX": "Get In Touch",
 		"NAME": "Name *",
 		"EMAIL": "Email Adress *",
-		"PHONE": "Phone *",
+		"PHONE": "Phone",
 		"SUBJECT": "Subject *",
 		"MESSAGE": "How can I help you? Feel free to get in touch! *",
 		"SEND": "Your message was sent successfully."

@@ -1,26 +1,61 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Renderer2, OnInit, OnDestroy } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterModule, ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule
+  imports: [CommonModule, TranslateModule, RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, OnDestroy {
+  private fragmentSubscription!: Subscription;
+  activeFragment!: string;
 
-  menuItems = [
-    { link: '/', label: 'NAVBAR.HOME' },
-    { link: '#about', label: 'NAVBAR.ABOUT' },
-    { link: '#skills', label: 'NAVBAR.SKILLS' },
-    { link: '#projects', label: 'NAVBAR.PROJECTS' },
-    { link: '#contact', label: 'NAVBAR.CONTACT' }
+  fragments = [
+    { path: '/home', id: 'home', label: 'NAVBAR.HOME' },
+    { path: '/home', id: 'about', label: 'NAVBAR.ABOUT' },
+    { path: '/home', id: 'skills', label: 'NAVBAR.SKILLS' },
+    { path: '/home', id: 'projects', label: 'NAVBAR.PROJECTS' },
+    { path: '/home', id: 'contact', label: 'NAVBAR.CONTACT' }
   ];
+  // menuItems = [
+  //   { link: '/home', label: 'NAVBAR.HOME' },
+  //   { link: '/home', label: 'NAVBAR.ABOUT' },
+  //   { link: '/home', label: 'NAVBAR.SKILLS' },
+  //   { link: '/home', label: 'NAVBAR.PROJECTS' },
+  //   { link: '/home', label: 'NAVBAR.CONTACT' }
+  // ];
 
-  constructor(private el: ElementRef, private renderer: Renderer2, public translate: TranslateService) { }
+  constructor(private el: ElementRef, private renderer: Renderer2,
+    public translate: TranslateService, private route: ActivatedRoute) {
+
+    // this.route.fragment.pipe(
+    //   filter(Boolean), // Filtere falsy Werte heraus
+    //   map(fragment => fragment as string) // Stelle sicher, dass der Typ string ist
+    // ).subscribe(fragment => {
+    //   this.activeFragment = fragment;
+    // });
+  }
+
+  ngOnInit() {
+    this.fragmentSubscription = this.route.fragment.pipe(
+      filter(Boolean), // Filtere falsy Werte heraus
+      map(fragment => fragment as string) // Stelle sicher, dass der Typ string ist
+    ).subscribe(fragment => {
+      this.activeFragment = fragment;    });
+  }
+
+  ngOnDestroy() {
+    if (this.fragmentSubscription) {
+      this.fragmentSubscription.unsubscribe();
+    }
+  }
 
   switchLanguage(language: string) {
     this.translate.use(language);
@@ -44,7 +79,7 @@ export class HeaderComponent {
       }
     });
   }
-  
+
 
   menuValue: boolean = false;
 
@@ -64,4 +99,7 @@ export class HeaderComponent {
     this.renderer.removeStyle(document.body, 'overflow');
   }
 
+  isActive(fragmentId: string): boolean {
+    return this.activeFragment === fragmentId;
+  }
 }

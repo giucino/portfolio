@@ -1,28 +1,39 @@
-@import './../../styles.scss';
+@import "./../../styles.scss";
 
-/* ======= Contact style ======= */
+.invalid {
+  border-bottom: 2px solid $orange !important;
+}
+
+.error {
+  color: $orange;
+}
+
+.btn-wrap.disabled .btn-link {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 /* contact form button style */
 .btn-link input[type="submit"],
 .btn-link input[type="reset"],
 .btn-link input[type="button"],
 .btn-link button {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.75em;
-    border: none;
-    color: #fff;
-    background: transparent;
-    padding: 20px 30px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+//   font-family: "Syne", sans-serif;
+  font-size: $fs-xs;
+  font-weight: $fw-700;
+  line-height: 1.75em;
+  border: none;
+  color: #fff;
+  background: transparent;
+  padding: 20px 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .contact__form .btn-link:hover .btn-block {
-    left: 60%;
-    text-decoration: none;
+  left: 60%;
+  text-decoration: none;
 }
 
 /* form element */
@@ -33,7 +44,7 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 input[type="password"],
@@ -41,31 +52,31 @@ input[type="email"],
 input[type="text"],
 input[type="file"],
 textarea {
-    max-width: 100%;
-    margin-bottom: 20px;
-    padding: 15px 0;
-    height: auto;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-width: 0 0 2px;
-    border-style: solid;
-    display: block;
-    width: 100%;
-    line-height: 1.5em;
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #868a9b;
-    background-image: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-    border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  height: auto;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-width: 0 0 2px;
+  border-style: solid;
+  display: block;
+  width: 100%;
+  line-height: 1.5em;
+//   font-family: "Syne", sans-serif;
+  font-size: $fs-xs;
+  font-weight: $fw-400;
+  color: $grey;
+  background-image: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  border-color: ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
 input:focus,
 textarea:focus {
-    border-bottom-width: 2px;
-    border-color: #fff;
+  border-bottom-width: 2px;
+  border-color: #fff;
 }
 
 /* submit and alert success  */
@@ -73,61 +84,61 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    line-height: 1.75em;
-    -webkit-transition: background-color .15s ease-out;
-    transition: background-color .15s ease-out;
-    border: none;
-    color: #868a9b;
-    background: #212228;
-    padding: 17px 34px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+//   font-family: "Syne", sans-serif;
+  font-size: $fs-xs;
+  font-weight: $fw-400;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  line-height: 1.75em;
+  -webkit-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+  border: none;
+  color: $grey;
+  background: $scndry-dark;
+  padding: 17px 34px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover {
-    background: #212228;
-    color: #fff;
-    border: none;
+  background: #212228;
+  color: #fff;
+  border: none;
 }
 
 .alert-success {
-    background: transparent;
-    color: #868a9b;
-    border: 2px solid rgba(255, 255, 255, 0.05);
-    border-radius: 0px;
+  background: transparent;
+  color: $orange;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-    display: inline;
+  display: inline;
 }
 
 /* placeholder */
 // ::-webkit-input-placeholder {
-//     color: #868a9b;
-//     font-size: 16px;
-//     font-weight: 400;
+//     color: $grey;
+//     font-size: $fs-xs;
+//     font-weight: $fw-400;
 // }
 
 // :-moz-placeholder {
-//     color: #868a9b;
+//     color: $grey;
 // }
 
 // ::-moz-placeholder {
-//     color: #868a9b;
+//     color: $grey;
 //     opacity: 1;
 // }
 
 // :-ms-input-placeholder {
-//     color: #868a9b;
+//     color: $grey;
 // }

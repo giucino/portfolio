@@ -104,7 +104,7 @@
 		"TITLE_SUFFIX": "Kontakt aufnehmen",
 		"NAME": "Name *",
 		"EMAIL": "E-Mail Adresse *",
-		"PHONE": "Telefon *",
+		"PHONE": "Telefon",
 		"SUBJECT": "Betreff *",
 		"MESSAGE": "Wie kann ich Ihnen helfen? Zögern Sie nicht, Kontakt aufzunehmen. *",
 		"SEND": "Ihre Nachricht wurde erfolgreich gesendet."
