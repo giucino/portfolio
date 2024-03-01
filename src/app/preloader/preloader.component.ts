@@ -5,9 +5,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './preloader.component.html',
-  styleUrls: ['./preloader.component.scss']
+  styleUrls: ['./preloader.component.scss'],
 })
 export class PreloaderComponent {
-
   @Input() isLoading: boolean = false;
 }

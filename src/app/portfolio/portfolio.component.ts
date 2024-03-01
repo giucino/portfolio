@@ -3,18 +3,13 @@ import { SectionTitleComponent } from '../shared/components/section-title/sectio
 import { ProjectsComponent } from './projects/projects.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [SectionTitleComponent, 
-    ProjectsComponent, 
-    TranslateModule
-  ],
+  imports: [SectionTitleComponent, ProjectsComponent, TranslateModule],
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
 })
 export class PortfolioComponent {
-  constructor(public translate: TranslateService) { }
-
+  constructor(public translate: TranslateService) {}
 }

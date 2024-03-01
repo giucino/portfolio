@@ -16,12 +16,11 @@ switch ($_SERVER['REQUEST_METHOD']) {
     
             $email = $params->email;
             $name = $params->name;
-            $phone = $params->phone;
             $message = $params->message;
     
             $recipient = 'hi@giuseppe-cino.de';  
             $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $phone . "<br>" . $message ;
+            $message = "From:" . $name . "<br>" . $message ;
     
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';

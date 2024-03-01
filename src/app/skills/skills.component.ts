@@ -6,16 +6,12 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule,
-    TranslateModule,
-    SectionTitleComponent
-  ],
+  imports: [CommonModule, TranslateModule, SectionTitleComponent],
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) {}
 
   techIcons = [
     { icon: 'angular.svg', name: 'Angular' },
@@ -31,6 +27,6 @@ export class SkillsComponent {
     { icon: 'material.svg', name: 'Material Design' },
     { icon: 'sass.svg', name: 'Scss' },
     { icon: 'photoshop.svg', name: 'Photoshop' },
-    { icon: 'figma.svg', name: 'Figma' }
+    { icon: 'figma.svg', name: 'Figma' },
   ];
 }

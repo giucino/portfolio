@@ -1,112 +1,115 @@
 {
-	"NAVBAR": {
-		"HOME": "Home",
-		"ABOUT": "About",
-		"SKILLS": "Skills",
-		"PROJECTS": "Projects",
-		"CONTACT": "Contact"
-	},
-	"LANDING": {
-		"DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bring ideas into real life.",
-		"DEV": "Frontend Developer",
-		"SAY_HELLO": "get in touch"
-	},
-	"ABOUT": {
-		"DESCRIPTION_I": "I am a frontend web developer with a passion for creating beautiful and functional web applications. I have a strong foundation in web development and programming, and I am always eager to learn new technologies and frameworks. I am a quick learner and a team player, and I am always looking for opportunities to grow and improve my skills.",
-		"DESCRIPTION_II": "I am currently seeking a position as a web developer where I can contribute my skills and knowledge to create innovative and high-quality web applications.",
-		"TITLE_PREFIX": "a",
-		"TITLE": "bout Me",
-		"TITLE_SUFFIX": "I Create Digital Future."
-	},
-	"SKILLS": {
-		"TITLE_PREFIX": "s",
-		"TITLE": "kills",
-		"TITLE_SUFFIX": "and Skills.",
-		"TITLE_DESCRIPTION": "I have a solid foundation in various programming languages and technologies. My strengths are particularly in frontend development, where I have gained experience with HTML, CSS, and JavaScript. Additionally, I have familiarized myself with frameworks such as Angular to create dynamic and responsive web applications. Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions."
-	},
-	"PROJECTS": {
-		"CRM": {
-			"APPLICATION_TYPE": "WebApp",
-			"CATEGORY": {
-				"CONTENT": "Business Applications, Customer Relationship Management",
-				"LABEL": "Category :"
-			},
-			"DATE": {
-				"CONTENT": "Mrc 2024",
-				"LABEL": "Date :"
-			},
-			"DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
-			"TITLE": "CRM",
-			"TOOLCHAIN": {
-				"CONTENT": "JavaScript, HTML, CSS",
-				"LABEL": "Toolchain :"
-			}
-		},
-		"JOIN": {
-			"APPLICATION_TYPE": "WebApp",
-			"CATEGORY": {
-				"CONTENT": "Project Management, Task Management",
-				"LABEL": "Category :"
-			},
-			"DATE": {
-				"CONTENT": "Oct 2023",
-				"LABEL": "Date :"
-			},
-			"DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories.",
-			"TITLE": "Join",
-			"TOOLCHAIN": {
-				"CONTENT": "JavaScript, HTML, CSS",
-				"LABEL": "Toolchain :"
-			}
-		},
-		"POKEDEX": {
-			"APPLICATION_TYPE": "WebApp",
-			"CATEGORY": {
-				"CONTENT": "Education, Entertainment",
-				"LABEL": "Category :"
-			},
-			"DATE": {
-				"CONTENT": "Jul 2023",
-				"LABEL": "Date :"
-			},
-			"DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
-			"TITLE": "Pokedex",
-			"TOOLCHAIN": {
-				"CONTENT": "JavaScript, HTML, CSS",
-				"LABEL": "Toolchain :"
-			}
-		},
-		"POLLO": {
-			"APPLICATION_TYPE": "WebApp",
-			"CATEGORY": {
-				"CONTENT": "Entertainment, Games",
-				"LABEL": "Category :"
-			},
-			"DATE": {
-				"CONTENT": "Dec 2023",
-				"LABEL": "Date :"
-			},
-			"DESCRIPTION": "Jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
-			"TITLE": "El Pollo Loco",
-			"TOOLCHAIN": {
-				"CONTENT": "JavaScript, HTML, CSS",
-				"LABEL": "Toolchain :"
-			}
-		},
-		"TITLE_PREFIX": "p",
-		"TITLE": "rojects",
-		"TITLE_SUFFIX": "My Work.",
-		"TITLE_DESCRIPTION": "Here are a few projects I've worked on recently. Feel free to try them out. They represent my journey in learning and applying new skills in real-world scenarios. I'm eager to continue growing and appreciate any feedback you might have."
-	},
-	"CONTACT": {
-		"TITLE_PREFIX": "c",
-		"TITLE": "ontact",
-		"TITLE_SUFFIX": "Get In Touch",
-		"NAME": "Name *",
-		"EMAIL": "Email Adress *",
-		"PHONE": "Phone",
-		"SUBJECT": "Subject *",
-		"MESSAGE": "How can I help you? Feel free to get in touch! *",
-		"SEND": "Your message was sent successfully."
-	}
+  "NAVBAR": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "LANDING": {
+    "DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bringing ideas into life.",
+    "DEV": "Frontend Developer",
+    "SAY_HELLO": "get in touch"
+  },
+  "ABOUT": {
+    "DESCRIPTION_I": "I am a frontend web developer with a passion for creating beautiful and functional web applications. I have a solid foundation in web development and programming, and I am always eager to learn new technologies and frameworks. I am a quick learner and a team player, and I am always looking for opportunities to grow and improve my skills.",
+    "DESCRIPTION_II": "I am currently seeking a position as a web developer where I can contribute my skills and knowledge to create innovative and high-quality web applications.",
+    "TITLE_PREFIX": "a",
+    "TITLE": "bout Me",
+    "TITLE_SUFFIX": "I Create Digital Future."
+  },
+  "SKILLS": {
+    "TITLE_PREFIX": "s",
+    "TITLE": "kills",
+    "TITLE_SUFFIX": "and Skills.",
+    "TITLE_DESCRIPTION": "I have a solid foundation in various programming languages and technologies. My strengths are particularly in frontend development, where I have gained experience with HTML, CSS, and JavaScript. Additionally, I have familiarized myself with frameworks such as Angular to create dynamic and responsive web applications. Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions."
+  },
+  "PROJECTS": {
+    "CRM": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Business Applications, Customer Relationship Management",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Mrc 2024",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
+      "TITLE": "CRM",
+      "TOOLCHAIN": {
+        "CONTENT": "JavaScript, HTML, CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
+    "JOIN": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Project Management, Task Management",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Oct 2023",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories.",
+      "TITLE": "Join",
+      "TOOLCHAIN": {
+        "CONTENT": "JavaScript, HTML, CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
+    "POKEDEX": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Education, Entertainment",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Jul 2023",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
+      "TITLE": "Pokedex",
+      "TOOLCHAIN": {
+        "CONTENT": "JavaScript, HTML, CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
+    "POLLO": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Entertainment, Games",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Dec 2023",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "Jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
+      "TITLE": "El Pollo Loco",
+      "TOOLCHAIN": {
+        "CONTENT": "JavaScript, HTML, CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
+    "TITLE_PREFIX": "p",
+    "TITLE": "rojects",
+    "TITLE_SUFFIX": "My Work.",
+    "TITLE_DESCRIPTION": "Here are a few projects I've worked on recently. Feel free to try them out. They represent my journey in learning and applying new skills in different scenarios. I appreciate any feedback you might have."
+  },
+  "CONTACT": {
+    "TITLE_PREFIX": "c",
+    "TITLE": "ontact",
+    "TITLE_SUFFIX": "Get In Touch",
+    "NAME": "Name *",
+    "EMAIL": "Email Adress *",
+    "PHONE": "Phone",
+    "MESSAGE": "Reach out anytime! *",
+    "SEND": "Your message was sent successfully."
+  },
+  "FOOTER": {
+    "TEXT": "© 2024 by Giuseppe Cino. All rights reserved.",
+	"IMPRINT": "Imprint"
+  }
 }

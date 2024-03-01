@@ -18,26 +18,25 @@
       position: relative;
     }
   }
-}
+  .content__name {
+    font-size: $fs-xxxl;
+    line-height: 1em;
+    font-weight: $fw-800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px $scndry-dark;
+  }
 
-.content__name {
-  font-size: $fs-xxxl;
-  line-height: 1em;
-  font-weight: $fw-800;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #fff;
-  text-shadow: 2px 2px $scndry-dark;
-}
-
-.content__headline {
-  display: inline-block;
-  font-size: $fs-xs;
-  font-weight: $fw-700;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  letter-spacing: 2px;
-  color: $orange;
+  .content__headline {
+    display: inline-block;
+    font-size: $fs-xs;
+    font-weight: $fw-700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    color: $orange;
+  }
 }
 
 .header-not-view-on-mobile {
@@ -109,6 +108,14 @@
   }
 }
 
+@media (max-width: $m-width-l) {
+  .special {
+    .btn-link {
+      width: 170px;
+    }
+  }
+}
+
 /* ======= Media Query style ======= */
 @media (min-width: $m-width-l) {
   .header-section-wrap {
@@ -141,32 +148,44 @@
 
 /* Tablet Layout: 768px. */
 @media (max-width: $m-width-m) {
-  .content__name {
-    font-size: $fs-l;
-    margin: 0;
-  }
+  .landing-page {
+    .content__name {
+      font-size: $fs-xl;
+      margin: 0;
+    }
 
-  .content__headline {
-    font-size: $fs-xxs;
-    margin-bottom: 30px;
-  }
+    .content__headline {
+      font-size: $fs-xxs;
+      margin-bottom: 30px;
+    }
 
-  .content__description-container {
-    padding: 0px;
-    margin: 30px auto 30px auto;
-  }
-}
-
-@media (max-width: $m-width-s) {
-  .text-center-sm {
-    text-align: center !important;
+    .content__description-container {
+      padding: 0px;
+      margin: 30px auto 30px auto;
+    }
   }
 }
 
-/* Tablet Layout: 480px. */
-@media (max-width: 480px) {
-  .content__name {
-    font-size: $fs-m;
-    margin: 0;
+// @media (max-width: $m-width-s) {
+//   .text-center-sm {
+//     text-align: center !important;
+//   }
+// }
+
+@media (max-width: 400px) {
+  .landing-page {
+    .content__name {
+      font-size: $fs-l;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .landing-page {
+    .content__name {
+      font-size: $fs-m;
+      margin: 0;
+    }
   }
 }

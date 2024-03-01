@@ -6,11 +6,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './section-title.component.html',
-  styleUrls: ['./section-title.component.scss']
+  styleUrls: ['./section-title.component.scss'],
 })
 export class SectionTitleComponent {
-
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) {}
 
   @Input() titlePrefixKey!: string;
   @Input() titleKey!: string;

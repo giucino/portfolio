@@ -1,48 +1,48 @@
 // Importieren des Haupt-Stylesheets (stellen Sie sicher, dass der Pfad korrekt ist)
-@import './../../styles.scss';
+@import "./../../styles.scss";
 
 .logo-container {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 
-    &:hover {
-        background-color: $scndry-dark;
-        transform: scale(0.95);
-
-        .logo-img {
-            opacity: 0.8;
-        }
-
-        .title-block {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
+  &:hover {
+    background-color: $scndry-dark;
+    transform: scale(0.95);
 
     .logo-img {
-        width: 60px;
-        height: 60px;
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: contain;
-        transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+      opacity: 0.8;
     }
 
     .title-block {
-        position: absolute;
-        opacity: 0;
-        transform: translateX(-20px);
-        transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
-
-        p {
-            color: $orange;
-            margin-bottom: 0;
-        }
+      opacity: 1;
+      transform: translateX(0px);
     }
+  }
+
+  .logo-img {
+    width: 60px;
+    height: 60px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  }
+
+  .title-block {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+
+    p {
+      color: $orange;
+      margin-bottom: 0;
+    }
+  }
 }

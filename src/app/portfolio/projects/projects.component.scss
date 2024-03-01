@@ -1,102 +1,99 @@
-@import './../../../styles.scss';
-
+@import "./../../../styles.scss";
 
 @supports (animation-timeline: view()) {
-    .project-img img {
-        filter: grayscale(100%);
-        transform: scale(.8);
-        opacity: 0;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-        animation-range: entry;
-    }
+  .project-img img {
+    filter: grayscale(100%);
+    transform: scale(0.8);
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
 }
 
 .project-img img:hover {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 @keyframes fade-in {
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .project-content {
-    h6 {
-        display: inline-block;
-        font-weight: $fw-700;
-        font-size: $fs-xxs;
-        color: $grey;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
+  h6 {
+    display: inline-block;
+    font-weight: $fw-700;
+    font-size: $fs-xxs;
+    color: $grey;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 
-    h1 {
-        font-size: $fs-xxxl;
-        line-height: 1.2em;
-        font-weight: $fw-700;
-        margin-bottom: 0px;
-        color: #fff;
-    }
+  h1 {
+    font-size: $fs-xxxl;
+    line-height: 1.2em;
+    font-weight: $fw-700;
+    margin-bottom: 0px;
+    color: #fff;
+  }
 
-    p {
-        line-height: 1.75em;
-        color: $grey;
-        font-weight: $fw-400;
+  p {
+    line-height: 1.75em;
+    color: $grey;
+    font-weight: $fw-400;
 
-        span {
-            color: #fff;
-        }
+    span {
+      color: #fff;
     }
+  }
 }
 
 .right-offset-md-1 {
-    margin-right: 8.333333%;
+  margin-right: 8.333333%;
 }
 
 @media screen and (max-width: $m-width-l) {
-    .project-content {
-        h1 {
-            font-size: $fs-xxl;
-        }
+  .project-content {
+    h1 {
+      font-size: $fs-xxl;
     }
+  }
 
-    .project-img {
-        padding-right: 0 !important;
-    }
+  .project-img {
+    padding-right: 0 !important;
+  }
 
-    .pr-0 {
-        padding-right: 0 !important;
-    
-    }
+  .pr-0 {
+    padding-right: 0 !important;
+  }
 }
 
 @media screen and (max-width: $m-width-m) {
-    .project-img {
-        padding-right: 12px !important;
-    }
+  .project-img {
+    padding-right: 12px !important;
+  }
 
-    .pr-0 {
-        padding-right: 12px !important;
-    
-    }
+  .pr-0 {
+    padding-right: 12px !important;
+  }
 }
 
 @media screen and (max-width: $m-width-s) {
-    .project-content {
-        h1 {
-            font-size: $fs-xxl;
-        }
+  .project-content {
+    h1 {
+      font-size: $fs-xxl;
     }
+  }
 }
 
 @media screen and (max-width: $m-width-xs) {
-    .project-content {
-        h1 {
-            font-size: $fs-xl;
-        }
+  .project-content {
+    h1 {
+      font-size: $fs-xl;
     }
+  }
 }

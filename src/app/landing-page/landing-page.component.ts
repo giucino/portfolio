@@ -6,13 +6,12 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent {
   // translatedText!: string;
 
-  constructor(public translate: TranslateService) { }
-
+  constructor(public translate: TranslateService) {}
 
   // ngOnInit() {
   //   this.translateText();

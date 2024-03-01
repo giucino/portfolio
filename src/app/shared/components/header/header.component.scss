@@ -291,19 +291,19 @@ $h-hide-distance: $h-width + $h-padding;
   }
 }
 
-.nilsbrown-header.awake {
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-}
-.nilsbrown-header.sleep {
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
+// .nilsbrown-header.awake {
+//   -webkit-transition: 0.3s all ease;
+//   -o-transition: 0.3s all ease;
+//   transition: 0.3s all ease;
+//   -webkit-transform: translateY(0%);
+//   -ms-transform: translateY(0%);
+//   transform: translateY(0%);
+// }
+// .nilsbrown-header.sleep {
+//   -webkit-transition: 0.3s all ease;
+//   -o-transition: 0.3s all ease;
+//   transition: 0.3s all ease;
+//   -webkit-transform: translateY(-100%);
+//   -ms-transform: translateY(-100%);
+//   transform: translateY(-100%);
+// }

@@ -15,6 +15,7 @@ import {
   FormBuilder,
   Validators,
 } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -24,6 +25,7 @@ import {
     SectionTitleComponent,
     TranslateModule,
     ReactiveFormsModule,
+    RouterModule,
     // FormsModule
   ],
   templateUrl: './contact.component.html',
@@ -31,11 +33,12 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {
-  isSubmitted = false;
+  isSubmitted: boolean = false;
   errorMessage: string = '';
   showError: boolean = false;
 
   submitForm = this.fb.group({
+    acceptTerms: [false, Validators.requiredTrue],
     name: ['', Validators.required],
     email: [
       '',
@@ -45,12 +48,12 @@ export class ContactComponent {
         Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$'),
       ],
     ],
-    phone: ['', Validators.pattern(/^\d+$/)],
+    // phone: [''],
     message: [
       '',
       [
         Validators.required,
-        Validators.minLength(10),
+        Validators.minLength(2),
         Validators.maxLength(1000),
       ],
     ],
@@ -78,10 +81,9 @@ export class ContactComponent {
   isFieldValid(field: string): boolean {
     const formField = this.submitForm.get(field);
     return (
-      !this.isSubmitted &&
       formField !== null &&
       formField.invalid &&
-      (formField.dirty || formField.touched || this.isSubmitted)
+      (formField.dirty || formField.touched)
     );
   }
 
@@ -119,6 +121,22 @@ export class ContactComponent {
     } else if (this.mailTest) {
       // Logik für den Testmodus
       this.submitForm.reset();
+    }
+  }
+
+  toggleAcceptTerms(): void {
+    // Umschalten des Wertes von acceptTerms
+    const currentValue = this.submitForm.get('acceptTerms')?.value;
+    this.submitForm.get('acceptTerms')?.setValue(!currentValue);
+
+    // Markieren als berührt, um Validierungsmeldungen anzuzeigen
+    this.submitForm.get('acceptTerms')?.markAsTouched();
+  }
+
+  toggleAcceptTermsOnKeyPress(event: KeyboardEvent): void {
+    if (event.key === ' ' || event.key === 'Enter') {
+      this.toggleAcceptTerms();
+      event.preventDefault();
     }
   }
 }

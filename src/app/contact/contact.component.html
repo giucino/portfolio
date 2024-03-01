@@ -1,7 +1,7 @@
 <app-section-title [titlePrefixKey]="'CONTACT.TITLE_PREFIX'" [titleKey]="'CONTACT.TITLE'"
     [titleSuffixKey]="'CONTACT.TITLE_SUFFIX'" [sectionId]="'contact'" [animation]="'fade-down'" [duration]="1500">
 
-    <section class="contact">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -23,23 +23,47 @@
                                     formControlName="name" [class.invalid]="isFieldValid('name')">
                                 <small *ngIf="isFieldValid('name')" class="error">This field is required</small>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
                                     formControlName="email" [class.invalid]="isFieldValid('email')">
                                 <small *ngIf="isFieldValid('email')" class="error">Please enter a valid email
                                     address.</small>
                             </div>
-                            <div class="col-md-6">
-                                <input name="phone" type="text" placeholder="{{ 'CONTACT.PHONE' | translate }}"
+                            <!-- <div class="col-md-6">
+                                <input name="phone" type="number" placeholder="{{ 'CONTACT.PHONE' | translate }}"
                                     formControlName="phone">
-                            </div>
+                            </div> -->
                             <div class="col-md-12">
                                 <textarea name="message" type="text" id="message" cols="30" rows="4"
                                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" formControlName="message"
                                     [class.invalid]="isFieldValid('message')">
                                 </textarea>
-                                <small *ngIf="isFieldValid('message')" class="error">The message must be at least 10
+                                <small *ngIf="isFieldValid('message')" class="error">The message must be at least 2
                                     characters long.</small>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="mb-30">
+                                    <input type="checkbox" formControlName="acceptTerms" hidden>
+                                    <i tabindex="0" role="checkbox"
+                                        [attr.aria-checked]="submitForm.get('acceptTerms')?.value ? 'true' : 'false'"
+                                        (keypress)="toggleAcceptTermsOnKeyPress($event)"
+                                        [class]="submitForm.get('acceptTerms')?.value ? 'fa-sharp fa-regular fa-square-check' : 'fa-sharp fa-regular fa-square'">
+                                    </i>
+                                    By checking this box, you agree to our <a routerLink="/imprint">Privacy Policy.</a>
+                                </label>
+
+                                <!-- <div class="custom-checkbox" (click)="toggleAcceptTerms()">
+                                    <i tabindex="0" role="checkbox"
+                                        [attr.aria-checked]="submitForm.get('acceptTerms')?.value ? 'true' : 'false'"
+                                        (keypress)="toggleAcceptTermsOnKeyPress($event)"
+                                        [class]="submitForm.get('acceptTerms')?.value ? 'fa-sharp fa-regular fa-square-check' : 'fa-sharp fa-regular fa-square'"></i>
+                                    By checking this box, you agree to our Privacy Policy.
+                                </div> -->
+
+                                <!-- <div *ngIf="isFieldValid('acceptTerms')" class="error">
+                                    You must agree to the Privacy Policy to proceed.
+                                </div> -->
+
                             </div>
                             <div class="col-md-12">
                                 <div class="btn-wrap" [class.disabled]="!submitForm.valid">
