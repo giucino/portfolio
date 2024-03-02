@@ -12,8 +12,8 @@
     "SAY_HELLO": "get in touch"
   },
   "ABOUT": {
-    "DESCRIPTION_I": "I am a frontend web developer with a passion for creating beautiful and functional web applications. I have a solid foundation in web development and programming, and I am always eager to learn new technologies and frameworks. I am a quick learner and a team player, and I am always looking for opportunities to grow and improve my skills.",
-    "DESCRIPTION_II": "I am currently seeking a position as a web developer where I can contribute my skills and knowledge to create innovative and high-quality web applications.",
+    "DESCRIPTION_I": "I have a solid foundation in various programming languages and technologies. My strengths are particularly in frontend development, where I have gained experience with HTML, CSS, and JavaScript. Additionally, I have familiarized myself with frameworks such as Angular to create dynamic and responsive web applications.",
+    "DESCRIPTION_II": "Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions.",
     "TITLE_PREFIX": "a",
     "TITLE": "bout Me",
     "TITLE_SUFFIX": "I Create Digital Future."
@@ -21,10 +21,27 @@
   "SKILLS": {
     "TITLE_PREFIX": "s",
     "TITLE": "kills",
-    "TITLE_SUFFIX": "and Skills.",
-    "TITLE_DESCRIPTION": "I have a solid foundation in various programming languages and technologies. My strengths are particularly in frontend development, where I have gained experience with HTML, CSS, and JavaScript. Additionally, I have familiarized myself with frameworks such as Angular to create dynamic and responsive web applications. Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions."
+    "TITLE_SUFFIX": "and Abilities.",
+    "TITLE_DESCRIPTION": "I possess solid analytical skills and problem-solving abilities, complemented by effective communication skills that facilitate smooth teamwork."
   },
   "PROJECTS": {
+    "PORTFOLIO": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Entertainment",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Mrc 2024",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "Personal Website.",
+      "TITLE": "Portfolio",
+      "TOOLCHAIN": {
+        "CONTENT": "Angular, Typescript, SCSS, HTML",
+        "LABEL": "Toolchain :"
+      }
+    },
     "CRM": {
       "APPLICATION_TYPE": "WebApp",
       "CATEGORY": {
@@ -59,23 +76,6 @@
         "LABEL": "Toolchain :"
       }
     },
-    "POKEDEX": {
-      "APPLICATION_TYPE": "WebApp",
-      "CATEGORY": {
-        "CONTENT": "Education, Entertainment",
-        "LABEL": "Category :"
-      },
-      "DATE": {
-        "CONTENT": "Jul 2023",
-        "LABEL": "Date :"
-      },
-      "DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
-      "TITLE": "Pokedex",
-      "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
-        "LABEL": "Toolchain :"
-      }
-    },
     "POLLO": {
       "APPLICATION_TYPE": "WebApp",
       "CATEGORY": {
@@ -93,23 +93,47 @@
         "LABEL": "Toolchain :"
       }
     },
+    "POKEDEX": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Education, Entertainment",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Jul 2023",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
+      "TITLE": "Pokedex",
+      "TOOLCHAIN": {
+        "CONTENT": "JavaScript, HTML, CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
     "TITLE_PREFIX": "p",
     "TITLE": "rojects",
     "TITLE_SUFFIX": "My Work.",
-    "TITLE_DESCRIPTION": "Here are a few projects I've worked on recently. Feel free to try them out. They represent my journey in learning and applying new skills in different scenarios. I appreciate any feedback you might have."
+    "TITLE_DESCRIPTION": "Here are a few projects I've worked on recently. They represent my journey in learning and applying new skills in different scenarios. I appreciate any feedback you might have."
   },
   "CONTACT": {
     "TITLE_PREFIX": "c",
     "TITLE": "ontact",
     "TITLE_SUFFIX": "Get In Touch",
+    "TITLE_DESCRIPTION": "Feel free to reach out if you're interested in collaborating on a project or if you have any inquiries about my work.",
     "NAME": "Name *",
     "EMAIL": "Email Adress *",
     "PHONE": "Phone",
     "MESSAGE": "Reach out anytime! *",
-    "SEND": "Your message was sent successfully."
+    "SEND": "Your message was sent successfully. Thanks!",
+    "REQUIRED_NAME": "Please enter your name",
+    "REQUIRED_EMAIL": "Please enter a valid email address",
+    "REQUIRED_MESSAGE": "The message must be at least 2 characters long",
+    "PRIVACY_TEXT": "By checking this box, you agree to our",
+    "PRIVACY_LINK": "Privacy Policy.",
+    "BTN_SEND": "Get in touch"
   },
   "FOOTER": {
     "TEXT": "© 2024 by Giuseppe Cino. All rights reserved.",
-	"IMPRINT": "Imprint"
+    "IMPRINT": "Imprint"
   }
 }

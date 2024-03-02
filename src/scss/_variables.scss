@@ -1,3 +1,19 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// No media query necessary for xs breakpoint as it's effectively `@media (max-width: 0) { ... }`
+@include media-breakpoint-down(sm) {
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(xxl) {
+}
+
 /* Colors */
 $orange: #fc5f4d;
 $prmry-dark: #18191d;
@@ -36,8 +52,11 @@ $section-padding: 120px 0;
 .custom-section {
   padding: $section-padding;
 
-  @media screen and (max-width: 768px) {
-    padding: 80px 0; 
+  // @media screen and (max-width: 768px) {
+  //   padding: 80px 0;
+  // }
+  @include media-breakpoint-down(md) {
+    padding: 80px 0;
   }
 }
 

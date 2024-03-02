@@ -1,6 +1,10 @@
 <app-section-title [titlePrefixKey]="'CONTACT.TITLE_PREFIX'" [titleKey]="'CONTACT.TITLE'"
     [titleSuffixKey]="'CONTACT.TITLE_SUFFIX'" [sectionId]="'contact'" [animation]="'fade-down'" [duration]="1500">
 
+    <div class="col-md-6 mt-45 above-main-content">
+        <p>{{ 'CONTACT.TITLE_DESCRIPTION' | translate }}</p>
+    </div>
+
     <section>
         <div class="container">
             <div class="row">
@@ -21,13 +25,12 @@
                             <div class="col-md-12">
                                 <input name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}"
                                     formControlName="name" [class.invalid]="isFieldValid('name')">
-                                <small *ngIf="isFieldValid('name')" class="error">This field is required</small>
+                                <small *ngIf="isFieldValid('name')" class="error">{{ 'CONTACT.REQUIRED_NAME' | translate }}</small>
                             </div>
                             <div class="col-md-12">
                                 <input name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
                                     formControlName="email" [class.invalid]="isFieldValid('email')">
-                                <small *ngIf="isFieldValid('email')" class="error">Please enter a valid email
-                                    address.</small>
+                                <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' | translate }}</small>
                             </div>
                             <!-- <div class="col-md-6">
                                 <input name="phone" type="number" placeholder="{{ 'CONTACT.PHONE' | translate }}"
@@ -38,8 +41,7 @@
                                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" formControlName="message"
                                     [class.invalid]="isFieldValid('message')">
                                 </textarea>
-                                <small *ngIf="isFieldValid('message')" class="error">The message must be at least 2
-                                    characters long.</small>
+                                <small *ngIf="isFieldValid('message')" class="error">{{ 'CONTACT.REQUIRED_MESSAGE' | translate }}</small>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-30">
@@ -49,7 +51,7 @@
                                         (keypress)="toggleAcceptTermsOnKeyPress($event)"
                                         [class]="submitForm.get('acceptTerms')?.value ? 'fa-sharp fa-regular fa-square-check' : 'fa-sharp fa-regular fa-square'">
                                     </i>
-                                    By checking this box, you agree to our <a routerLink="/imprint">Privacy Policy.</a>
+                                    {{ 'CONTACT.PRIVACY_TEXT' | translate }} <a routerLink="/imprint">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
                                 </label>
 
                                 <!-- <div class="custom-checkbox" (click)="toggleAcceptTerms()">
@@ -68,7 +70,7 @@
                             <div class="col-md-12">
                                 <div class="btn-wrap" [class.disabled]="!submitForm.valid">
                                     <div class="btn-link">
-                                        <input type="submit" value="Get in touch">
+                                        <input type="submit" value="{{ 'CONTACT.BTN_SEND' | translate }}">
                                         <span class="btn-block color1 animation-bounce"></span>
                                     </div>
                                 </div>

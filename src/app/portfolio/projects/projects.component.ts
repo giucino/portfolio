@@ -16,6 +16,46 @@ export class ProjectsComponent {
   projects = [
     {
       imgSrc: 'join.png',
+      type: 'PROJECTS.PORTFOLIO.APPLICATION_TYPE',
+      title: 'Portfolio',
+      description: 'PROJECTS.PORTFOLIO.DESCRIPTION',
+      toolchain: {
+        label: 'PROJECTS.PORTFOLIO.TOOLCHAIN.LABEL',
+        content: 'PROJECTS.PORTFOLIO.TOOLCHAIN.CONTENT',
+      },
+      category: {
+        label: 'PROJECTS.PORTFOLIO.CATEGORY.LABEL',
+        content: 'PROJECTS.PORTFOLIO.CATEGORY.CONTENT',
+      },
+      date: {
+        label: 'PROJECTS.PORTFOLIO.DATE.LABEL',
+        content: 'PROJECTS.PORTFOLIO.DATE.CONTENT',
+      },
+      liveTestLink: '',
+      githubLink: 'https://github.com/giucino/portfolio',
+    },
+    {
+      imgSrc: 'crm.png',
+      type: 'PROJECTS.CRM.APPLICATION_TYPE',
+      title: 'CRM',
+      description: 'PROJECTS.CRM.DESCRIPTION',
+      toolchain: {
+        label: 'PROJECTS.CRM.TOOLCHAIN.LABEL',
+        content: 'PROJECTS.CRM.TOOLCHAIN.CONTENT',
+      },
+      category: {
+        label: 'PROJECTS.CRM.CATEGORY.LABEL',
+        content: 'PROJECTS.CRM.CATEGORY.CONTENT',
+      },
+      date: {
+        label: 'PROJECTS.CRM.DATE.LABEL',
+        content: 'PROJECTS.CRM.DATE.CONTENT',
+      },
+      liveTestLink: 'https://github.com/giucino/join',
+      githubLink: 'https://github.com/giucino/join',
+    },
+    {
+      imgSrc: 'join.png',
       type: 'PROJECTS.JOIN.APPLICATION_TYPE',
       title: 'Join',
       description: 'PROJECTS.JOIN.DESCRIPTION',
@@ -73,26 +113,6 @@ export class ProjectsComponent {
       },
       liveTestLink: 'https://pokedex.giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/pokedex',
-    },
-    {
-      imgSrc: 'crm.png',
-      type: 'PROJECTS.CRM.APPLICATION_TYPE',
-      title: 'CRM',
-      description: 'PROJECTS.CRM.DESCRIPTION',
-      toolchain: {
-        label: 'PROJECTS.CRM.TOOLCHAIN.LABEL',
-        content: 'PROJECTS.CRM.TOOLCHAIN.CONTENT',
-      },
-      category: {
-        label: 'PROJECTS.CRM.CATEGORY.LABEL',
-        content: 'PROJECTS.CRM.CATEGORY.CONTENT',
-      },
-      date: {
-        label: 'PROJECTS.CRM.DATE.LABEL',
-        content: 'PROJECTS.CRM.DATE.CONTENT',
-      },
-      liveTestLink: 'https://github.com/giucino/join',
-      githubLink: 'https://github.com/giucino/join',
-    },
+    }
   ];
 }

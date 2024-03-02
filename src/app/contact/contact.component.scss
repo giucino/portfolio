@@ -94,9 +94,9 @@ textarea {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $m-width-l) {
   label {
-    display: block;
+    display: block !important;
   }
 }
 

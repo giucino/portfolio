@@ -1,47 +1,67 @@
-@import './../../../../styles.scss';
+@import "./../../../../styles.scss";
 
 footer {
-    background-color: $scndry-dark;
-    padding: 75px 0 60px 0;
-    width: 100%;
+  background-color: $scndry-dark;
+  padding: 75px 0 60px 0;
+  width: 100%;
 
-    h5 {
-        font-size: $fs-s;
-        font-weight: $fw-700;
+  h5 {
+    font-size: $fs-s;
+    font-weight: $fw-700;
+  }
+
+  p {
+    color: $grey;
+  }
+
+  .footer-social-link {
+    @include flex-container(flex-end, center);
+    padding: 0;
+
+    li {
+      @include flex-container(center, center);
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      transition: all 0.3 ease-in-out;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      margin-right: 5px;
+
+      i {
+        font-size: 14px;
+        color: #fff;
+      }
     }
-
-    p {
-        color: $grey;
-    }
-
-    .footer-social-link {
-        @include flex-container(flex-end, center);
-        padding: 0;
-
-        li {
-            @include flex-container(center, center);
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            transition: all 0.3 ease-in-out;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-            margin-right: 5px;
-
-            i {
-                font-size: 14px;
-                color: #fff;
-            }
-        }
-    }
+  }
 }
 
+.content__logo {
+  width: 100px;
+  height: 50px;
+}
+
+.display-flex {
+  @include flex-container(center, start);
+  flex-direction: column;
+
+  a {
+    margin-left: 10px;
+  }
+}
 
 @media screen and (max-width: 767.98px) {
-    .col-md-4 {
-        text-align: center !important;
-    }
+  .col-md-4 {
+    text-align: center !important;
+  }
 
-    footer .footer-social-link {
-        justify-content: center;
+  .display-flex {
+    @include flex-container(center, center);
+    flex-direction: column;
+  }
+
+  footer {
+    .footer-social-link {
+      justify-content: center;
     }
+  }
 }

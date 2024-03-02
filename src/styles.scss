@@ -1,4 +1,4 @@
-@import "./scss/variables.scss";
+@import "./scss/_variables.scss";
 @import "./scss/button.scss";
 @import "./scss/font.scss";
 @import "primeicons/primeicons.css";
@@ -107,6 +107,28 @@ button {
   }
 }
 
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $orange $prmry-dark; // Farbe des Thumbs und Tracks
+}
+
+/* ======= Scrollbar ======= */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $prmry-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scndry-dark;
+
+  &:hover {
+    background: $grey;
+  }
+}
+
 /* ======= Global margin ======= */
 .mb-30 {
   margin-bottom: 30px;
@@ -133,23 +155,34 @@ button {
 }
 
 /* ======= Image fade in ======= */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
+// @keyframes fadeInUp {
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateY(20px);
+//     transform: translateY(20px);
+//   }
 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+//   100% {
+//     opacity: 1;
+//     -webkit-transform: translateY(0);
+//     transform: translateY(0);
+//   }
+// }
+
+@supports (animation-timeline: view()) {
+  img {
+    transform: scale(0.8);
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
   }
 }
 
-@media screen and (min-width: $m-width-xl) {
-  .container {
-    max-width: 1140px !important;
+@keyframes fade-in {
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -158,3 +191,9 @@ button {
 .with-title-content p {
   color: $grey;
 }
+
+// @media screen and (min-width: $m-width-xl) {
+//   .container {
+//     max-width: 1140px !important;
+//   }
+// }
