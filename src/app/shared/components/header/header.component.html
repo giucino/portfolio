@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-3">
-                <div class="header-logo__content">
+                <div class="header-logo__content"> 
                     <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
                 </div>
             </div>
@@ -14,27 +14,20 @@
                     </div>
                 </div>
                 <aside class="header-menu" [class.header-menu__right]="menuValue">
-                    <!-- <ul aria-label="Primary" role="list">
-                        <li *ngFor="let menuItem of menuItems"; (click)="closeMenu()">
-                            <a class="animate__animated animate__slideInDown" [href]="menuItem.link">
-                                {{ menuItem.label | translate }}
-                            </a>
-                        </li>
-                    </ul> -->
                     <ul aria-label="Primary" role="list">
                         @for(fragment of fragments; track fragment.id) {
                         <li (click)="closeMenu()">
                             <a [routerLink]="fragment.path" [fragment]="fragment.id"
-                                [class.active]="isActive(fragment.id)" class="animate__animated animate__slideInDown"
+                                class="animate__animated animate__slideInDown" [class.active]="fragment.id === 'home'"
                                 (click)="closeMenu()">{{ fragment.label |
                                 translate }}</a>
                         </li>
                         }
                     </ul>
-
                     <div class="btn-container text-center">
-                        <button (click)="switchLanguage('de')" title="Deutsch">DE</button>
-                        <button (click)="switchLanguage('en')" title="Englisch">EN</button>
+                        <button (click)="switchLanguage('de')" title="Deutsch">de</button>
+                        <span style="color: black">|</span>
+                        <button (click)="switchLanguage('en')" title="Englisch">en</button>
                     </div>
                 </aside>
             </div>

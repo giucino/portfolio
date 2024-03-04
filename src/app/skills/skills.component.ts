@@ -30,8 +30,7 @@ export class SkillsComponent {
     { icon: 'photoshop.svg', name: 'Photoshop' },
     { icon: 's.webp', name: 'Selbstständigkeit' },
     { icon: 'e.webp', name: 'Eigenverantwortung' },
-    { icon: 't.webp', name: 'Teamfähigkeit' },
-    { icon: 'a.webp', name: 'Anpassungsfähigkeit' }
+    { icon: 't.webp', name: 'Teamfähigkeit' }, //TODO: bilder in photoshop anpassen
   ];
 }
 

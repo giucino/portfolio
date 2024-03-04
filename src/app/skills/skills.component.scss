@@ -1,4 +1,3 @@
-// Importieren des Haupt-Stylesheets (stellen Sie sicher, dass der Pfad korrekt ist)
 @import "./../../styles.scss";
 
 .logo-container {
@@ -46,3 +45,25 @@
     }
   }
 }
+
+// :host ::ng-deep .section-title {
+//   word-break: break-word;
+// }
+
+// @media screen and (max-width: $m-width-m) {
+//   :host ::ng-deep .section-title {
+//     font-size: 44px !important;
+//   }
+// }
+
+// @media screen and (max-width: $m-width-s) {
+//   :host ::ng-deep .section-title {
+//     font-size: $fs-l !important;
+//   }
+// }
+
+// @media screen and (max-width: $m-width-xs) {
+//   :host ::ng-deep .section-title {
+//     font-size: $fs-m !important;
+//   }
+// }

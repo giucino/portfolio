@@ -39,6 +39,10 @@
     align-items: center;
     gap: 4px;
     color: $grey;
+
+    i {
+      margin-right: 4px;
+    }
   }
 
   .alert-success {

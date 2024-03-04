@@ -37,7 +37,6 @@ export class ViewportAnimationDirective implements AfterViewInit {
             'animate__fadeInUp',
           ];
           if (entry.isIntersecting) {
-            // Starten der Animation mit requestAnimationFrame
             requestAnimationFrame(() => {
               animationClasses.forEach((className) => {
                 this.renderer.addClass(entry.target, className);
@@ -52,29 +51,4 @@ export class ViewportAnimationDirective implements AfterViewInit {
 
     observer.observe(this.el.nativeElement);
   }
-
-  // private setupIntersectionObserver() {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       const animationClasses = this.appViewportAnimation.split(' ') || ['animate__animated', 'animate__fadeInUp'];
-  //       if (entry.isIntersecting) {
-  //         // Starten der Animation mit requestAnimationFrame
-  //         requestAnimationFrame(() => {
-  //           animationClasses.forEach(className => {
-  //             this.renderer.addClass(entry.target, className);
-  //           });
-  //         });
-  //       } else {
-  //         // Zurücksetzen der Animation
-  //         requestAnimationFrame(() => {
-  //           animationClasses.forEach(className => {
-  //             this.renderer.removeClass(entry.target, className);
-  //           });
-  //         });
-  //       }
-  //     });
-  //   }, { rootMargin: '50px', threshold: 0 });
-
-  //   observer.observe(this.el.nativeElement);
-  // }
 }

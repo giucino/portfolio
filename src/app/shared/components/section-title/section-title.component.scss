@@ -6,8 +6,8 @@
 
   h6 {
     display: inline-block;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: $fw-700;
+    font-size: $fs-xxs;
     color: $grey;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -22,27 +22,15 @@
 
   .section-title {
     font-size: $fs-xxxl;
-    // line-height: 60px;
-    font-weight: 700;
+    font-weight: $fw-700;
+    word-break: break-word;
   }
 }
 
 @media screen and (max-width: $m-width-m) {
   .section {
-    width: 100%;
-
     .section-title {
       font-size: $fs-xxl;
     }
   }
 }
-
-// @media screen and (max-width: $m-width-s) {
-//     .section {
-//         width: 100%;
-
-//         .section-title {
-//             font-size: $fs-l;
-//         }
-//     }
-// }

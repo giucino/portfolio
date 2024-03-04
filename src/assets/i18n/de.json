@@ -7,7 +7,7 @@
     "SKILLS": "Skills"
   },
   "LANDING": {
-    "DESCRIPTION": "Hallo, ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
+    "DESCRIPTION": "Ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
     "DEV": "Frontend Entwickler",
     "SAY_HELLO": "sag hallo"
   },
@@ -38,7 +38,7 @@
       "DESCRIPTION": "Persönliche Website.",
       "TITLE": "Portfolio",
       "TOOLCHAIN": {
-        "CONTENT": "Angular, Typescript, SCSS, HTML",
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Werkzeug :"
       }
     },
@@ -55,7 +55,7 @@
       "DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
       "TITLE": "CRM",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Werkzeug :"
       }
     },
@@ -72,7 +72,7 @@
       "DESCRIPTION": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
       "TITLE": "Join",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Werkzeug :"
       }
     },
@@ -89,7 +89,7 @@
       "DESCRIPTION": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
       "TITLE": "El Pollo Loco",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Werkzeug :"
       }
     },
@@ -106,7 +106,7 @@
       "DESCRIPTION": "Eine einfache Bibliothek basierend auf der Poké-API, die Pokemon-Informationen bereitstellt und katalogisiert.",
       "TITLE": "Pokedex",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Werkzeug :"
       }
     },
@@ -122,7 +122,6 @@
     "TITLE_DESCRIPTION": "Zögern Sie nicht, sich zu melden, wenn Sie an einer Zusammenarbeit bei einem Projekt interessiert sind oder Fragen zu meiner Arbeit haben.",
     "NAME": "Name *",
     "EMAIL": "E-Mail Adresse *",
-    "PHONE": "Telefon",
     "MESSAGE": "Melde dich jederzeit! *",
     "SEND": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!",
     "REQUIRED_NAME": "Bitte geben Sie Ihren Namen ein",

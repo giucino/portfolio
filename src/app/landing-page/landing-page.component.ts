@@ -9,21 +9,5 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent {
-  // translatedText!: string;
-
   constructor(public translate: TranslateService) {}
-
-  // ngOnInit() {
-  //   this.translateText();
-
-  //   this.translate.onLangChange.subscribe(() => {
-  //     this.translateText();
-  //   });
-  // }
-
-  // translateText() {
-  //   this.translate.get('LANDING.SAY_HELLO').subscribe((res: string) => {
-  //     this.translatedText = res;
-  //   });
-  // }
 }

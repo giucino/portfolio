@@ -32,10 +32,6 @@
                                     formControlName="email" [class.invalid]="isFieldValid('email')">
                                 <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' | translate }}</small>
                             </div>
-                            <!-- <div class="col-md-6">
-                                <input name="phone" type="number" placeholder="{{ 'CONTACT.PHONE' | translate }}"
-                                    formControlName="phone">
-                            </div> -->
                             <div class="col-md-12">
                                 <textarea name="message" type="text" id="message" cols="30" rows="4"
                                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" formControlName="message"

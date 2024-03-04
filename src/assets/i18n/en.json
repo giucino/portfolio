@@ -7,7 +7,7 @@
     "CONTACT": "Contact"
   },
   "LANDING": {
-    "DESCRIPTION": "Hi, I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bringing ideas into life.",
+    "DESCRIPTION": "I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bringing ideas into life.",
     "DEV": "Frontend Developer",
     "SAY_HELLO": "get in touch"
   },
@@ -38,7 +38,7 @@
       "DESCRIPTION": "Personal Website.",
       "TITLE": "Portfolio",
       "TOOLCHAIN": {
-        "CONTENT": "Angular, Typescript, SCSS, HTML",
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Toolchain :"
       }
     },
@@ -55,7 +55,7 @@
       "DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
       "TITLE": "CRM",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Toolchain :"
       }
     },
@@ -72,7 +72,7 @@
       "DESCRIPTION": "Task manager inspired by the Kanban system. Create and organize tasks using drag-and-drop features, assign users and categories.",
       "TITLE": "Join",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Toolchain :"
       }
     },
@@ -89,7 +89,7 @@
       "DESCRIPTION": "Jumping, running, and throwing game based on an object-oriented approach. Help Pepe find coins and Tabasco salsa to fight against the crazy chicken.",
       "TITLE": "El Pollo Loco",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Toolchain :"
       }
     },
@@ -106,7 +106,7 @@
       "DESCRIPTION": "A simple library based on the Poké API that provides and catalogs Pokemon information.",
       "TITLE": "Pokedex",
       "TOOLCHAIN": {
-        "CONTENT": "JavaScript, HTML, CSS",
+        "CONTENT": "JavaScript | HTML | CSS",
         "LABEL": "Toolchain :"
       }
     },
@@ -122,7 +122,6 @@
     "TITLE_DESCRIPTION": "Feel free to reach out if you're interested in collaborating on a project or if you have any inquiries about my work.",
     "NAME": "Name *",
     "EMAIL": "Email Adress *",
-    "PHONE": "Phone",
     "MESSAGE": "Reach out anytime! *",
     "SEND": "Your message was sent successfully. Thanks!",
     "REQUIRED_NAME": "Please enter your name",

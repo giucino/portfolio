@@ -15,7 +15,7 @@ export class ProjectsComponent {
 
   projects = [
     {
-      imgSrc: 'join.png',
+      imgSrc: 'join.png',  //TODO: add images
       type: 'PROJECTS.PORTFOLIO.APPLICATION_TYPE',
       title: 'Portfolio',
       description: 'PROJECTS.PORTFOLIO.DESCRIPTION',
@@ -34,26 +34,26 @@ export class ProjectsComponent {
       liveTestLink: '',
       githubLink: 'https://github.com/giucino/portfolio',
     },
-    {
-      imgSrc: 'crm.png',
-      type: 'PROJECTS.CRM.APPLICATION_TYPE',
-      title: 'CRM',
-      description: 'PROJECTS.CRM.DESCRIPTION',
-      toolchain: {
-        label: 'PROJECTS.CRM.TOOLCHAIN.LABEL',
-        content: 'PROJECTS.CRM.TOOLCHAIN.CONTENT',
-      },
-      category: {
-        label: 'PROJECTS.CRM.CATEGORY.LABEL',
-        content: 'PROJECTS.CRM.CATEGORY.CONTENT',
-      },
-      date: {
-        label: 'PROJECTS.CRM.DATE.LABEL',
-        content: 'PROJECTS.CRM.DATE.CONTENT',
-      },
-      liveTestLink: 'https://github.com/giucino/join',
-      githubLink: 'https://github.com/giucino/join',
-    },
+    // {
+    //   imgSrc: 'crm.png',
+    //   type: 'PROJECTS.CRM.APPLICATION_TYPE',
+    //   title: 'CRM',
+    //   description: 'PROJECTS.CRM.DESCRIPTION',
+    //   toolchain: {
+    //     label: 'PROJECTS.CRM.TOOLCHAIN.LABEL',
+    //     content: 'PROJECTS.CRM.TOOLCHAIN.CONTENT',
+    //   },
+    //   category: {
+    //     label: 'PROJECTS.CRM.CATEGORY.LABEL',
+    //     content: 'PROJECTS.CRM.CATEGORY.CONTENT',
+    //   },
+    //   date: {
+    //     label: 'PROJECTS.CRM.DATE.LABEL',
+    //     content: 'PROJECTS.CRM.DATE.CONTENT',
+    //   },
+    //   liveTestLink: 'https://github.com/giucino/join',
+    //   githubLink: 'https://github.com/giucino/join',
+    // },
     {
       imgSrc: 'join.png',
       type: 'PROJECTS.JOIN.APPLICATION_TYPE',

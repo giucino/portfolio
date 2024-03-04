@@ -13,14 +13,17 @@
   box-sizing: border-box;
 }
 
-/* Set core root defaults */
+/* ======= Set core root defaults ======= */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
+html {
+  color-scheme: dark light;
+}
+
 html,
 body {
-  color-scheme: dark light;
   height: 100%;
   font-family: $syne-font !important;
   font-size: $fs-xs;
@@ -36,13 +39,13 @@ body {
   font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* ======= Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed ======= */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
-/* lists */
+/* ======= Lists ======= */
 ul {
   list-style-type: none;
 }
@@ -51,8 +54,8 @@ li {
   list-style: none;
 }
 
-/* links */
-/* A elements that don't have a class get default styles */
+/* ======= Links ======= */
+/* =======  A elements that don't have a class get default styles ======= */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
@@ -75,7 +78,7 @@ a:focus {
   outline: none;
 }
 
-/* Make images easier to work with */
+/* =======  Make images easier to work with ======= */
 img,
 picture,
 svg {
@@ -83,6 +86,7 @@ svg {
   display: block;
 }
 
+/* =======  Button ======= */
 button {
   background: none;
   border: none;
@@ -91,7 +95,7 @@ button {
   cursor: pointer;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* =======  Remove all animations, transitions and smooth scroll for people that prefer not to see them ======= */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -107,9 +111,10 @@ button {
   }
 }
 
+/* ======= Scrollbar Global ======= */
 * {
   scrollbar-width: auto;
-  scrollbar-color: $orange $prmry-dark; // Farbe des Thumbs und Tracks
+  scrollbar-color: $orange $prmry-dark;
 }
 
 /* ======= Scrollbar ======= */
@@ -146,7 +151,7 @@ button {
   margin-top: 45px;
 }
 
-/* ======= Scroll-Icon ======= */
+/* ======= Scroll-Top-Icon ======= */
 .custom-scrolltop {
   background-color: $scndry-dark;
   border-radius: 50%;
@@ -169,6 +174,7 @@ button {
 //   }
 // }
 
+/* ======= Images Viewport Entry  ======= */
 @supports (animation-timeline: view()) {
   img {
     transform: scale(0.8);
@@ -186,14 +192,17 @@ button {
   }
 }
 
-/* ======= Section-Title Component Global ======= */
+/* ======= Section Padding  ======= */
+.custom-section {
+  padding: $section-padding;
+
+  @media screen and (max-width: $m-width-m) {
+    padding: 80px 0;
+  }
+}
+
+/* ======= Section-Title NG Content Global ======= */
 .above-main-content p,
 .with-title-content p {
   color: $grey;
 }
-
-// @media screen and (min-width: $m-width-xl) {
-//   .container {
-//     max-width: 1140px !important;
-//   }
-// }

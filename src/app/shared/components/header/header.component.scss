@@ -1,5 +1,5 @@
 @import "./../../../../styles.scss";
-
+//TODO: Add logo
 header {
   position: fixed;
   top: 0;
@@ -71,7 +71,6 @@ header {
         color: $scndry-dark;
         font-size: $fs-s;
         font-weight: $fw-700;
-        // text-transform: uppercase;
 
         &::before {
           content: "";
@@ -117,6 +116,37 @@ header {
   }
 }
 
+@media screen and (min-width: $m-width-m) {
+  .header-menu {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: $m-width-m) {
+  .header-menu__right {
+    width: 100vw;
+    max-width: none;
+  }
+}
+
+.btn-container {
+  margin-top: 40px;
+
+  button {
+    padding: 15px 15px;
+    font-size: $fs-s;
+    font-weight: $fw-700;
+    color: $prmry-dark;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+/* ======= Hamburger  ======= */
 $h-padding: 15px;
 $h-width: 36px;
 $h-height: 24px;
@@ -171,7 +201,7 @@ $h-hide-distance: $h-width + $h-padding;
     opacity: $h-transition-opacity;
   }
 
-  &.is-active &__inner {
+  &.is-open &__inner {
     display: none;
   }
 
@@ -210,17 +240,17 @@ $h-hide-distance: $h-width + $h-padding;
     transform: translate(0, 0);
   }
 
-  &.is-active &__hidden {
+  &.is-open &__hidden {
     opacity: 1;
     transform: rotate(45deg);
   }
 
-  &.is-active &__hidden::before {
+  &.is-open &__hidden::before {
     transform: translate(0, #{$h-vertical-gap}) rotate(90deg);
     transform-origin: center;
   }
 
-  &.is-active &__hidden::after {
+  &.is-open &__hidden::after {
     transform-origin: center;
     transform: translate(0, -#{$h-vertical-gap}) rotate(0);
   }
@@ -251,59 +281,3 @@ $h-hide-distance: $h-width + $h-padding;
     }
   }
 }
-
-@media screen and (min-width: $m-width-m) {
-  .header-menu {
-    top: 0;
-  }
-}
-
-@media screen and (max-width: $m-width-m) {
-  .header-menu__right {
-    width: 100vw;
-    max-width: none;
-  }
-}
-
-@media screen and (max-width: $m-width-s) {
-  .header-menu ul li a {
-    font-size: $fs-xs;
-  }
-}
-
-.btn-container {
-  margin-top: 40px;
-
-  button {
-    padding: 15px 30px;
-    font-size: $fs-s;
-    font-weight: $fw-700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: $prmry-dark;
-    // border: none;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      color: $orange;
-    }
-  }
-}
-
-// .nilsbrown-header.awake {
-//   -webkit-transition: 0.3s all ease;
-//   -o-transition: 0.3s all ease;
-//   transition: 0.3s all ease;
-//   -webkit-transform: translateY(0%);
-//   -ms-transform: translateY(0%);
-//   transform: translateY(0%);
-// }
-// .nilsbrown-header.sleep {
-//   -webkit-transition: 0.3s all ease;
-//   -o-transition: 0.3s all ease;
-//   transition: 0.3s all ease;
-//   -webkit-transform: translateY(-100%);
-//   -ms-transform: translateY(-100%);
-//   transform: translateY(-100%);
-// }
