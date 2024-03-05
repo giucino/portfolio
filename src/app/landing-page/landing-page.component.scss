@@ -8,7 +8,7 @@
   padding: 60px 0;
 
   .header-section-wrap {
-    // overflow: hidden;
+    overflow: hidden;
 
     .header-img {
       width: 100%;
@@ -83,7 +83,7 @@
     .landing-page__content {
       @include flex-container(center, center);
       flex-direction: column;
-      left: -9%;
+      left: -5%;
     }
 
     .content__description-container {
@@ -121,7 +121,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $m-width-xs) {
   .landing-page {
     .content__name {
       font-size: $fs-m;

@@ -3,7 +3,9 @@
         <div class="row flex-column-reverse flex-md-row">
             <div class="col-md-4 display-flex">
                 <div class="header-logo__content">
-                    <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
+                    <a (click)="navigateToTop()">
+                        <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
+                    </a>
                 </div>
                 <a routerLink="/imprint">{{ 'FOOTER.IMPRINT' | translate }}</a>
             </div>

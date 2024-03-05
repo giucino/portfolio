@@ -1,4 +1,4 @@
-@import "./scss/_variables.scss";
+@import "./scss/variables.scss";
 @import "./scss/button.scss";
 @import "./scss/font.scss";
 @import "primeicons/primeicons.css";
@@ -111,6 +111,12 @@ button {
   }
 }
 
+@media screen and (min-width: $m-width-xl) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
 /* ======= Scrollbar Global ======= */
 * {
   scrollbar-width: auto;
@@ -158,21 +164,6 @@ button {
   padding: 12px;
   color: $orange;
 }
-
-/* ======= Image fade in ======= */
-// @keyframes fadeInUp {
-//   0% {
-//     opacity: 0;
-//     -webkit-transform: translateY(20px);
-//     transform: translateY(20px);
-//   }
-
-//   100% {
-//     opacity: 1;
-//     -webkit-transform: translateY(0);
-//     transform: translateY(0);
-//   }
-// }
 
 /* ======= Images Viewport Entry  ======= */
 @supports (animation-timeline: view()) {

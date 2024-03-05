@@ -7,16 +7,15 @@
     "SKILLS": "Skills"
   },
   "LANDING": {
-    "DESCRIPTION": "Ich bin Giuseppe Cino und kreativer Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich genieße es, Ideen in die Realität umzusetzen.",
-    "DEV": "Frontend Entwickler",
-    "SAY_HELLO": "sag hallo"
+    "DESCRIPTION": "Ich bin Giuseppe Cino und Frontend Entwickler mit Sitz in Saarlouis, Deutschland. Ich begeistere mich dafür, Ideen in die Realität umzusetzen.",
+    "DEV": "Frontend Entwickler"
   },
   "ABOUT": {
-    "DESCRIPTION_I": "Ich habe eine solide Grundlage in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen insbesondere in der Frontend-Entwicklung, wo ich Erfahrungen mit HTML, CSS und JavaScript gesammelt habe. Zudem habe ich mich mit dem Framework Angular vertraut gemacht, um dynamische und responsive Webanwendungen zu erstellen.",
-    "DESCRIPTION_II": "Problemlösung und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um effektive Lösungen zu entwickeln.",
+    "DESCRIPTION_I": "Ich habe fundierte Kenntnisse in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen in der Frontend-Entwicklung. Dabei habe ich Erfahrungen mit HTML, CSS und JavaScript erlangt. Zudem arbeite ich mit dem Framework Angular, um dynamische und responsive Webanwendungen zu kreieren.",
+    "DESCRIPTION_II": "Lösungsorientiertes und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um eine besondere UI/UX zu schaffen.",
     "TITLE_PREFIX": "ü",
     "TITLE": "ber mich",
-    "TITLE_SUFFIX": "Ich gestalte digitale Zukunft."
+    "TITLE_SUFFIX": "Ich bin Teil der digitalen Zukunft."
   },
   "SKILLS": {
     "TITLE_PREFIX": "s",
@@ -28,14 +27,14 @@
     "PORTFOLIO": {
       "APPLICATION_TYPE": "Webanwendung",
       "CATEGORY": {
-        "CONTENT": "Unterhaltung",
+        "CONTENT": "Persönliche Webseite, Portfolio",
         "LABEL": "Kategorie :"
       },
       "DATE": {
         "CONTENT": "Mrz 2024",
         "LABEL": "Datum :"
       },
-      "DESCRIPTION": "Persönliche Website.",
+      "DESCRIPTION": "Auf meiner persönlichen Website können Besucher mehr über mich erfahren, meine Projekte erkunden und Kontakt mit mir aufnehmen, um über potenzielle Zusammenarbeit oder neue Möglichkeiten zu sprechen.",
       "TITLE": "Portfolio",
       "TOOLCHAIN": {
         "CONTENT": "Angular | TypeScript | SCSS | HTML",
@@ -113,21 +112,21 @@
     "TITLE_PREFIX": "p",
     "TITLE": "rojekte",
     "TITLE_SUFFIX": "Meine Arbeit.",
-    "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Sie stellen meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich schätze jedes Feedback, das Sie haben könnten."
+    "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Jedes Projekt stellt meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich bin für konstruktives Feedback dankbar."
   },
   "CONTACT": {
     "TITLE_PREFIX": "k",
     "TITLE": "ontakt",
-    "TITLE_SUFFIX": "In Kontakt treten",
+    "TITLE_SUFFIX": "Get In Touch",
     "TITLE_DESCRIPTION": "Zögern Sie nicht, sich zu melden, wenn Sie an einer Zusammenarbeit bei einem Projekt interessiert sind oder Fragen zu meiner Arbeit haben.",
     "NAME": "Name *",
     "EMAIL": "E-Mail Adresse *",
-    "MESSAGE": "Melde dich jederzeit! *",
+    "MESSAGE": "Ihre Nachricht *",
     "SEND": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!",
     "REQUIRED_NAME": "Bitte geben Sie Ihren Namen ein",
     "REQUIRED_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "REQUIRED_MESSAGE": "Die Nachricht muss mindestens 2 Zeichen lang sein",
-    "PRIVACY_TEXT": "Indem Sie dieses Feld markieren, akzeptieren Sie unsere",
+    "PRIVACY_TEXT": "Ich akzeptiere die",
     "PRIVACY_LINK": "Datenschutzerklärung.",
     "BTN_SEND": "Senden"
   },

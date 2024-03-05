@@ -13,10 +13,10 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <div class="alert alert-success" *ngIf="isSubmitted" role="alert">
+                                <div class="alert alert-success" *ngIf="isSubmitted" role="alert" #successAlert>
                                     {{ 'CONTACT.SEND' | translate }}
                                 </div>
-                                <div class="alert alert-danger" *ngIf="showError" role="alert">
+                                <div class="alert alert-danger" *ngIf="showError" role="alert" #errorAlert>
                                     {{ errorMessage }}
                                 </div>
                             </div>
@@ -25,19 +25,22 @@
                             <div class="col-md-12">
                                 <input name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}"
                                     formControlName="name" [class.invalid]="isFieldValid('name')">
-                                <small *ngIf="isFieldValid('name')" class="error">{{ 'CONTACT.REQUIRED_NAME' | translate }}</small>
+                                <small *ngIf="isFieldValid('name')" class="error">{{ 'CONTACT.REQUIRED_NAME' | translate
+                                    }}</small>
                             </div>
                             <div class="col-md-12">
                                 <input name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
                                     formControlName="email" [class.invalid]="isFieldValid('email')">
-                                <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' | translate }}</small>
+                                <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' |
+                                    translate }}</small>
                             </div>
                             <div class="col-md-12">
                                 <textarea name="message" type="text" id="message" cols="30" rows="4"
                                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" formControlName="message"
                                     [class.invalid]="isFieldValid('message')">
                                 </textarea>
-                                <small *ngIf="isFieldValid('message')" class="error">{{ 'CONTACT.REQUIRED_MESSAGE' | translate }}</small>
+                                <small *ngIf="isFieldValid('message')" class="error">{{ 'CONTACT.REQUIRED_MESSAGE' |
+                                    translate }}</small>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-30">
@@ -47,21 +50,9 @@
                                         (keypress)="toggleAcceptTermsOnKeyPress($event)"
                                         [class]="submitForm.get('acceptTerms')?.value ? 'fa-sharp fa-regular fa-square-check' : 'fa-sharp fa-regular fa-square'">
                                     </i>
-                                    {{ 'CONTACT.PRIVACY_TEXT' | translate }} <a routerLink="/imprint">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                                    {{ 'CONTACT.PRIVACY_TEXT' | translate }} <a routerLink="/imprint">{{
+                                        'CONTACT.PRIVACY_LINK' | translate }}</a>
                                 </label>
-
-                                <!-- <div class="custom-checkbox" (click)="toggleAcceptTerms()">
-                                    <i tabindex="0" role="checkbox"
-                                        [attr.aria-checked]="submitForm.get('acceptTerms')?.value ? 'true' : 'false'"
-                                        (keypress)="toggleAcceptTermsOnKeyPress($event)"
-                                        [class]="submitForm.get('acceptTerms')?.value ? 'fa-sharp fa-regular fa-square-check' : 'fa-sharp fa-regular fa-square'"></i>
-                                    By checking this box, you agree to our Privacy Policy.
-                                </div> -->
-
-                                <!-- <div *ngIf="isFieldValid('acceptTerms')" class="error">
-                                    You must agree to the Privacy Policy to proceed.
-                                </div> -->
-
                             </div>
                             <div class="col-md-12">
                                 <div class="btn-wrap" [class.disabled]="!submitForm.valid">
@@ -79,56 +70,3 @@
     </section>
 
 </app-section-title>
-
-
-
-<!-- <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" method="post" class="contact__form">
-                        
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="alert alert-success contact__msg" *ngIf="isSubmitted" role="alert">
-                                    {{ 'CONTACT.SEND' | translate }}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}" required>
-                                @if (name.invalid && (name.dirty || name.touched)) {
-                                    <div class="alert alert-success contact__msg">Name is required</div>
-                                }
-                            </div>
-                            <div class="col-md-6">
-                                <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                            </div>
-                            <div class="col-md-6">
-                                <input [(ngModel)]="contactData.phone" name="phone" type="text" placeholder="{{ 'CONTACT.PHONE' | translate }}">
-                            </div>
-                            <div class="col-md-12">
-                                <input name="subject" type="text" placeholder="{{ 'CONTACT.SUBJECT' | translate }}" required>
-                            </div> 
-                            <div class="col-md-12">
-                                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id="message" cols="30" rows="4"
-                                    placeholder="{{ 'CONTACT.MESSAGE' | translate }}" required></textarea>
-                                    @if (message.invalid && (message.dirty || message.touched)) {
-                                        <div class="alert alert-success contact__msg">Message is required</div>
-                                    }
-                            </div>
-                            <div class="col-md-12">
-                                <div class="btn-wrap">
-                                    <div class="btn-link">
-                                        <input type="submit" [disabled]="contactForm.form.invalid" value="Get in touch"><i class="pi pi-arrow-up-right"></i>
-                                        <span class="btn-block color1 animation-bounce"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->

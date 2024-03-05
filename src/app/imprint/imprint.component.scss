@@ -1,6 +1,27 @@
-@import './../../styles.scss';
+@import "./../../styles.scss";
 
 .imprint {
-    height: 90vh;
-    width: 100%;
+  position: relative;
+  // top: 10vh;
+  height: auto;
+  min-height: calc(100vh - 180px);
+  width: 100%;
+  padding: 120px 0;
+
+  p {
+    color: $grey;
+  }
+}
+
+.display-flex {
+  @include flex-container(space-between, center);
+
+  a {
+    color: $grey;
+    font-size: 40px;
+
+    &:hover {
+      color: $orange;
+    }
+  }
 }

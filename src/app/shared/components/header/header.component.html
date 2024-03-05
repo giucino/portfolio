@@ -2,8 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-3 col-3">
-                <div class="header-logo__content"> 
-                    <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
+                <div class="header-logo__content">
+                    <a (click)="navigateToTop()">
+                        <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
+                    </a>
                 </div>
             </div>
             <div class="col-md-9 col-sm-9 col-9 header-right">
@@ -26,7 +28,7 @@
                     </ul>
                     <div class="btn-container text-center">
                         <button (click)="switchLanguage('de')" title="Deutsch">de</button>
-                        <span style="color: black">|</span>
+                        <span>|</span>
                         <button (click)="switchLanguage('en')" title="Englisch">en</button>
                     </div>
                 </aside>

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-header',
@@ -24,7 +25,8 @@ export class HeaderComponent implements AfterViewInit {
   constructor(
     private el: ElementRef,
     private renderer: Renderer2,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private navigationService: NavigationService
   ) {}
 
   switchLanguage(language: string) {
@@ -62,5 +64,9 @@ export class HeaderComponent implements AfterViewInit {
     const hamburgerElement = this.el.nativeElement.querySelector('.hamburger');
     hamburgerElement.classList.remove('is-open');
     this.renderer.removeStyle(document.body, 'overflow');
+  }
+
+  navigateToTop() {
+    this.navigationService.scrollToTop();
   }
 }

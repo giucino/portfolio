@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-footer',
@@ -18,9 +19,14 @@ export class FooterComponent {
       url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/',
       iconClass: 'pi pi-linkedin',
     },
-    // { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'fa-brands fa-xing' }
-    // { url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/', iconClass: 'pi pi-discord' }
   ];
 
-  constructor(public translate: TranslateService) {}
+  constructor(
+    public translate: TranslateService,
+    private navigationService: NavigationService
+  ) {}
+
+  navigateToTop() {
+    this.navigationService.scrollToTop();
+  }
 }

@@ -7,9 +7,8 @@
     "CONTACT": "Contact"
   },
   "LANDING": {
-    "DESCRIPTION": "I’m Giuseppe Cino and I am creative frontend developer based in Saarlouis, Germany. I enjoy bringing ideas into life.",
-    "DEV": "Frontend Developer",
-    "SAY_HELLO": "get in touch"
+    "DESCRIPTION": "I’m Giuseppe Cino and I am a frontend developer based in Saarlouis, Germany. I enjoy bringing ideas to life.",
+    "DEV": "Frontend Developer"
   },
   "ABOUT": {
     "DESCRIPTION_I": "I have a solid foundation in various programming languages and technologies. My strengths are particularly in frontend development, where I have gained experience with HTML, CSS, and JavaScript. Additionally, I have familiarized myself with frameworks such as Angular to create dynamic and responsive web applications.",
@@ -28,14 +27,14 @@
     "PORTFOLIO": {
       "APPLICATION_TYPE": "WebApp",
       "CATEGORY": {
-        "CONTENT": "Entertainment",
+        "CONTENT": "Personal Website, Portfolio",
         "LABEL": "Category :"
       },
       "DATE": {
         "CONTENT": "Mrc 2024",
         "LABEL": "Date :"
       },
-      "DESCRIPTION": "Personal Website.",
+      "DESCRIPTION": "In my personal website, visitors can learn more about me, explore my projects, and get in touch with me to discuss potential collaborations or new opportunities.",
       "TITLE": "Portfolio",
       "TOOLCHAIN": {
         "CONTENT": "Angular | TypeScript | SCSS | HTML",
@@ -122,7 +121,7 @@
     "TITLE_DESCRIPTION": "Feel free to reach out if you're interested in collaborating on a project or if you have any inquiries about my work.",
     "NAME": "Name *",
     "EMAIL": "Email Adress *",
-    "MESSAGE": "Reach out anytime! *",
+    "MESSAGE": "Your message *",
     "SEND": "Your message was sent successfully. Thanks!",
     "REQUIRED_NAME": "Please enter your name",
     "REQUIRED_EMAIL": "Please enter a valid email address",

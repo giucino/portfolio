@@ -1,6 +1,6 @@
-import { Component, OnInit, Renderer2, Inject } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject, Injectable } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { RouterOutlet, RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule, Router } from '@angular/router';
 import { PreloaderComponent } from './preloader/preloader.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -15,15 +15,18 @@ import AOS from 'aos';
   imports: [
     CommonModule,
     RouterOutlet,
-    // RouterModule,
     PreloaderComponent,
     MainContentComponent,
     HeaderComponent,
     FooterComponent,
     ImprintComponent,
+    RouterModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+})
+@Injectable({
+  providedIn: 'root',
 })
 export class AppComponent implements OnInit {
   title = 'Portfolio';
@@ -32,7 +35,8 @@ export class AppComponent implements OnInit {
   constructor(
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private router: Router
   ) {
     this.translate.setDefaultLang('en');
   }
@@ -46,5 +50,13 @@ export class AppComponent implements OnInit {
       this.renderer.removeStyle(this.document.body, 'overflow');
     }, 2500);
     AOS.init();
+  }
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+
+    if (this.router.url !== '/home') {
+      this.router.navigate(['/'], { fragment: 'home' });
+    }
   }
 }

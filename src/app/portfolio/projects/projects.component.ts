@@ -15,7 +15,7 @@ export class ProjectsComponent {
 
   projects = [
     {
-      imgSrc: 'join.png',  //TODO: add images
+      imgSrc: 'portfolio.png',
       type: 'PROJECTS.PORTFOLIO.APPLICATION_TYPE',
       title: 'Portfolio',
       description: 'PROJECTS.PORTFOLIO.DESCRIPTION',
@@ -31,7 +31,7 @@ export class ProjectsComponent {
         label: 'PROJECTS.PORTFOLIO.DATE.LABEL',
         content: 'PROJECTS.PORTFOLIO.DATE.CONTENT',
       },
-      liveTestLink: '',
+      liveTestLink: 'https://giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/portfolio',
     },
     // {

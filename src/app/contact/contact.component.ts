@@ -3,18 +3,14 @@ import {
   inject,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
+  ViewChild,
+  ElementRef
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { SectionTitleComponent } from '../shared/components/section-title/section-title.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import {
-  FormsModule,
-  NgForm,
-  ReactiveFormsModule,
-  FormBuilder,
-  Validators,
-} from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -26,13 +22,14 @@ import { RouterModule } from '@angular/router';
     TranslateModule,
     ReactiveFormsModule,
     RouterModule,
-    // FormsModule
   ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {
+  @ViewChild('successAlert', { static: false }) successAlert!: ElementRef;
+  @ViewChild('errorAlert', { static: false }) errorAlert!: ElementRef;
   isSubmitted: boolean = false;
   errorMessage: string = '';
   showError: boolean = false;
@@ -94,11 +91,6 @@ export class ContactComponent {
         })
         .subscribe({
           next: (response) => {
-            console.info(
-              'submitted form',
-              this.submitForm.value,
-              this.submitForm.invalid
-            );
             this.isSubmitted = true;
             this.showError = false;
             this.submitForm.reset();
@@ -106,6 +98,9 @@ export class ContactComponent {
 
             setTimeout(() => {
               this.isSubmitted = false;
+              if (this.successAlert && this.successAlert.nativeElement) {
+                this.successAlert.nativeElement.focus();
+              }
               this.cd.markForCheck(); // Erneut überprüfen
             }, 3000);
           },
@@ -114,8 +109,11 @@ export class ContactComponent {
             this.errorMessage =
               'Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.';
             this.showError = true;
+            if (this.errorAlert && this.errorAlert.nativeElement) {
+              this.errorAlert.nativeElement.focus();
+            }
           },
-          complete: () => console.info('send post complete'),
+          // complete: () => console.info('send post complete'),
         });
     } else if (this.mailTest) {
       // Logik für den Testmodus
@@ -139,27 +137,3 @@ export class ContactComponent {
     }
   }
 }
-
-// onSubmit(ngForm: NgForm) {
-//   if (ngForm.submitted && ngForm.form.valid) {
-//     this.http.post(this.post.endPoint, this.post.body(this.contactData), { responseType: 'text' })
-//       .subscribe({
-//         next: (response) => {
-//           // Feedback an den Benutzer, dass die Nachricht erfolgreich gesendet wurde
-//           console.info('Nachricht erfolgreich gesendet.');
-//           this.isSubmitted = true;
-//           ngForm.resetForm();
-//           // Optional: Zeige eine Erfolgsmeldung im UI
-//         },
-//         error: (error) => {
-//           console.error(error);
-//           // Optional: Zeige eine Fehlermeldung im UI
-//         },
-//         complete: () => console.info('send post complete'),
-//       });
-//   } else if (this.mailTest) {
-//     // Logik für den Testmodus
-//     ngForm.resetForm();
-//     // Optional: Zeige eine Testmodusmeldung im UI
-//   }
-// }

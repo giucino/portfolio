@@ -28,24 +28,9 @@ export class SkillsComponent {
     { icon: 'scrum.svg', name: 'Scrum' },
     { icon: 'figma.svg', name: 'Figma' },
     { icon: 'photoshop.svg', name: 'Photoshop' },
-    { icon: 's.webp', name: 'Selbstständigkeit' },
-    { icon: 'e.webp', name: 'Eigenverantwortung' },
-    { icon: 't.webp', name: 'Teamfähigkeit' }, //TODO: bilder in photoshop anpassen
+    { icon: 'e.png', name: 'Eigenverantwortung' },
+    { icon: 't.png', name: 'Teamfähig' },
+    { icon: 'l.png', name: 'Lösungsorientiert' },
+    { icon: 'k.png', name: 'Kreativ' }
   ];
 }
-
-// name: emotionale Intelligenz,
-// name: Teamfähigkeit,
-// name: Eigenverantwortung,
-// name: Selbstständigkeit,
-// name: Organisationsfähigkeit,
-// name: Zeitmanagement,
-// name: Konfliktfähigkeit,
-// name: Stressresistenz,
-// name: Kritikfähigkeit,
-// name: Durchsetzungsvermögen,
-// name: Anpassungsfähigkeit,
-// name: Kommunikationsfähigkeit,
-// name: Problemlösungsfähigkeit,
-// name: Kreativität,
-// name: Flexibilität,
