@@ -72,8 +72,7 @@ export class MainContentComponent implements OnInit, OnDestroy {
     });
 
     if (currentSectionId) {
-      this.location.replaceState('/#' + currentSectionId);
-
+      this.location.replaceState('/' + currentSectionId);
       // this.router.navigate([], { fragment: currentSectionId });
     }
   }
