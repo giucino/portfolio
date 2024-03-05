@@ -10,7 +10,7 @@ export class NavigationService {
   scrollToTop() {
     window.scrollTo(0, 0);
     if (this.router.url !== '/home') {
-      this.router.navigate(['/'], { fragment: 'home' });
+      this.router.navigate(['/#'], { fragment: 'home' });
     }
   }
 }
