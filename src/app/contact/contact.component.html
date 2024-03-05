@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form class="contact__form" [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+                    <form  class="contact__form" [formGroup]="submitForm" (ngSubmit)="onSubmit()">
 
                         <div class="row">
                             <div class="col-12">
@@ -25,14 +25,14 @@
                             <div class="col-md-12">
                                 <label for="name" class="sr-only">{{ 'CONTACT.NAME' | translate }}</label>
                                 <input id="name" name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}"
-                                    formControlName="name" [class.invalid]="isFieldValid('name')">
+                                    formControlName="name" [class.invalid]="isFieldValid('name')" autocomplete="name">
                                 <small *ngIf="isFieldValid('name')" class="error">{{ 'CONTACT.REQUIRED_NAME' | translate
                                     }}</small>
                             </div>
                             <div class="col-md-12">
                                 <label for="email" class="sr-only">{{ 'CONTACT.EMAIL' | translate }}</label>
                                 <input id="email" name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
-                                    formControlName="email" [class.invalid]="isFieldValid('email')">
+                                    formControlName="email" [class.invalid]="isFieldValid('email')" autocomplete="email">
                                 <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' |
                                     translate }}</small>
                             </div>
