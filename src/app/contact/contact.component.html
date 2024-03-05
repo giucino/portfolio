@@ -23,19 +23,22 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}"
+                                <label for="name" class="sr-only">{{ 'CONTACT.NAME' | translate }}</label>
+                                <input id="name" name="name" type="text" placeholder="{{ 'CONTACT.NAME' | translate }}"
                                     formControlName="name" [class.invalid]="isFieldValid('name')">
                                 <small *ngIf="isFieldValid('name')" class="error">{{ 'CONTACT.REQUIRED_NAME' | translate
                                     }}</small>
                             </div>
                             <div class="col-md-12">
-                                <input name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
+                                <label for="email" class="sr-only">{{ 'CONTACT.EMAIL' | translate }}</label>
+                                <input id="email" name="email" type="email" placeholder="{{ 'CONTACT.EMAIL' | translate }}"
                                     formControlName="email" [class.invalid]="isFieldValid('email')">
                                 <small *ngIf="isFieldValid('email')" class="error">{{ 'CONTACT.REQUIRED_EMAIL' |
                                     translate }}</small>
                             </div>
                             <div class="col-md-12">
-                                <textarea name="message" type="text" id="message" cols="30" rows="4"
+                                <label for="message" class="sr-only">{{ 'CONTACT.MESSAGE' | translate }}</label>
+                                <textarea id="message" name="message" type="text" cols="30" rows="4"
                                     placeholder="{{ 'CONTACT.MESSAGE' | translate }}" formControlName="message"
                                     [class.invalid]="isFieldValid('message')">
                                 </textarea>
