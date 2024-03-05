@@ -11,7 +11,7 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ContactComponent } from '../contact/contact.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription, fromEvent } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 
@@ -36,7 +36,11 @@ export class MainContentComponent implements OnInit, OnDestroy {
   private fragmentSubscription!: Subscription;
   private scrollSubscription!: Subscription;
 
-  constructor(private activeRoute: ActivatedRoute, private location: Location) {
+  constructor(
+    private activeRoute: ActivatedRoute,
+    private location: Location,
+    private router: Router
+  ) {
     this.scrollSubscription = fromEvent(window, 'scroll')
       .pipe(throttleTime(80))
       .subscribe(() => this.onWindowScroll());
@@ -69,6 +73,8 @@ export class MainContentComponent implements OnInit, OnDestroy {
 
     if (currentSectionId) {
       this.location.replaceState('/#' + currentSectionId);
+
+      // this.router.navigate([], { fragment: currentSectionId });
     }
   }
 
