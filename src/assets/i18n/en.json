@@ -7,7 +7,7 @@
     "CONTACT": "Contact"
   },
   "LANDING": {
-    "DESCRIPTION": "I’m Giuseppe Cino and I am a frontend developer based in Saarlouis, Germany. I enjoy bringing ideas to life.",
+    "DESCRIPTION": "I’m Giuseppe Cino, a frontend developer based in Saarlouis, Germany. I enjoy bringing ideas to life.",
     "DEV": "Frontend Developer"
   },
   "ABOUT": {
@@ -21,7 +21,11 @@
     "TITLE_PREFIX": "s",
     "TITLE": "kills",
     "TITLE_SUFFIX": "and Abilities.",
-    "TITLE_DESCRIPTION": "I possess solid analytical skills and problem-solving abilities, complemented by effective communication skills that facilitate smooth teamwork."
+    "TITLE_DESCRIPTION": "I possess solid analytical skills and problem-solving abilities, complemented by effective communication skills that facilitate smooth teamwork.",
+    "CREATIVE": "Creative",
+    "SOLVING": "Solution-Oriented",
+    "TEAM": "Teamplayer",
+    "RESPONSIBILITY": "Self-responsibility"
   },
   "PROJECTS": {
     "PORTFOLIO": {

@@ -21,7 +21,11 @@
     "TITLE_PREFIX": "s",
     "TITLE": "kills",
     "TITLE_SUFFIX": "und Kompetenzen.",
-    "TITLE_DESCRIPTION": "Ich verfüge über gute analytische Fähigkeiten und Problemlösungskompetenz, sowie über solide Kommunikationsfähigkeiten, die eine reibungslose Teamarbeit ermöglichen."
+    "TITLE_DESCRIPTION": "Ich verfüge über gute analytische Fähigkeiten und Problemlösungskompetenz, sowie über solide Kommunikationsfähigkeiten, die eine reibungslose Teamarbeit ermöglichen.",
+    "CREATIVE": "Kreativität",
+    "SOLVING": "Lösungsorientiert",
+    "TEAM": "Teamplayer",
+    "RESPONSIBILITY": "Eigenverantwortung"
   },
   "PROJECTS": {
     "PORTFOLIO": {

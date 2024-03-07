@@ -21,8 +21,7 @@
                         <li (click)="closeMenu()">
                             <a [routerLink]="fragment.path" [fragment]="fragment.id"
                                 class="animate__animated animate__slideInDown"
-                                [class.active]="fragment.id === 'home'">{{ fragment.label |
-                                translate }}</a>
+                                [class.active]="fragment.id === 'home'">{{ fragment.label | translate }}</a>
                         </li>
                         }
                     </ul>

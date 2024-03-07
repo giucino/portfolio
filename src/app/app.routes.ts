@@ -13,5 +13,5 @@ export const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'projects', component: PortfolioComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'imprint', component: ImprintComponent },
+  { path: 'imprint', component: ImprintComponent }
 ];
