@@ -23,9 +23,12 @@
     "TITLE_SUFFIX": "und Kompetenzen.",
     "TITLE_DESCRIPTION": "Ich verfüge über gute analytische Fähigkeiten und Problemlösungskompetenz, sowie über solide Kommunikationsfähigkeiten, die eine reibungslose Teamarbeit ermöglichen.",
     "CREATIVE": "Kreativität",
+    "CREATIVE_IMG": "assets/img/skills_white/k.png",
     "SOLVING": "Lösungsorientiert",
+    "SOLVING_IMG": "assets/img/skills_white/l.png",
     "TEAM": "Teamplayer",
-    "RESPONSIBILITY": "Eigenverantwortung"
+    "RESPONSIBILITY": "Eigenverantwortung",
+    "RESPONSIBILITY_IMG": "assets/img/skills_white/e.png"
   },
   "PROJECTS": {
     "PORTFOLIO": {

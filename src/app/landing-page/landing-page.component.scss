@@ -3,7 +3,7 @@
 .landing-page {
   position: relative;
   top: 10vh;
-  height: 90vh;
+  height: auto;
   width: 100%;
   padding: 60px 0;
 
@@ -55,15 +55,14 @@
   }
 }
 
-@media (max-width: $m-width-l) {
-  .special {
-    .btn-link {
-      width: 170px;
-    }
+/* ======= Media Query style ======= */
+@media (min-width: $m-width-l) {
+  .landing-page {
+    height: 90vh;
+    @include flex-container(center, center);
   }
 }
 
-/* ======= Media Query style ======= */
 @media (min-width: $m-width-l) {
   .header-section-wrap {
     display: flex;
@@ -89,6 +88,14 @@
     .content__description-container {
       margin: 0;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: $m-width-l) {
+  .btn-wrap {
+    .btn-link {
+      width: 170px;
     }
   }
 }

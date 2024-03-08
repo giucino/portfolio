@@ -28,9 +28,9 @@ export class SkillsComponent {
     { icon: 'scrum.svg', name: 'Scrum' },
     { icon: 'figma.svg', name: 'Figma' },
     { icon: 'photoshop.svg', name: 'Photoshop' },
-    { icon: 'e.png', name: 'SKILLS.RESPONSIBILITY' },
+    { icon: 'SKILLS.RESPONSIBILITY_IMG', name: 'SKILLS.RESPONSIBILITY' },
     { icon: 't.png', name: 'SKILLS.TEAM' },
-    { icon: 'l.png', name: 'SKILLS.SOLVING' },
-    { icon: 'k.png', name: 'SKILLS.CREATIVE' },
+    { icon: 'SKILLS.SOLVING_IMG', name: 'SKILLS.SOLVING' },
+    { icon: 'SKILLS.CREATIVE_IMG', name: 'SKILLS.CREATIVE' },
   ];
 }

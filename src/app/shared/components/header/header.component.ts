@@ -67,6 +67,6 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   navigateToTop() {
-    this.navigationService.scrollToTop();
+    this.navigationService.scrollToTheTop();
   }
 }

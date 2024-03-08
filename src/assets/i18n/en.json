@@ -23,9 +23,12 @@
     "TITLE_SUFFIX": "and Abilities.",
     "TITLE_DESCRIPTION": "I possess solid analytical skills and problem-solving abilities, complemented by effective communication skills that facilitate smooth teamwork.",
     "CREATIVE": "Creative",
-    "SOLVING": "Solution-Oriented",
+    "CREATIVE_IMG": "assets/img/skills_white/c.png",
+    "SOLVING": "Solution-oriented",
+    "SOLVING_IMG": "assets/img/skills_white/so.png",
     "TEAM": "Teamplayer",
-    "RESPONSIBILITY": "Self-responsibility"
+    "RESPONSIBILITY": "Self-responsibility",
+    "RESPONSIBILITY_IMG": "assets/img/skills_white/sr.png"
   },
   "PROJECTS": {
     "PORTFOLIO": {

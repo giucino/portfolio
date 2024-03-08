@@ -7,10 +7,10 @@ import { Router } from '@angular/router';
 export class NavigationService {
   constructor(private router: Router) {}
 
-  scrollToTop() {
+  scrollToTheTop() {
     window.scrollTo(0, 0);
     if (this.router.url !== '/home') {
-      this.router.navigate(['/home'], { fragment: 'home' });
+      this.router.navigate(['/'], { fragment: 'home' });
     }
   }
 }

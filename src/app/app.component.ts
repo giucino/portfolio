@@ -42,6 +42,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.router.navigate(['/']);
     if (this.isLoading) {
       this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
     }

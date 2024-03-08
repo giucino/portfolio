@@ -27,6 +27,6 @@ export class FooterComponent {
   ) {}
 
   navigateToTop() {
-    this.navigationService.scrollToTop();
+    this.navigationService.scrollToTheTop();
   }
 }
