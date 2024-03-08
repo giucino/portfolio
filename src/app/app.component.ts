@@ -1,4 +1,10 @@
-import { Component, OnInit, Renderer2, Inject, Injectable } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Renderer2,
+  Inject,
+  Injectable,
+} from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { RouterOutlet, RouterModule, Router } from '@angular/router';
 import { PreloaderComponent } from './preloader/preloader.component';
@@ -20,7 +26,7 @@ import AOS from 'aos';
     HeaderComponent,
     FooterComponent,
     ImprintComponent,
-    RouterModule
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -53,11 +59,11 @@ export class AppComponent implements OnInit {
     AOS.init();
   }
 
-  scrollToTop() {
-    window.scrollTo(0, 0);
+  // scrollToTop() {
+  //   window.scrollTo(0, 0);
 
-    if (this.router.url !== '/home') {
-      this.router.navigate(['/'], { fragment: 'home' });
-    }
-  }
+  //   if (this.router.url !== '/home') {
+  //     this.router.navigate(['/'], { fragment: 'home' });
+  //   }
+  // }
 }
