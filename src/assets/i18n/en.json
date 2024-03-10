@@ -22,11 +22,11 @@
     "TITLE": "kills",
     "TITLE_SUFFIX": "and Abilities.",
     "TITLE_DESCRIPTION": "I possess solid analytical skills and problem-solving abilities, complemented by effective communication skills that facilitate smooth teamwork.",
-    "CREATIVE": "Creative",
+    "CREATIVE": "Creativity",
     "CREATIVE_IMG": "assets/img/skills_white/c.png",
-    "SOLVING": "Solution-oriented",
+    "SOLVING": "Solution-orientation",
     "SOLVING_IMG": "assets/img/skills_white/so.png",
-    "TEAM": "Teamplayer",
+    "TEAM": "Teamwork",
     "RESPONSIBILITY": "Self-responsibility",
     "RESPONSIBILITY_IMG": "assets/img/skills_white/sr.png"
   },
@@ -133,7 +133,7 @@
     "REQUIRED_NAME": "Please enter your name",
     "REQUIRED_EMAIL": "Please enter a valid email address",
     "REQUIRED_MESSAGE": "The message must be at least 2 characters long",
-    "PRIVACY_TEXT": "By checking this box, you agree to our",
+    "PRIVACY_TEXT": "By checking this box, you agree to the",
     "PRIVACY_LINK": "Privacy Policy.",
     "BTN_SEND": "Get in touch"
   },

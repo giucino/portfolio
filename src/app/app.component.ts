@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.router.navigate(['/']);
+    this.router.navigate(['/']); // nur in Verbindung mit "replaceState"
     if (this.isLoading) {
       this.renderer.setStyle(this.document.body, 'overflow', 'hidden');
     }
@@ -58,12 +58,4 @@ export class AppComponent implements OnInit {
     }, 2500);
     AOS.init();
   }
-
-  // scrollToTop() {
-  //   window.scrollTo(0, 0);
-
-  //   if (this.router.url !== '/home') {
-  //     this.router.navigate(['/'], { fragment: 'home' });
-  //   }
-  // }
 }
