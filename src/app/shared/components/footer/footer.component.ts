@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { NavigationService } from '../../services/navigation.service';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -16,17 +17,28 @@ export class FooterComponent {
     { url: 'mailto:hi@giuseppe-cino.de', iconClass: 'pi pi-envelope' },
     { url: 'https://github.com/giucino', iconClass: 'pi pi-github' },
     {
-      url: 'https://www.linkedin.com/in/giuseppe-cino-9a9b0b268/',
+      url: 'https://www.linkedin.com/in/giuseppe-cino',
       iconClass: 'pi pi-linkedin',
     },
   ];
 
   constructor(
     public translate: TranslateService,
-    private navigationService: NavigationService
+    private navigationService: NavigationService,
+    private router: Router,
+    private el: ElementRef
   ) {}
 
   navigateToTop() {
     this.navigationService.scrollToTheTop();
+  }
+
+  scrollToTopAndNavigateToImprint() {
+    this.router.navigate(['/imprint']).then(() => {
+      this.el.nativeElement.ownerDocument.defaultView.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
   }
 }

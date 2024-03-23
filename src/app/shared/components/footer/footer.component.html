@@ -7,7 +7,8 @@
                         <img class="content__logo" src="./../../../assets/img/logo.png" alt="Logo">
                     </a>
                 </div>
-                <a routerLink="/imprint">{{ 'FOOTER.IMPRINT' | translate }}</a>
+                <a (click)="scrollToTopAndNavigateToImprint()">{{ 'FOOTER.IMPRINT' | translate }}</a>
+
             </div>
             <div class="col-md-4 text-center d-flex flex-column justify-content-center">
                 <p>{{ 'FOOTER.TEXT' | translate }}</p>

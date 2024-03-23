@@ -7,7 +7,7 @@ header {
   width: 100%;
   background-color: $prmry-dark;
   @include flex-container(center, center);
-  padding: 30px 0;
+  padding: 15px 0;
   z-index: 1000;
 
   .content__logo {

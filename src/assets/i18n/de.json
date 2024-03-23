@@ -15,7 +15,7 @@
     "TITLE": "ber mich",
     "TITLE_SUFFIX": "Ich bin Teil der digitalen Zukunft.",
     "DESCRIPTION_I": "Ich habe fundierte Kenntnisse in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen in der Frontend-Entwicklung. Dabei habe ich Erfahrungen mit HTML, CSS und JavaScript erlangt. Zudem arbeite ich mit dem Framework Angular, um dynamische und responsive Webanwendungen zu kreieren.",
-    "DESCRIPTION_II": "Lösungsorientiertes und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um eine besondere Benutzeroberfläche zu schaffen."
+    "DESCRIPTION_II": "Lösungsorientiertes und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um ein besonderes Benutzererlebnis zu schaffen."
   },
   "SKILLS": {
     "TITLE_PREFIX": "s",
@@ -34,7 +34,7 @@
     "TITLE_PREFIX": "p",
     "TITLE": "rojekte",
     "TITLE_SUFFIX": "Meine Arbeit.",
-    "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Jedes Projekt stellt meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich bin für jedes konstruktives Feedback dankbar.",
+    "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Jedes Projekt stellt meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich bin für jedes konstruktive Feedback dankbar.",
     "PORTFOLIO": {
       "APPLICATION_TYPE": "Webanwendung",
       "CATEGORY": {
