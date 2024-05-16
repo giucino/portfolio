@@ -15,6 +15,26 @@ export class ProjectsComponent {
 
   projects = [
     {
+      imgSrc: 'bubble.png',
+      type: 'PROJECTS.DABUBBLE.APPLICATION_TYPE',
+      title: 'DABubble',
+      description: 'PROJECTS.DABUBBLE.DESCRIPTION',
+      toolchain: {
+        label: 'PROJECTS.DABUBBLE.TOOLCHAIN.LABEL',
+        content: 'PROJECTS.DABUBBLE.TOOLCHAIN.CONTENT',
+      },
+      category: {
+        label: 'PROJECTS.DABUBBLE.CATEGORY.LABEL',
+        content: 'PROJECTS.DABUBBLE.CATEGORY.CONTENT',
+      },
+      date: {
+        label: 'PROJECTS.DABUBBLE.DATE.LABEL',
+        content: 'PROJECTS.DABUBBLE.DATE.CONTENT',
+      },
+      liveTestLink: 'https://dabubble.giuseppe-cino.de',
+      githubLink: 'https://github.com/Khroxx/DABubble',
+    },
+    {
       imgSrc: 'portfolio.png',
       type: 'PROJECTS.PORTFOLIO.APPLICATION_TYPE',
       title: 'Portfolio',

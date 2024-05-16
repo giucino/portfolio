@@ -35,6 +35,23 @@
     "TITLE": "rojekte",
     "TITLE_SUFFIX": "Meine Arbeit.",
     "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Jedes Projekt stellt meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich bin für jedes konstruktive Feedback dankbar.",
+    "DABUBBLE": {
+      "APPLICATION_TYPE": "Webanwendung",
+      "CATEGORY": {
+        "CONTENT": "Kommunikations- und Kollaborationsplattform",
+        "LABEL": "Kategorie :"
+      },
+      "DATE": {
+        "CONTENT": "Aktuell in Entwicklung",
+        "LABEL": "Datum :"
+      },
+      "DESCRIPTION": "Ein moderner Slack-Clone, der Teams ermöglicht, in Echtzeit zu kommunizieren und zusammenzuarbeiten. Enthält Funktionen wie Chats, Kanäle und Dateifreigaben.",
+      "TITLE": "DABUBBLE",
+      "TOOLCHAIN": {
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
+        "LABEL": "Werkzeug :"
+      }
+    },
     "PORTFOLIO": {
       "APPLICATION_TYPE": "Webanwendung",
       "CATEGORY": {

@@ -31,6 +31,23 @@
     "RESPONSIBILITY_IMG": "assets/img/skills_white/sr.png"
   },
   "PROJECTS": {
+    "DABUBBLE": {
+      "APPLICATION_TYPE": "WebApp",
+      "CATEGORY": {
+        "CONTENT": "Communication and Collaboration Platform",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Currently in development",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "A modern Slack clone that enables teams to communicate and collaborate in real time. It includes features such as chats, channels, and file sharing.",
+      "TITLE": "DABubble",
+      "TOOLCHAIN": {
+        "CONTENT": "Angular | TypeScript | SCSS | HTML",
+        "LABEL": "Toolchain :"
+      }
+    },
     "PORTFOLIO": {
       "APPLICATION_TYPE": "WebApp",
       "CATEGORY": {
