@@ -32,7 +32,7 @@ export class ProjectsComponent {
         content: 'PROJECTS.DABUBBLE.DATE.CONTENT',
       },
       liveTestLink: 'https://dabubble.giuseppe-cino.de',
-      githubLink: 'https://github.com/Khroxx/DABubble',
+      githubLink: 'https://github.com/giucino/DABubble',
     },
     {
       imgSrc: 'portfolio.png',

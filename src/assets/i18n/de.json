@@ -42,7 +42,7 @@
         "LABEL": "Kategorie :"
       },
       "DATE": {
-        "CONTENT": "Aktuell in Entwicklung",
+        "CONTENT": "Jul 2024",
         "LABEL": "Datum :"
       },
       "DESCRIPTION": "Ein moderner Slack-Clone, der Teams ermöglicht, in Echtzeit zu kommunizieren und zusammenzuarbeiten. Enthält Funktionen wie Chats, Kanäle und Dateifreigaben.",
