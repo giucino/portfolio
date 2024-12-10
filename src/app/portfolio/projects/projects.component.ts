@@ -15,9 +15,49 @@ export class ProjectsComponent {
 
   projects = [
     {
-      imgSrc: 'bubble.png',
+      imgSrc: 'new.png',
+      type: 'PROJECTS.BLOG.APPLICATION_TYPE',
+      title: 'PROJECTS.BLOG.TITLE',
+      description: 'PROJECTS.BLOG.DESCRIPTION',
+      toolchain: {
+        label: 'PROJECTS.BLOG.TOOLCHAIN.LABEL',
+        content: 'PROJECTS.BLOG.TOOLCHAIN.CONTENT',
+      },
+      category: {
+        label: 'PROJECTS.BLOG.CATEGORY.LABEL',
+        content: 'PROJECTS.BLOG.CATEGORY.CONTENT',
+      },
+      date: {
+        label: 'PROJECTS.BLOG.DATE.LABEL',
+        content: 'PROJECTS.BLOG.DATE.CONTENT',
+      },
+      // liveTestLink: 'https://davvero-dillingen.de',
+      githubLink: 'https://github.com/giucino/cms-blog',
+
+    },
+    {
+      imgSrc: 'davvero.png',
+      type: 'PROJECTS.DAVVERO.APPLICATION_TYPE',
+      title: 'PROJECTS.DAVVERO.TITLE',
+      description: 'PROJECTS.DAVVERO.DESCRIPTION',
+      toolchain: {
+        label: 'PROJECTS.DAVVERO.TOOLCHAIN.LABEL',
+        content: 'PROJECTS.DAVVERO.TOOLCHAIN.CONTENT',
+      },
+      category: {
+        label: 'PROJECTS.DAVVERO.CATEGORY.LABEL',
+        content: 'PROJECTS.DAVVERO.CATEGORY.CONTENT',
+      },
+      date: {
+        label: 'PROJECTS.DAVVERO.DATE.LABEL',
+        content: 'PROJECTS.DAVVERO.DATE.CONTENT',
+      },
+      liveTestLink: 'https://davvero-dillingen.de'
+    },
+    {
+      imgSrc: 'dabubble.png',
       type: 'PROJECTS.DABUBBLE.APPLICATION_TYPE',
-      title: 'DABubble',
+      title: 'PROJECTS.DABUBBLE.TITLE',
       description: 'PROJECTS.DABUBBLE.DESCRIPTION',
       toolchain: {
         label: 'PROJECTS.DABUBBLE.TOOLCHAIN.LABEL',
@@ -37,7 +77,7 @@ export class ProjectsComponent {
     {
       imgSrc: 'portfolio.png',
       type: 'PROJECTS.PORTFOLIO.APPLICATION_TYPE',
-      title: 'Portfolio',
+      title: 'PROJECTS.PORTFOLIO.TITLE',
       description: 'PROJECTS.PORTFOLIO.DESCRIPTION',
       toolchain: {
         label: 'PROJECTS.PORTFOLIO.TOOLCHAIN.LABEL',
@@ -54,30 +94,10 @@ export class ProjectsComponent {
       liveTestLink: 'https://giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/portfolio',
     },
-    // {
-    //   imgSrc: 'crm.png',
-    //   type: 'PROJECTS.CRM.APPLICATION_TYPE',
-    //   title: 'CRM',
-    //   description: 'PROJECTS.CRM.DESCRIPTION',
-    //   toolchain: {
-    //     label: 'PROJECTS.CRM.TOOLCHAIN.LABEL',
-    //     content: 'PROJECTS.CRM.TOOLCHAIN.CONTENT',
-    //   },
-    //   category: {
-    //     label: 'PROJECTS.CRM.CATEGORY.LABEL',
-    //     content: 'PROJECTS.CRM.CATEGORY.CONTENT',
-    //   },
-    //   date: {
-    //     label: 'PROJECTS.CRM.DATE.LABEL',
-    //     content: 'PROJECTS.CRM.DATE.CONTENT',
-    //   },
-    //   liveTestLink: 'https://github.com/giucino/join',
-    //   githubLink: 'https://github.com/giucino/join',
-    // },
     {
       imgSrc: 'join.png',
       type: 'PROJECTS.JOIN.APPLICATION_TYPE',
-      title: 'Join',
+      title: 'PROJECTS.JOIN.TITLE',
       description: 'PROJECTS.JOIN.DESCRIPTION',
       toolchain: {
         label: 'PROJECTS.JOIN.TOOLCHAIN.LABEL',
@@ -97,7 +117,7 @@ export class ProjectsComponent {
     {
       imgSrc: 'elpollo.png',
       type: 'PROJECTS.POLLO.APPLICATION_TYPE',
-      title: 'El Pollo Loco',
+      title: 'PROJECTS.POLLO.TITLE',
       description: 'PROJECTS.POLLO.DESCRIPTION',
       toolchain: {
         label: 'PROJECTS.POLLO.TOOLCHAIN.LABEL',
@@ -117,7 +137,7 @@ export class ProjectsComponent {
     {
       imgSrc: 'pokedex.png',
       type: 'PROJECTS.POKEDEX.APPLICATION_TYPE',
-      title: 'Pokedex',
+      title: 'PROJECTS.POKEDEX.TITLE',
       description: 'PROJECTS.POKEDEX.DESCRIPTION',
       toolchain: {
         label: 'PROJECTS.POKEDEX.TOOLCHAIN.LABEL',
@@ -133,6 +153,6 @@ export class ProjectsComponent {
       },
       liveTestLink: 'https://pokedex.giuseppe-cino.de',
       githubLink: 'https://github.com/giucino/pokedex',
-    }
+    },
   ];
 }

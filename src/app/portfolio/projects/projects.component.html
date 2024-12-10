@@ -9,14 +9,14 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-5 offset-md-1 project-content" [ngClass]="{'order-md-1': i % 2 !== 0, 'right-offset-md-1': i % 2 !== 0, 
         'offset-md-1': i % 2 === 0}">
             <h6 appViewportAnimation="animate__animated animate__fadeInUp">
                 {{ project.type | translate }}
             </h6>
             <h1 appViewportAnimation="animate__animated animate__fadeInUp">
-                {{ project.title }}
+                {{ project.title | translate }}
             </h1>
             <p appViewportAnimation="animate__animated animate__fadeInUp" class="mt-45">
                 {{ project.description | translate }}
@@ -36,13 +36,15 @@
 
             <div appViewportAnimation="animate__animated animate__fadeInUp" class="d-flex">
                 <div class="text-left mt-30">
-                    <div class="btn-link"> <a [href]="project.liveTestLink" target="_blank">Live website
+                    <div class="btn-link" *ngIf="project.liveTestLink"> 
+                        <a [href]="project.liveTestLink" target="_blank">Live website
                             <i class="pi pi-arrow-up-right"></i>
                         </a> <span class="btn-block color1 animation-bounce"></span>
                     </div>
                 </div>
                 <div class="text-left mt-30">
-                    <div class="btn-link"> <a [href]="project.githubLink" target="_blank">GitHub
+                    <div class="btn-link" *ngIf="project.githubLink">
+                        <a [href]="project.githubLink" target="_blank">GitHub
                             <i class="pi pi-arrow-up-right"></i>
                         </a> <span class="btn-block color1 animation-bounce"></span>
                     </div>

@@ -15,7 +15,7 @@
     "DESCRIPTION_II": "Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions.",
     "TITLE_PREFIX": "a",
     "TITLE": "bout Me",
-    "TITLE_SUFFIX": "I Create Digital Future."
+    "TITLE_SUFFIX": "My passion for digital experiences."
   },
   "SKILLS": {
     "TITLE_PREFIX": "s",
@@ -27,10 +27,45 @@
     "SOLVING": "Solution-orientation",
     "SOLVING_IMG": "assets/img/skills_white/so.png",
     "TEAM": "Teamwork",
+    "TEAM_IMG": "assets/img/skills_white/t.png",
     "RESPONSIBILITY": "Self-responsibility",
     "RESPONSIBILITY_IMG": "assets/img/skills_white/sr.png"
   },
   "PROJECTS": {
+    "BLOG": {
+      "APPLICATION_TYPE": "Fullstack Web Application",
+      "CATEGORY": {
+        "CONTENT": "Content Management System (CMS), Business, CRUD Application with Authentication",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Dec 2024",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "A modern blog and CMS project with Angular and Tailwind CSS in the frontend, and Node.js and Express.js in the backend, implementing a secure RESTful API with authentication, authorization, and CRUD functionality via Sequelize ORM and MySQL.",
+      "TITLE": "Blog & CMS",
+      "TOOLCHAIN": {
+        "CONTENT":  "Angular | Node.js | MySQL | Tailwind CSS",
+        "LABEL": "Toolchain :"
+      }
+    },
+    "DAVVERO": {
+      "APPLICATION_TYPE": "Website",
+      "CATEGORY": {
+        "CONTENT": "Restaurant-Website, Business",
+        "LABEL": "Category :"
+      },
+      "DATE": {
+        "CONTENT": "Oct 2024",
+        "LABEL": "Date :"
+      },
+      "DESCRIPTION": "User-friendly restaurant website for reservations, menu displays, contact inquiries, and easy navigation.",
+      "TITLE": "Davvero",
+      "TOOLCHAIN": {
+        "CONTENT": "Wordpress | Elementor | Custom CSS/JavaScript",
+        "LABEL": "Toolchain :"
+      }
+    },
     "DABUBBLE": {
       "APPLICATION_TYPE": "WebApp",
       "CATEGORY": {
@@ -49,7 +84,7 @@
       }
     },
     "PORTFOLIO": {
-      "APPLICATION_TYPE": "WebApp",
+      "APPLICATION_TYPE": "Website",
       "CATEGORY": {
         "CONTENT": "Personal Website, Portfolio",
         "LABEL": "Category :"
@@ -60,23 +95,6 @@
       },
       "DESCRIPTION": "In my personal website, visitors can learn more about me, explore my projects, and get in touch with me to discuss potential collaborations or new opportunities.",
       "TITLE": "Portfolio",
-      "TOOLCHAIN": {
-        "CONTENT": "Angular | TypeScript | SCSS | HTML",
-        "LABEL": "Toolchain :"
-      }
-    },
-    "CRM": {
-      "APPLICATION_TYPE": "WebApp",
-      "CATEGORY": {
-        "CONTENT": "Business Applications, Customer Relationship Management",
-        "LABEL": "Category :"
-      },
-      "DATE": {
-        "CONTENT": "Mrc 2024",
-        "LABEL": "Date :"
-      },
-      "DESCRIPTION": "A very simple Customer Relationship Management system that works with CRUD functionality.",
-      "TITLE": "CRM",
       "TOOLCHAIN": {
         "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Toolchain :"

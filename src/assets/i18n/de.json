@@ -13,7 +13,7 @@
   "ABOUT": {
     "TITLE_PREFIX": "ü",
     "TITLE": "ber mich",
-    "TITLE_SUFFIX": "Ich bin Teil der digitalen Zukunft.",
+    "TITLE_SUFFIX": "Meine Leidenschaft für digitale Erlebnisse",
     "DESCRIPTION_I": "Ich habe fundierte Kenntnisse in verschiedenen Programmiersprachen und Technologien. Meine Stärken liegen in der Frontend-Entwicklung. Dabei habe ich Erfahrungen mit HTML, CSS und JavaScript erlangt. Zudem arbeite ich mit dem Framework Angular, um dynamische und responsive Webanwendungen zu kreieren.",
     "DESCRIPTION_II": "Lösungsorientiertes und kreatives Denken zähle ich ebenfalls zu meinen Kompetenzen, die ich in jedem Projekt einsetze, um ein besonderes Benutzererlebnis zu schaffen."
   },
@@ -27,6 +27,7 @@
     "SOLVING": "Lösungsorientierung",
     "SOLVING_IMG": "assets/img/skills_white/l.png",
     "TEAM": "Teamfähigkeit",
+    "TEAM_IMG": "assets/img/skills_white/t.png",
     "RESPONSIBILITY": "Eigenverantwortung",
     "RESPONSIBILITY_IMG": "assets/img/skills_white/e.png"
   },
@@ -35,6 +36,40 @@
     "TITLE": "rojekte",
     "TITLE_SUFFIX": "Meine Arbeit.",
     "TITLE_DESCRIPTION": "Hier sind einige Projekte, an denen ich gearbeitet habe. Jedes Projekt stellt meine Reise im Erlernen und Anwenden neuer Fähigkeiten in verschiedenen Szenarien dar. Ich bin für jedes konstruktive Feedback dankbar.",
+    "BLOG": {
+      "APPLICATION_TYPE": "Fullstack Web-Anwendung",
+      "CATEGORY": {
+        "CONTENT": "Content Management System (CMS), Business, CRUD-Anwendung mit Authentifizierung",
+        "LABEL": "Kategorie :"
+      },
+      "DATE": {
+        "CONTENT": "Dez 2024",
+        "LABEL": "Datum :"
+      },
+      "DESCRIPTION": "Ein modernes Blog- und CMS-Projekt mit Angular und Tailwind CSS im Frontend sowie Node.js und Express.js im Backend, das eine sichere RESTful API mit Authentifizierung, Autorisierung und CRUD-Funktionalitäten über Sequelize ORM und MySQL implementiert.",
+      "TITLE": "Blog & CMS",
+      "TOOLCHAIN": {
+        "CONTENT": "Angular | Node.js | MySQL | Tailwind CSS",
+        "LABEL": "Werkzeug :"
+      }
+    },
+    "DAVVERO": {
+      "APPLICATION_TYPE": "Website",
+      "CATEGORY": {
+        "CONTENT": "Restaurant-Website, Business",
+        "LABEL": "Kategorie :"
+      },
+      "DATE": {
+        "CONTENT": "Okt 2024",
+        "LABEL": "Datum :"
+      },
+      "DESCRIPTION": "Benutzerfreundliche Restaurant-Website für Reservierungen, Menüanzeigen, Kontaktanfragen und einfache Navigation.",
+      "TITLE": "Davvero",
+      "TOOLCHAIN": {
+        "CONTENT": "Wordpress | Elementor | Custom CSS/JavaScript",
+        "LABEL": "Werkzeug :"
+      }
+    },
     "DABUBBLE": {
       "APPLICATION_TYPE": "Webanwendung",
       "CATEGORY": {
@@ -46,16 +81,16 @@
         "LABEL": "Datum :"
       },
       "DESCRIPTION": "Ein moderner Slack-Clone, der Teams ermöglicht, in Echtzeit zu kommunizieren und zusammenzuarbeiten. Enthält Funktionen wie Chats, Kanäle und Dateifreigaben.",
-      "TITLE": "DABUBBLE",
+      "TITLE": "DaBubble",
       "TOOLCHAIN": {
         "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Werkzeug :"
       }
     },
     "PORTFOLIO": {
-      "APPLICATION_TYPE": "Webanwendung",
+      "APPLICATION_TYPE": "Website",
       "CATEGORY": {
-        "CONTENT": "Persönliche Webseite, Portfolio",
+        "CONTENT": "Persönliche Website, Portfolio",
         "LABEL": "Kategorie :"
       },
       "DATE": {
@@ -64,23 +99,6 @@
       },
       "DESCRIPTION": "Auf meiner persönlichen Website können Besucher mehr über mich erfahren, meine Projekte erkunden und Kontakt mit mir aufnehmen, um über potenzielle Zusammenarbeit oder neue Möglichkeiten zu sprechen.",
       "TITLE": "Portfolio",
-      "TOOLCHAIN": {
-        "CONTENT": "Angular | TypeScript | SCSS | HTML",
-        "LABEL": "Werkzeug :"
-      }
-    },
-    "CRM": {
-      "APPLICATION_TYPE": "Webanwendung",
-      "CATEGORY": {
-        "CONTENT": "Geschäftsanwendungen, Kundenbeziehungsmanagement",
-        "LABEL": "Kategorie :"
-      },
-      "DATE": {
-        "CONTENT": "Mrz 2024",
-        "LABEL": "Datum :"
-      },
-      "DESCRIPTION": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
-      "TITLE": "CRM",
       "TOOLCHAIN": {
         "CONTENT": "Angular | TypeScript | SCSS | HTML",
         "LABEL": "Werkzeug :"

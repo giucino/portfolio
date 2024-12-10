@@ -20,13 +20,13 @@ import { throttleTime } from 'rxjs/operators';
   standalone: true,
   imports: [
     CommonModule,
-    MainContentComponent,
+    // MainContentComponent,
     LandingPageComponent,
     AboutComponent,
     SkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    ScrollTopModule,
+    ScrollTopModule
   ],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss'],
