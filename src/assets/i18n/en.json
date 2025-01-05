@@ -15,7 +15,7 @@
     "DESCRIPTION_II": "Problem-solving and creative thinking are also among my competencies, which I apply in every project to develop effective solutions.",
     "TITLE_PREFIX": "a",
     "TITLE": "bout Me",
-    "TITLE_SUFFIX": "My passion for digital experiences."
+    "TITLE_SUFFIX": "Learning and Growth in the Digital World."
   },
   "SKILLS": {
     "TITLE_PREFIX": "s",
@@ -39,7 +39,7 @@
         "LABEL": "Category :"
       },
       "DATE": {
-        "CONTENT": "Dec 2024",
+        "CONTENT": "Jan 2025",
         "LABEL": "Date :"
       },
       "DESCRIPTION": "A modern blog and CMS project with Angular and Tailwind CSS in the frontend, and Node.js and Express.js in the backend, implementing a secure RESTful API with authentication, authorization, and CRUD functionality via Sequelize ORM and MySQL.",
