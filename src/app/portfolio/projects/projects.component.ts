@@ -31,7 +31,7 @@ export class ProjectsComponent {
         label: 'PROJECTS.BLOG.DATE.LABEL',
         content: 'PROJECTS.BLOG.DATE.CONTENT',
       },
-      // liveTestLink: 'https://davvero-dillingen.de',
+      liveTestLink: 'https://blog-frontend-473446493160.us-central1.run.app/#/',
       githubLink: 'https://github.com/giucino/cms-blog',
 
     },
